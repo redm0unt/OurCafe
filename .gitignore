@@ -1,6 +1,7 @@
 .DS_Store
 echoServer/echoServer.pro.user
 application/OurCafe.pro.user
+Server/Server.pro.user
 
 build-echoServer-Desktop_Qt_6_6_2_MSVC2019_64bit-Debug/
 build-echoServer-Desktop_Qt_6_6_2_MSVC2019_64bit-Profile/
