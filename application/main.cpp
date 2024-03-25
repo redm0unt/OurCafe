@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     MainWindow window;
     window.show();
 
-    // initialize connection with server and send message after drawing GUI
+    // Initialize connection with server and send message after drawing GUI
     BackendClient* interface = BackendClient::getInstance();
     interface->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
 
