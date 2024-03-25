@@ -48,7 +48,7 @@ color: #000000;</string>
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <layout class="QHBoxLayout" name="Window_horizontalLayout">
     <property name="spacing">
      <number>0</number>
     </property>
@@ -66,13 +66,28 @@ color: #000000;</string>
     </property>
     <item>
      <widget class="QWidget" name="Sidebar" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="minimumSize">
+       <size>
+        <width>305</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>305</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="Sidebar_verticalLayout">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -97,28 +112,28 @@ color: #000000;</string>
           </sizepolicy>
          </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>Logo</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="MenuButton">
          <property name="text">
-          <string>PushButton</string>
+          <string>Menu</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="BookingButton">
          <property name="text">
-          <string>PushButton</string>
+          <string>Booking</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="DeliveryButton">
          <property name="text">
-          <string>PushButton</string>
+          <string>Delivery</string>
          </property>
         </widget>
        </item>
@@ -174,7 +189,7 @@ color: #000000;</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <layout class="QHBoxLayout" name="Social_horizontalLayout">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -193,28 +208,28 @@ color: #000000;</string>
           <item alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="Telegram">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Social</string>
             </property>
            </widget>
           </item>
           <item alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="Whatsapp">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Social</string>
             </property>
            </widget>
           </item>
           <item alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="VK">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Social</string>
             </property>
            </widget>
           </item>
           <item alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="Instagram">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Social</string>
             </property>
            </widget>
           </item>
@@ -257,7 +272,7 @@ color: #000000;</string>
     </item>
     <item>
      <widget class="QWidget" name="Content" native="true">
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="Content_verticalLayout">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -274,158 +289,161 @@ color: #000000;</string>
         <number>0</number>
        </property>
        <item>
-        <layout class="QVBoxLayout" name="Content_verticalLayout">
-         <property name="spacing">
-          <number>0</number>
+        <widget class="QWidget" name="Header" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-         <item>
-          <widget class="QWidget" name="Header" native="true">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>125</height>
-            </size>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <property name="spacing">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>125</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>125</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="Header_horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Heading">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Menu</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="indent">
              <number>0</number>
             </property>
-            <property name="leftMargin">
-             <number>0</number>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="CartAccountBlock" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-            <property name="topMargin">
-             <number>0</number>
+            <property name="minimumSize">
+             <size>
+              <width>282</width>
+              <height>0</height>
+             </size>
             </property>
-            <property name="rightMargin">
-             <number>0</number>
+            <property name="maximumSize">
+             <size>
+              <width>282</width>
+              <height>16777215</height>
+             </size>
             </property>
-            <property name="bottomMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <layout class="QHBoxLayout" name="Header_horizontalLayout">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <item alignment="Qt::AlignHCenter">
-               <widget class="QLabel" name="Heading">
-                <property name="text">
-                 <string>Menu</string>
-                </property>
-                <property name="indent">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QWidget" name="CartAccountBlock" native="true">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>282</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_4">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item>
-                  <layout class="QHBoxLayout" name="CartAccountBlock_horizontalLayout">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="sizeConstraint">
-                    <enum>QLayout::SetDefaultConstraint</enum>
-                   </property>
-                   <item alignment="Qt::AlignHCenter">
-                    <widget class="QLabel" name="Cart">
-                     <property name="text">
-                      <string>TextLabel</string>
-                     </property>
-                     <property name="indent">
-                      <number>0</number>
-                     </property>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignHCenter">
-                    <widget class="QLabel" name="Account">
-                     <property name="text">
-                      <string>TextLabel</string>
-                     </property>
-                     <property name="indent">
-                      <number>0</number>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="Line" name="Header_line">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>4</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>4</height>
-            </size>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="lineWidth">
-            <number>4</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QWidget" name="PageContents" native="true"/>
-         </item>
-        </layout>
+            <layout class="QHBoxLayout" name="CartAccountBlock_horizontalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="Cart">
+               <property name="text">
+                <string>Cart</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="indent">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="Account">
+               <property name="text">
+                <string>Account</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="indent">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="Header_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>4</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>4</height>
+          </size>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>4</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="PageContent" native="true"/>
        </item>
       </layout>
      </widget>
