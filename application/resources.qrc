@@ -7,5 +7,6 @@
         <file>resources/Telegram.png</file>
         <file>resources/Whatsapp.png</file>
         <file>resources/VK.png</file>
+        <file>resources/AppIcon.png</file>
     </qresource>
 </RCC>

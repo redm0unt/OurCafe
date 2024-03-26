@@ -211,7 +211,6 @@ color: #000000;</string>
 	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	duration: 100;
 }
 QPushButton:hover {
 	color: #ffffff;
@@ -245,7 +244,6 @@ QPushButton:hover {
 	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	duration: 100;
 }
 QPushButton:hover {
 	color: #ffffff;
@@ -279,7 +277,6 @@ QPushButton:hover {
 	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	duration: 100;
 }
 QPushButton:hover {
 	color: #ffffff;

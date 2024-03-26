@@ -11,12 +11,6 @@ MainWindow::MainWindow(QWidget* parent)
     // Draw Main Logo
     QString MainLogoPixmapPath = ":/resources/resources/MainLogo.png";
     QPixmap MainLogoPixmap(MainLogoPixmapPath);
-
-    qDebug() << "Width: " << MainLogoPixmap.width();
-    qDebug() << "Height: " << MainLogoPixmap.height();
-    qDebug() << ui->MainLogo->width();
-    qDebug() << ui->MainLogo->height();
-
     int MainLogoWidth = 180;
     ui->MainLogo->setPixmap(MainLogoPixmap.scaled(MainLogoWidth, MainLogoWidth, Qt::KeepAspectRatio, Qt::SmoothTransformation));
 

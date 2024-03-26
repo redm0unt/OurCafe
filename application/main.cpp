@@ -12,6 +12,8 @@ int main(int argc, char* argv[])
     QApplication app(argc, argv);
     MainWindow window;
     window.show();
+    app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png")); // Your path icon
+
 
     // Initialize connection with server and send message after drawing GUI
     BackendClient* interface = BackendClient::getInstance();
