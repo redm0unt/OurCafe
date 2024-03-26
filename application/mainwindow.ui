@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>911</width>
-    <height>576</height>
+    <width>1360</width>
+    <height>765</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="minimumSize">
    <size>
     <width>800</width>
-    <height>450</height>
+    <height>445</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -87,9 +87,12 @@ color: #000000;</string>
         <height>16777215</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;Bodoni Moda 9pt&quot;;</string>
+      </property>
       <layout class="QVBoxLayout" name="Sidebar_verticalLayout">
        <property name="spacing">
-        <number>10</number>
+        <number>0</number>
        </property>
        <property name="sizeConstraint">
         <enum>QLayout::SetMinimumSize</enum>
@@ -98,18 +101,18 @@ color: #000000;</string>
         <number>0</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>20</number>
        </property>
        <property name="rightMargin">
         <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>20</number>
        </property>
        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
         <widget class="QLabel" name="MainLogo">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -117,13 +120,13 @@ color: #000000;</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>0</height>
+           <height>180</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>1024</width>
-           <height>1024</height>
+           <height>180</height>
           </size>
          </property>
          <property name="cursor">
@@ -135,8 +138,11 @@ color: #000000;</string>
          <property name="focusPolicy">
           <enum>Qt::NoFocus</enum>
          </property>
-         <property name="styleSheet">
-          <string notr="true">alignment: center center;</string>
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
          </property>
          <property name="frameShape">
           <enum>QFrame::NoFrame</enum>
@@ -150,6 +156,9 @@ color: #000000;</string>
          <property name="textFormat">
           <enum>Qt::PlainText</enum>
          </property>
+         <property name="pixmap">
+          <pixmap resource="resources.qrc">:/resources/resources/MainLogo.png</pixmap>
+         </property>
          <property name="scaledContents">
           <bool>false</bool>
          </property>
@@ -165,9 +174,49 @@ color: #000000;</string>
         </widget>
        </item>
        <item>
+        <spacer name="Sidebar_verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>45</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QPushButton" name="MenuButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
-          <string notr="true">margin-bottom: 10px;</string>
+          <string notr="true">QPushButton {
+	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	duration: 100;
+}
+QPushButton:hover {
+	color: #ffffff;
+	background-color: #E59C59;
+}</string>
          </property>
          <property name="text">
           <string>Menu</string>
@@ -176,6 +225,33 @@ color: #000000;</string>
        </item>
        <item>
         <widget class="QPushButton" name="BookingButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>QPushButton {
+	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	duration: 100;
+}
+QPushButton:hover {
+	color: #ffffff;
+	background-color: #E59C59;
+}</string>
+         </property>
          <property name="text">
           <string>Booking</string>
          </property>
@@ -183,6 +259,33 @@ color: #000000;</string>
        </item>
        <item>
         <widget class="QPushButton" name="DeliveryButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	duration: 100;
+}
+QPushButton:hover {
+	color: #ffffff;
+	background-color: #E59C59;
+}</string>
+         </property>
          <property name="text">
           <string>Delivery</string>
          </property>
@@ -194,46 +297,142 @@ color: #000000;</string>
           <enum>Qt::Vertical</enum>
          </property>
          <property name="sizeType">
-          <enum>QSizePolicy::Preferred</enum>
+          <enum>QSizePolicy::Expanding</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>45</width>
-           <height>40</height>
+           <height>10</height>
           </size>
          </property>
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="Contacts">
+        <widget class="QLabel" name="ContactsHeader">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 900 26pt &quot;Bodoni Moda 9pt&quot;;</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 align=&quot;center&quot;&gt;Contacts&lt;/h1&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::AutoText</enum>
-         </property>
-         <property name="scaledContents">
-          <bool>false</bool>
+          <string>Contacts</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
          </property>
          <property name="indent">
           <number>0</number>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="Sidebar_verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>45</width>
+           <height>15</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="ContactsTextWrapper" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="ContactsText">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 13pt &quot;Bodoni Moda 9pt&quot;;</string>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByMouse</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="Sidebar_verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>45</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
        <item>
         <widget class="QWidget" name="Social" native="true">
@@ -243,7 +442,7 @@ color: #000000;</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <layout class="QHBoxLayout" name="Social_horizontalLayout">
+         <layout class="QHBoxLayout" name="horizontalLayout">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -251,39 +450,87 @@ color: #000000;</string>
            <number>0</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>2</number>
           </property>
           <property name="rightMargin">
            <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>3</number>
           </property>
-          <item alignment="Qt::AlignHCenter">
+          <item>
            <widget class="QLabel" name="Telegram">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
-             <string>Social</string>
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/resources/resources/Telegram.png</pixmap>
             </property>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter">
+          <item>
            <widget class="QLabel" name="Whatsapp">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
-             <string>Social</string>
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/resources/resources/Whatsapp.png</pixmap>
             </property>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter">
+          <item>
            <widget class="QLabel" name="VK">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
-             <string>Social</string>
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/resources/resources/VK.png</pixmap>
             </property>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter">
+          <item>
            <widget class="QLabel" name="Instagram">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
-             <string>Social</string>
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/resources/resources/Instagram.png</pixmap>
             </property>
            </widget>
           </item>
