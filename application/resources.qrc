@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/resources">
-        <file>resources/MainLogo.png</file>
         <file>resources/Cart.png</file>
         <file>resources/Account.png</file>
         <file>resources/Instagram.png</file>
@@ -8,5 +7,6 @@
         <file>resources/Whatsapp.png</file>
         <file>resources/VK.png</file>
         <file>resources/AppIcon.png</file>
+        <file>resources/MainLogo.png</file>
     </qresource>
 </RCC>
