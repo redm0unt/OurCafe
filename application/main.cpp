@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "menuwindow.h"
 #include "backendclient.h"
 
 #include <QApplication>

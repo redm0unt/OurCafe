@@ -8,5 +8,6 @@
         <file>resources/VK.png</file>
         <file>resources/AppIcon.png</file>
         <file>resources/MainLogo.png</file>
+        <file>resources/plus_menu.png</file>
     </qresource>
 </RCC>

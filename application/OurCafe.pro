@@ -15,14 +15,17 @@ ICON = resources/AppIcon.png
 SOURCES += \
     backendclient.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    menuwindow.cpp
 
 HEADERS += \
     backendclient.h \
-    mainwindow.h
+    mainwindow.h \
+    menuwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    menuwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
