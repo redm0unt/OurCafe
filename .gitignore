@@ -5,6 +5,12 @@ Server/Server.pro.user
 
 build-echoServer-Desktop_Qt_6_6_2_MSVC2019_64bit-Debug/
 build-echoServer-Desktop_Qt_6_6_2_MSVC2019_64bit-Profile/
+Server/build-Server-Desktop_x86_windows_msvc2022_pe_64bit-Debug/
+Server/build-Server-Desktop_x86_windows_msvc2022_pe_64bit-Profile/
+Server/build-Server-Desktop_x86_windows_msvc2022_pe_64bit-Profile/
+build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Debug/
+build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Profile/
+build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Profile/
 build-echoServer-Desktop_Qt_6_6_2_MSVC2019_64bit-Release/
 build-OurCafe-Desktop_Qt_6_6_2_MSVC2019_64bit-Debug/
 build-OurCafe-Desktop_Qt_6_6_2_MSVC2019_64bit-Profile/
