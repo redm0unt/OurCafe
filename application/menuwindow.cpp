@@ -2,6 +2,7 @@
 #include "ui_menuwindow.h"
 //#include "mainwindow.h"
 
+
 MenuWindow::MenuWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MenuWindow)

@@ -19,6 +19,7 @@ SOURCES += \
     menuwindow.cpp \
     entering_window.cpp \
     register_window.cpp
+     # register_window.cpp
 
 HEADERS += \
     backendclient.h \

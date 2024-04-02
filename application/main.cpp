@@ -20,7 +20,6 @@ int main(int argc, char* argv[])
     app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png")); // Your path icon
 
 
-
     // Initialize connection with server and send message after drawing GUI
     BackendClient* interface = BackendClient::getInstance();
     interface->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));

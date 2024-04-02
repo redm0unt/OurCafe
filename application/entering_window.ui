@@ -142,9 +142,11 @@ color: #000000;</string>
         <height>0</height>
        </size>
       </property>
+      <property name="toolTip">
+       <string extracomment="Enter your email"/>
+      </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
@@ -308,15 +310,46 @@ color: #000000;</string>
            <height>45</height>
           </size>
          </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
          <property name="styleSheet">
           <string notr="true">font: 13px;
-color: #8E8E8E;
+color: #000000;
 
 background-color: #F5F0EB;
-border-radius: 13px;</string>
+border-radius: 13px;
+padding: 0 13px;</string>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhHiddenText</set>
+         </property>
+         <property name="inputMask">
+          <string comment="Enter your email" extracomment="Enter your email"/>
          </property>
          <property name="text">
-          <string>    Enter your email</string>
+          <string comment="Enter your email" extracomment="Enter your email"/>
+         </property>
+         <property name="cursorPosition">
+          <number>0</number>
+         </property>
+         <property name="placeholderText">
+          <string extracomment="Enter your email"/>
          </property>
         </widget>
        </item>
@@ -372,13 +405,26 @@ border-radius: 13px;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">font: 13px;
-color: #8E8E8E;
+color: #000000;
 
 background-color: #F5F0EB;
-border-radius: 13px;</string>
+border-radius: 13px;
+padding: 0 13px;</string>
          </property>
          <property name="text">
-          <string>    Enter your password</string>
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>25</number>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="cursorPosition">
+          <number>0</number>
+         </property>
+         <property name="placeholderText">
+          <string/>
          </property>
         </widget>
        </item>

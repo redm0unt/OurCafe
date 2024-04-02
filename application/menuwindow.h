@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 namespace Ui {
 class MenuWindow;
 }
@@ -21,5 +22,6 @@ public:
 private:
     Ui::MenuWindow *ui;
 };
+
 
 #endif // MENUWINDOW_H
