@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1061</width>
-    <height>445</height>
+    <width>1360</width>
+    <height>765</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -87,8 +87,14 @@ color: #000000;</string>
         <height>16777215</height>
        </size>
       </property>
+      <property name="baseSize">
+       <size>
+        <width>230</width>
+        <height>0</height>
+       </size>
+      </property>
       <property name="styleSheet">
-       <string notr="true">font: 13pt &quot;Bodoni Moda 9pt&quot;;</string>
+       <string notr="true">font: 700 40px</string>
       </property>
       <layout class="QVBoxLayout" name="Sidebar_verticalLayout">
        <property name="spacing">
@@ -193,7 +199,7 @@ color: #000000;</string>
          <property name="sizeHint" stdset="0">
           <size>
            <width>45</width>
-           <height>40</height>
+           <height>20</height>
           </size>
          </property>
         </spacer>
@@ -217,7 +223,7 @@ color: #000000;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -250,7 +256,7 @@ QPushButton:hover {
          </property>
          <property name="styleSheet">
           <string>QPushButton {
-	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -283,7 +289,7 @@ QPushButton:hover {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	font: 900 35pt &quot;Bodoni Moda 9pt&quot;;
+	
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -303,12 +309,12 @@ QPushButton:hover {
           <enum>Qt::Vertical</enum>
          </property>
          <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
+          <enum>QSizePolicy::Expanding</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>45</width>
-           <height>45</height>
+           <height>10</height>
           </size>
          </property>
         </spacer>
@@ -321,14 +327,20 @@ QPushButton:hover {
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <property name="maximumSize">
+         <property name="minimumSize">
           <size>
-           <width>16777215</width>
+           <width>0</width>
            <height>20</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
          <property name="styleSheet">
-          <string notr="true">font: 900 26pt &quot;Bodoni Moda 9pt&quot;;</string>
+          <string notr="true">font: 700 26px;</string>
          </property>
          <property name="text">
           <string>Contacts</string>
@@ -352,7 +364,7 @@ QPushButton:hover {
          <property name="sizeHint" stdset="0">
           <size>
            <width>45</width>
-           <height>45</height>
+           <height>15</height>
           </size>
          </property>
         </spacer>
@@ -393,7 +405,7 @@ QPushButton:hover {
              <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 13pt &quot;Bodoni Moda 9pt&quot;;</string>
+             <string notr="true">font: 14px</string>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Plain</enum>
@@ -664,7 +676,7 @@ QPushButton:hover {
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">font: 900 40pt &quot;Bodoni Moda 9pt&quot;;</string>
+          <string notr="true">font: 700 45px;</string>
          </property>
          <layout class="QHBoxLayout" name="Header_horizontalLayout">
           <property name="spacing">
@@ -691,7 +703,7 @@ QPushButton:hover {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Main</string>
+             <string>Menu</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -857,6 +869,12 @@ QPushButton:hover {
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
            <widget class="QScrollArea" name="scrollArea">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
@@ -865,7 +883,7 @@ QPushButton:hover {
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>786</width>
+               <width>1085</width>
                <height>922</height>
               </rect>
              </property>
