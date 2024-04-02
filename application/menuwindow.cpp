@@ -1,6 +1,6 @@
 #include "menuwindow.h"
 #include "ui_menuwindow.h"
-//#include "mainwindow.h"
+#include "backendclient.h"
 
 
 MenuWindow::MenuWindow(QWidget *parent)
@@ -15,10 +15,10 @@ MenuWindow::~MenuWindow()
     delete ui;
 }
 
-// void MenuWindow::on_MainLogo_clicked()
-// {
-//     hide();
-//     mainWindow = new MainWindow(this);
-//     mainWindow->show();
-// }
+
+void MenuWindow::on_MainLogo_clicked()
+{
+    BackendClient::open_main_window();
+    this->hide();
+}
 

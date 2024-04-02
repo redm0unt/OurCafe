@@ -16,6 +16,11 @@ public:
     explicit register_window(QWidget *parent = nullptr);
     ~register_window();
 
+private slots:
+    void on_SingUpButton_clicked();
+
+    void on_AuthorizationButton_clicked();
+
 private:
     Ui::register_window *ui;
 };

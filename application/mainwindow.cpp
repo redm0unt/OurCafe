@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "menuwindow.h"
+#include "backendclient.h"
 
 
 MainWindow::MainWindow(QWidget* parent)
@@ -17,8 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_MenuButton_clicked()
 {
-    hide();
-    menuWindow = new MenuWindow(this);
-    menuWindow->show();
+    BackendClient::open_menu_window();
+    this->hide();
 }
 

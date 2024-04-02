@@ -13,20 +13,21 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    MainWindow window;
-    entering_window entering_win;
-    register_window register_win;
+    // MainWindow window;
+    // entering_window entering_win;
+    // register_window register_win;
 
-    entering_win.show();
-    register_win.show();
-    window.show();
+    // entering_win.show();
+    // register_win.show();
+    // window.show();
 
     app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png")); // Your path icon
 
 
     // Initialize connection with server and send message after drawing GUI
-    BackendClient* interface = BackendClient::getInstance();
-    interface->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
+    BackendClient* client = BackendClient::getclient();
+    BackendClient::start_application();
+    client->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
 
     return app.exec();
 }

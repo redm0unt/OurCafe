@@ -19,6 +19,9 @@ public:
 // private slots:
 //     void on_MainLogo_clicked();
 
+private slots:
+    void on_MainLogo_clicked();
+
 private:
     Ui::MenuWindow *ui;
 };

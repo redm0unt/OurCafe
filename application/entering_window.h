@@ -18,6 +18,11 @@ public:
     entering_window(QWidget *parent = nullptr);
     ~entering_window();
 
+private slots:
+    void on_SingInButton_clicked();
+
+    void on_RegisterButton_clicked();
+
 private:
     Ui::entering_window *ui;
 };
