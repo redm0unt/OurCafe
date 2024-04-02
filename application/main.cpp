@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "menuwindow.h"
 #include "backendclient.h"
+#include "entering_window.h"
+#include "register_window.h"
 
 #include <QApplication>
 #include <QLabel>
@@ -12,8 +14,11 @@ int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
     MainWindow window;
+    entering_window enter;
+    enter.show();
     window.show();
     app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png")); // Your path icon
+
 
 
     // Initialize connection with server and send message after drawing GUI

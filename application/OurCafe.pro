@@ -16,16 +16,22 @@ SOURCES += \
     backendclient.cpp \
     main.cpp \
     mainwindow.cpp \
-    menuwindow.cpp
+    menuwindow.cpp \
+    entering_window.cpp \
+    register_window.cpp
 
 HEADERS += \
     backendclient.h \
     mainwindow.h \
-    menuwindow.h
+    menuwindow.h \
+    entering_window.h \
+    register_window.h
 
 FORMS += \
     mainwindow.ui \
-    menuwindow.ui
+    menuwindow.ui \
+    entering_window.ui \
+    register_window.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
