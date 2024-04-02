@@ -7,8 +7,6 @@ entering_window::entering_window(QWidget *parent)
     , ui(new Ui::entering_window)
 {
     ui->setupUi(this);
-    ui->EmailInput->setPlaceholderText("Enter your email");
-    ui->PasswordInput->setPlaceholderText("Enter your password");
 }
 
 entering_window::~entering_window()

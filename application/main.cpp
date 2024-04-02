@@ -14,9 +14,13 @@ int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
     MainWindow window;
-    entering_window enter;
-    enter.show();
+    entering_window entering_win;
+    register_window register_win;
+
+    entering_win.show();
+    register_win.show();
     window.show();
+
     app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png")); // Your path icon
 
 

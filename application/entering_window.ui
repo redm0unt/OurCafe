@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>entering_window</string>
+   <string>Authorization</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #E7D8CB;
@@ -340,16 +340,16 @@ padding: 0 13px;</string>
           <set>Qt::ImhHiddenText</set>
          </property>
          <property name="inputMask">
-          <string comment="Enter your email" extracomment="Enter your email"/>
+          <string/>
          </property>
          <property name="text">
-          <string comment="Enter your email" extracomment="Enter your email"/>
+          <string/>
          </property>
          <property name="cursorPosition">
           <number>0</number>
          </property>
          <property name="placeholderText">
-          <string extracomment="Enter your email"/>
+          <string>Enter your email</string>
          </property>
         </widget>
        </item>
@@ -424,7 +424,7 @@ padding: 0 13px;</string>
           <number>0</number>
          </property>
          <property name="placeholderText">
-          <string/>
+          <string>Enter your password</string>
          </property>
         </widget>
        </item>

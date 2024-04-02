@@ -3,7 +3,7 @@
 
 
 register_window::register_window(QWidget *parent)
-    : QWidget(parent)
+    : QMainWindow(parent)
     , ui(new Ui::register_window)
 {
     ui->setupUi(this);

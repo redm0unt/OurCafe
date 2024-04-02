@@ -1,14 +1,14 @@
 #ifndef REGISTER_WINDOW_H
 #define REGISTER_WINDOW_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 
 namespace Ui {
 class register_window;
 }
 
-class register_window : public QWidget
+class register_window : public QMainWindow
 {
     Q_OBJECT
 

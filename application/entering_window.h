@@ -1,7 +1,7 @@
 #ifndef ENTERING_WINDOW_H
 #define ENTERING_WINDOW_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 
 QT_BEGIN_NAMESPACE
@@ -10,7 +10,7 @@ class entering_window;
 }
 QT_END_NAMESPACE
 
-class entering_window : public QWidget
+class entering_window : public QMainWindow
 {
     Q_OBJECT
 
