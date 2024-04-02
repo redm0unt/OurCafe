@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1088</width>
-    <height>612</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1088</width>
-    <height>612</height>
+    <width>1280</width>
+    <height>720</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1088</width>
-    <height>612</height>
+    <width>1280</width>
+    <height>720</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -104,8 +104,8 @@ color: #000000;</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>380</width>
-           <height>510</height>
+           <width>450</width>
+           <height>603</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -126,13 +126,13 @@ color: #000000;</string>
       </property>
       <property name="minimumSize">
        <size>
-        <width>660</width>
+        <width>776</width>
         <height>0</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>660</width>
+        <width>776</width>
         <height>16777215</height>
        </size>
       </property>
@@ -151,13 +151,13 @@ color: #000000;</string>
         <number>0</number>
        </property>
        <property name="leftMargin">
-        <number>110</number>
+        <number>140</number>
        </property>
        <property name="topMargin">
         <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>110</number>
+        <number>140</number>
        </property>
        <property name="bottomMargin">
         <number>0</number>
@@ -225,7 +225,7 @@ color: #000000;</string>
           </sizepolicy>
          </property>
          <property name="styleSheet">
-          <string notr="true">font: 800 38px;</string>
+          <string notr="true">font: 800 42px;</string>
          </property>
          <property name="text">
           <string>Welcome back</string>
@@ -305,7 +305,7 @@ color: #000000;</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>40</height>
+           <height>45</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -367,7 +367,7 @@ border-radius: 13px;</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>40</height>
+           <height>45</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -403,7 +403,7 @@ border-radius: 13px;</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>47</height>
+           <height>50</height>
           </size>
          </property>
          <property name="cursor">
