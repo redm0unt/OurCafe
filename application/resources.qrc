@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/Cart.png</file>
+        <file>resources/Account.png</file>
+        <file>resources/Instagram.png</file>
+        <file>resources/Telegram.png</file>
+        <file>resources/Whatsapp.png</file>
+        <file>resources/VK.png</file>
+        <file>resources/AppIcon.png</file>
+        <file>resources/MainLogo.png</file>
+        <file>resources/plus_menu.png</file>
+        <file>resources/Welcome_photo.png</file>
+    </qresource>
+</RCC>

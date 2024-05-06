@@ -10,12 +10,14 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    MainWindow window;
-    window.show();
+    app.setWindowIcon(QIcon(":/resources/resources/AppIcon.png"));
 
-    // initialize connection with server and send message after drawing GUI
-    BackendClient* interface = BackendClient::getInstance();
-    interface->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
+    BackendClient::start_application();
+
+
+    // Initialize connection with server and send message after drawing GUI
+    BackendClient* client = BackendClient::getclient();
+    client->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
 
     return app.exec();
 }

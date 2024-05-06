@@ -7,34 +7,59 @@
 #include <QByteArray>
 #include <QDebug>
 
+#include "entering_window.h"
+#include "register_window.h"
+#include "mainwindow.h"
+#include "menuwindow.h"
+
 
 class BackendClient;
 
 class BackendClientDestroyer
 {
     private:
-        BackendClient* instance;
+        BackendClient* client;
     public:
-        ~BackendClientDestroyer() { delete instance; }
-        void initialize(BackendClient* p) { instance = p; }
+        ~BackendClientDestroyer() { delete client; }
+        void initialize(BackendClient* p) { client = p; }
 };
 
 class BackendClient : public QObject
 {
     Q_OBJECT
     private:
-        static BackendClient* instance;
+        static BackendClient* client;
         static BackendClientDestroyer destroyer;
+
+        // Client Server Socket
         QTcpSocket* TcpSocket;
+
+        // Application Windows
+        static entering_window* enteringWindow;
+        static register_window* registerWindow;
+        static MainWindow* mainWindow;
+        static MenuWindow* menuWindow;
     protected:
         explicit BackendClient (QObject* parent = nullptr);
         BackendClient( BackendClient& ) = delete;
         BackendClient & operator = (BackendClient &) = delete;
-        ~BackendClient() { TcpSocket->close(); }
+        ~BackendClient() {
+            TcpSocket->close();
+            delete enteringWindow;
+            delete registerWindow;
+            delete mainWindow;
+            delete menuWindow;
+        }
         friend class BackendClientDestroyer;
     public:
-        static BackendClient* getInstance();
+        static BackendClient* getclient();
         void send_message_to_server ( QString query );
+        static void start_application();
+
+        static void open_entering_window();
+        static void open_register_window();
+        static void open_main_window();
+        static void open_menu_window();
 
         signals:
             void message_from_server( QString message );
