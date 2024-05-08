@@ -12,7 +12,7 @@ QT_END_NAMESPACE
 
 class entering_window : public QMainWindow
 {
-    Q_OBJECT
+Q_OBJECT
 
 public:
     entering_window(QWidget *parent = nullptr);

@@ -17,10 +17,7 @@ entering_window::~entering_window()
 
 void entering_window::on_SingInButton_clicked()
 {
-    // Send info to server and evaluate it
-    // –––––––––––––––––––––––––––––––––––
-    BackendClient::open_main_window();
-    this->hide();
+    BackendClient::authentificate(ui->EmailInput->text(), ui->PasswordInput->text());
 }
 
 void entering_window::on_RegisterButton_clicked()

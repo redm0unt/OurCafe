@@ -14,6 +14,7 @@ ICON = resources/AppIcon.png
 
 SOURCES += \
     backendclient.cpp \
+    hash.cpp \
     main.cpp \
     mainwindow.cpp \
     menuwindow.cpp \
@@ -22,6 +23,7 @@ SOURCES += \
 
 HEADERS += \
     backendclient.h \
+    hash.h \
     mainwindow.h \
     menuwindow.h \
     entering_window.h \
