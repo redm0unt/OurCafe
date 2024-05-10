@@ -10,5 +10,6 @@
         <file>resources/MainLogo.png</file>
         <file>resources/plus_menu.png</file>
         <file>resources/Welcome_photo.png</file>
+        <file>resources/CafeBackground.png</file>
     </qresource>
 </RCC>

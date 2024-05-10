@@ -21,3 +21,10 @@ void MainWindow::on_MenuButton_clicked()
     this->hide();
 }
 
+
+void MainWindow::on_BookingButton_clicked()
+{
+    BackendClient::open_booking_window();
+    this->hide();
+}
+

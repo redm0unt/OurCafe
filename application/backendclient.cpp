@@ -72,6 +72,13 @@ void BackendClient::open_menu_window()
     }
     menuWindow->show();
 }
+void BackendClient::open_booking_window()
+{
+    if (!bookingWindow) {
+        bookingWindow = new BookingWindow();
+    }
+    bookingWindow->show();
+}
 
 
 BackendClient* BackendClient::client;
@@ -82,3 +89,4 @@ MainWindow* BackendClient::mainWindow;
 MenuWindow* BackendClient::menuWindow;
 entering_window* BackendClient::enteringWindow;
 register_window* BackendClient::registerWindow;
+BookingWindow* BackendClient::bookingWindow;
