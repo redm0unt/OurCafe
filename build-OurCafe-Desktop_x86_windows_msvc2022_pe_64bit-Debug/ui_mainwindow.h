@@ -62,6 +62,18 @@ public:
     QSpacerItem *horizontalSpacer;
     QFrame *Header_line;
     QWidget *PageContent;
+    QVBoxLayout *verticalLayout;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label;
+    QLabel *label_2;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_3;
+    QLabel *label_4;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_5;
+    QLabel *label_6;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -395,6 +407,77 @@ public:
 
         PageContent = new QWidget(Content);
         PageContent->setObjectName("PageContent");
+        verticalLayout = new QVBoxLayout(PageContent);
+        verticalLayout->setObjectName("verticalLayout");
+        widget = new QWidget(PageContent);
+        widget->setObjectName("widget");
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(40);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(70, 15, 70, 15);
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setSpacing(7);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        label = new QLabel(widget);
+        label->setObjectName("label");
+        sizePolicy3.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy3);
+        label->setMinimumSize(QSize(0, 380));
+        label->setMaximumSize(QSize(16777215, 380));
+        label->setBaseSize(QSize(0, 380));
+        label->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/dessert.png);"));
+
+        verticalLayout_2->addWidget(label);
+
+        label_2 = new QLabel(widget);
+        label_2->setObjectName("label_2");
+
+        verticalLayout_2->addWidget(label_2);
+
+
+        horizontalLayout->addLayout(verticalLayout_2);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName("verticalLayout_3");
+        label_3 = new QLabel(widget);
+        label_3->setObjectName("label_3");
+
+        verticalLayout_3->addWidget(label_3);
+
+        label_4 = new QLabel(widget);
+        label_4->setObjectName("label_4");
+        sizePolicy3.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy3);
+        label_4->setMinimumSize(QSize(0, 390));
+        label_4->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/cocoa.png);"));
+
+        verticalLayout_3->addWidget(label_4);
+
+
+        horizontalLayout->addLayout(verticalLayout_3);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        label_5 = new QLabel(widget);
+        label_5->setObjectName("label_5");
+        sizePolicy3.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
+        label_5->setSizePolicy(sizePolicy3);
+        label_5->setMinimumSize(QSize(0, 380));
+        label_5->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/coffee.png);"));
+
+        verticalLayout_4->addWidget(label_5);
+
+        label_6 = new QLabel(widget);
+        label_6->setObjectName("label_6");
+
+        verticalLayout_4->addWidget(label_6);
+
+
+        horizontalLayout->addLayout(verticalLayout_4);
+
+
+        verticalLayout->addWidget(widget);
+
 
         Content_verticalLayout->addWidget(PageContent);
 
@@ -433,6 +516,12 @@ public:
         Heading->setText(QCoreApplication::translate("MainWindow", "Main", nullptr));
         Cart->setText(QString());
         Account->setText(QString());
+        label->setText(QString());
+        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_4->setText(QString());
+        label_5->setText(QString());
+        label_6->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };

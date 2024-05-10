@@ -202,10 +202,13 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_resources.cpp
 debug\qrc_resources.cpp: ..\application\resources.qrc \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\rcc.exe \
+		..\application\resources\dessert.png \
 		..\application\resources\plus_menu.png \
 		..\application\resources\CafeBackground.png \
 		..\application\resources\Telegram.png \
 		..\application\resources\Cart.png \
+		..\application\resources\cocoa.png \
+		..\application\resources\coffee.png \
 		..\application\resources\MainLogo.png \
 		..\application\resources\Account.png \
 		..\application\resources\AppIcon.png \
@@ -596,6 +599,7 @@ debug\moc_backendclient.cpp: ..\application\backendclient.h \
 		..\application\register_window.h \
 		..\application\mainwindow.h \
 		..\application\menuwindow.h \
+		..\application\bookingwindow.h \
 		debug\moc_predefs.h \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\moc.exe
 	D:\QT\6.6.2\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/qt_projects/OurCafe/build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Debug/debug/moc_predefs.h -ID:/QT/6.6.2/msvc2019_64/mkspecs/win32-msvc -ID:/qt_projects/OurCafe/application -ID:/QT/6.6.2/msvc2019_64/include -ID:/QT/6.6.2/msvc2019_64/include/QtWidgets -ID:/QT/6.6.2/msvc2019_64/include/QtGui -ID:/QT/6.6.2/msvc2019_64/include/QtNetwork -ID:/QT/6.6.2/msvc2019_64/include/QtCore -I. -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\application\backendclient.h -o debug\moc_backendclient.cpp
@@ -765,6 +769,7 @@ debug\moc_bookingwindow.cpp: ..\application\bookingwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\QTransform \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
+		..\application\menuwindow.h \
 		debug\moc_predefs.h \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\moc.exe
 	D:\QT\6.6.2\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/qt_projects/OurCafe/build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Debug/debug/moc_predefs.h -ID:/QT/6.6.2/msvc2019_64/mkspecs/win32-msvc -ID:/qt_projects/OurCafe/application -ID:/QT/6.6.2/msvc2019_64/include -ID:/QT/6.6.2/msvc2019_64/include/QtWidgets -ID:/QT/6.6.2/msvc2019_64/include/QtGui -ID:/QT/6.6.2/msvc2019_64/include/QtNetwork -ID:/QT/6.6.2/msvc2019_64/include/QtCore -I. -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\application\bookingwindow.h -o debug\moc_bookingwindow.cpp
@@ -935,6 +940,7 @@ debug\moc_mainwindow.cpp: ..\application\mainwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
 		..\application\menuwindow.h \
+		..\application\bookingwindow.h \
 		debug\moc_predefs.h \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\moc.exe
 	D:\QT\6.6.2\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/qt_projects/OurCafe/build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Debug/debug/moc_predefs.h -ID:/QT/6.6.2/msvc2019_64/mkspecs/win32-msvc -ID:/qt_projects/OurCafe/application -ID:/QT/6.6.2/msvc2019_64/include -ID:/QT/6.6.2/msvc2019_64/include/QtWidgets -ID:/QT/6.6.2/msvc2019_64/include/QtGui -ID:/QT/6.6.2/msvc2019_64/include/QtNetwork -ID:/QT/6.6.2/msvc2019_64/include/QtCore -I. -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\application\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -1856,7 +1862,8 @@ debug\backendclient.obj: ..\application\backendclient.cpp ..\application\backend
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
 		..\application\register_window.h \
 		..\application\mainwindow.h \
-		..\application\menuwindow.h
+		..\application\menuwindow.h \
+		..\application\bookingwindow.h
 
 debug\bookingwindow.obj: ..\application\bookingwindow.cpp ..\application\bookingwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QMainWindow \
@@ -2022,7 +2029,248 @@ debug\bookingwindow.obj: ..\application\bookingwindow.cpp ..\application\booking
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QSizeF \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\QTransform \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
-		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
+		..\application\menuwindow.h \
+		ui_bookingwindow.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QVariant \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QApplication \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qapplication.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcoreapplication.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qeventloop.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcoreapplication_platform.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfuture.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfutureinterface.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmutex.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qdeadlinetimer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qelapsedtimer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtsan_impl.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qresultstore.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfuture_impl.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qthreadpool.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qthread.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qrunnable.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qexception.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpromise.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qguiapplication.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qinputmethod.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qlocale.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qguiapplication_platform.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QDateEdit \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qdatetimeedit.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qdatetime.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcalendar.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qabstractspinbox.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qvalidator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qregularexpression.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QFrame \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qframe.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QHBoxLayout \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qboxlayout.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qlayout.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qlayoutitem.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qgridlayout.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QLabel \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qlabel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qpicture.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qtextdocument.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QLineEdit \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qlineedit.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qtextcursor.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qtextformat.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qpen.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\qtextoption.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QPushButton \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qabstractbutton.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QSpacerItem \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QVBoxLayout \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QWidget \
+		..\application\backendclient.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QTcpSocket \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtcpsocket.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtnetwork-config.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtnetworkexports.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qabstractsocket.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhostaddress.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QtNetwork \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QtNetworkDepends \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QtCore \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QtCoreDepends \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\q20algorithm.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\q20chrono.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\q20iterator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\q23functional.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qabstractanimation.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qabstracteventdispatcher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qabstractitemmodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qabstractnativeeventfilter.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qabstractproxymodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qanimationgroup.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qapplicationstatic.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QMutex \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qassociativeiterable.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qbasictimer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qbitarray.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qbuffer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qbytearraymatcher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcache.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborarray.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborvalue.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborcommon.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\quuid.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qendian.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcbormap.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborstream.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborstreamreader.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcborstreamwriter.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcollator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcommandlineoption.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcommandlineparser.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qconcatenatetablesproxymodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qcryptographichash.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qdir.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfile.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfiledevice.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfileinfo.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtimezone.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qdiriterator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qeasingcurve.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfactoryinterface.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfileselector.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QStringList \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfilesystemwatcher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfuturesynchronizer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qfuturewatcher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qidentityproxymodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qitemselectionmodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qjsonarray.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qjsonvalue.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qjsondocument.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qjsonobject.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qlatin1stringmatcher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qlibrary.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qlibraryinfo.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qversionnumber.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qlockfile.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qloggingcategory.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmessageauthenticationcode.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmetaobject.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmimedata.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmimedatabase.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qmimetype.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qobjectcleanuphandler.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qoperatingsystemversion.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qparallelanimationgroup.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpauseanimation.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpermissions.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qplugin.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpluginloader.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qprocess.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qproperty.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpropertyprivate.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qpropertyanimation.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qvariantanimation.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qqueue.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qrandom.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qreadwritelock.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qresource.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsavefile.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qscopedvaluerollback.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsemaphore.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsequentialanimationgroup.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsequentialiterable.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsettings.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsharedmemory.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtipccommon.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsignalmapper.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsimd.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsocketnotifier.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsortfilterproxymodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qstack.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qstandardpaths.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qstorageinfo.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qstringconverter.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qstringlistmodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qsystemsemaphore.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtcoreversion.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtemporarydir.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtemporaryfile.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtextboundaryfinder.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qthreadstorage.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtimeline.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtimer.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtranslator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qtransposeproxymodel.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qurlquery.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qvarianthash.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QHash \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QString \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qvariantlist.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qvariantmap.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QMap \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qvector.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qwaitcondition.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QDeadlineTimer \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qwineventnotifier.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qxmlstream.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qxpfunctional.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qabstractnetworkcache.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkrequest.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QSharedDataPointer \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QUrl \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qauthenticator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qdnslookup.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qdtls.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslsocket.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslerror.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslcertificate.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qssl.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QFlags \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhostinfo.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhstspolicy.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhttp1configuration.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhttp2configuration.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qhttpmultipart.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QByteArray \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QIODevice \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QNetworkRequest \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qlocalserver.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qlocalsocket.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QSslConfiguration \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslconfiguration.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QSslPreSharedKeyAuthenticator \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslpresharedkeyauthenticator.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QMetaType \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkcookie.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkcookiejar.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkdatagram.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkdiskcache.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkinformation.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkinterface.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkproxy.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qnetworkreply.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qocspresponse.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qpassworddigestor.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QCryptographicHash \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslcertificateextension.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslcipher.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qssldiffiehellmanparameters.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslellipticcurve.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslkey.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qsslserver.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QTcpServer \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtcpserver.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QSslError \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QSslSocket \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtnetworkversion.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qudpsocket.h \
+		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QDebug \
+		..\application\entering_window.h \
+		..\application\register_window.h \
+		..\application\mainwindow.h
 
 debug\main.obj: ..\application\main.cpp ..\application\mainwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QMainWindow \
@@ -2190,6 +2438,7 @@ debug\main.obj: ..\application\main.cpp ..\application\mainwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
 		..\application\menuwindow.h \
+		..\application\bookingwindow.h \
 		..\application\backendclient.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\QTcpSocket \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtNetwork\qtcpsocket.h \
@@ -2573,6 +2822,7 @@ debug\mainwindow.obj: ..\application\mainwindow.cpp ..\application\mainwindow.h 
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
 		..\application\menuwindow.h \
+		..\application\bookingwindow.h \
 		ui_mainwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QVariant \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QApplication \
@@ -3200,7 +3450,8 @@ debug\menuwindow.obj: ..\application\menuwindow.cpp ..\application\menuwindow.h 
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QDebug \
 		..\application\entering_window.h \
 		..\application\register_window.h \
-		..\application\mainwindow.h
+		..\application\mainwindow.h \
+		..\application\bookingwindow.h
 
 debug\entering_window.obj: ..\application\entering_window.cpp ..\application\entering_window.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QMainWindow \
@@ -3601,7 +3852,8 @@ debug\entering_window.obj: ..\application\entering_window.cpp ..\application\ent
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QDebug \
 		..\application\register_window.h \
 		..\application\mainwindow.h \
-		..\application\menuwindow.h
+		..\application\menuwindow.h \
+		..\application\bookingwindow.h
 
 debug\register_window.obj: ..\application\register_window.cpp ..\application\register_window.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QMainWindow \
@@ -4002,7 +4254,8 @@ debug\register_window.obj: ..\application\register_window.cpp ..\application\reg
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QDebug \
 		..\application\entering_window.h \
 		..\application\mainwindow.h \
-		..\application\menuwindow.h
+		..\application\menuwindow.h \
+		..\application\bookingwindow.h
 
 debug\qrc_resources.obj: debug\qrc_resources.cpp 
 

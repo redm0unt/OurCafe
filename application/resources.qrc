@@ -11,5 +11,8 @@
         <file>resources/plus_menu.png</file>
         <file>resources/Welcome_photo.png</file>
         <file>resources/CafeBackground.png</file>
+        <file>resources/cocoa.png</file>
+        <file>resources/dessert.png</file>
+        <file>resources/coffee.png</file>
     </qresource>
 </RCC>

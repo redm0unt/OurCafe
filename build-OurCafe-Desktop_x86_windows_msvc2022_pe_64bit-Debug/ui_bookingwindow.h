@@ -65,23 +65,23 @@ public:
     QFrame *Header_line;
     QWidget *PageContent;
     QVBoxLayout *verticalLayout_2;
-    QWidget *widget_2;
+    QWidget *content;
     QVBoxLayout *verticalLayout;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *label_top_2;
-    QLabel *label_bottom_2;
-    QWidget *widget_3;
+    QVBoxLayout *layoutforcontent;
+    QLabel *label_top;
+    QLabel *label_bottom;
+    QWidget *widget;
     QHBoxLayout *horizontalLayout_3;
-    QSpacerItem *horizontalSpacer_4;
-    QWidget *form_2;
+    QSpacerItem *horizontalSpacer_1;
+    QWidget *form;
     QHBoxLayout *horizontalLayout_4;
     QVBoxLayout *verticalLayout_5;
-    QLineEdit *name_2;
-    QLineEdit *number_2;
-    QLineEdit *people_2;
-    QDateEdit *dateEdit_2;
-    QPushButton *ButtonBook_2;
-    QSpacerItem *horizontalSpacer_5;
+    QLineEdit *name;
+    QLineEdit *number;
+    QLineEdit *people2;
+    QDateEdit *dateEdit;
+    QPushButton *ButtonBook;
+    QSpacerItem *horizontalSpacer_2;
 
     void setupUi(QMainWindow *BookingWindow)
     {
@@ -424,160 +424,157 @@ public:
         PageContent->setStyleSheet(QString::fromUtf8(""));
         verticalLayout_2 = new QVBoxLayout(PageContent);
         verticalLayout_2->setObjectName("verticalLayout_2");
-        widget_2 = new QWidget(PageContent);
-        widget_2->setObjectName("widget_2");
-        QSizePolicy sizePolicy9(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Expanding);
-        sizePolicy9.setHorizontalStretch(0);
-        sizePolicy9.setVerticalStretch(0);
-        sizePolicy9.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
-        widget_2->setSizePolicy(sizePolicy9);
-        verticalLayout = new QVBoxLayout(widget_2);
+        content = new QWidget(PageContent);
+        content->setObjectName("content");
+        sizePolicy6.setHeightForWidth(content->sizePolicy().hasHeightForWidth());
+        content->setSizePolicy(sizePolicy6);
+        verticalLayout = new QVBoxLayout(content);
         verticalLayout->setObjectName("verticalLayout");
-        verticalLayout_4 = new QVBoxLayout();
-        verticalLayout_4->setObjectName("verticalLayout_4");
-        label_top_2 = new QLabel(widget_2);
-        label_top_2->setObjectName("label_top_2");
-        QSizePolicy sizePolicy10(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
-        sizePolicy10.setHorizontalStretch(50);
-        sizePolicy10.setVerticalStretch(0);
-        sizePolicy10.setHeightForWidth(label_top_2->sizePolicy().hasHeightForWidth());
-        label_top_2->setSizePolicy(sizePolicy10);
-        label_top_2->setMinimumSize(QSize(0, 50));
-        label_top_2->setMaximumSize(QSize(16777215, 50));
-        label_top_2->setBaseSize(QSize(0, 50));
-        label_top_2->setStyleSheet(QString::fromUtf8("font: 700 26pt \"Segoe UI\";"));
-        label_top_2->setAlignment(Qt::AlignCenter);
+        layoutforcontent = new QVBoxLayout();
+        layoutforcontent->setObjectName("layoutforcontent");
+        label_top = new QLabel(content);
+        label_top->setObjectName("label_top");
+        QSizePolicy sizePolicy9(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
+        sizePolicy9.setHorizontalStretch(50);
+        sizePolicy9.setVerticalStretch(0);
+        sizePolicy9.setHeightForWidth(label_top->sizePolicy().hasHeightForWidth());
+        label_top->setSizePolicy(sizePolicy9);
+        label_top->setMinimumSize(QSize(0, 50));
+        label_top->setMaximumSize(QSize(16777215, 50));
+        label_top->setBaseSize(QSize(0, 50));
+        label_top->setStyleSheet(QString::fromUtf8("font: 700 26pt \"Segoe UI\";"));
+        label_top->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_4->addWidget(label_top_2);
+        layoutforcontent->addWidget(label_top);
 
-        label_bottom_2 = new QLabel(widget_2);
-        label_bottom_2->setObjectName("label_bottom_2");
-        sizePolicy4.setHeightForWidth(label_bottom_2->sizePolicy().hasHeightForWidth());
-        label_bottom_2->setSizePolicy(sizePolicy4);
-        label_bottom_2->setMinimumSize(QSize(0, 50));
-        label_bottom_2->setStyleSheet(QString::fromUtf8("font: 700 26pt \"Segoe UI\";"));
-        label_bottom_2->setAlignment(Qt::AlignCenter);
+        label_bottom = new QLabel(content);
+        label_bottom->setObjectName("label_bottom");
+        sizePolicy4.setHeightForWidth(label_bottom->sizePolicy().hasHeightForWidth());
+        label_bottom->setSizePolicy(sizePolicy4);
+        label_bottom->setMinimumSize(QSize(0, 50));
+        label_bottom->setStyleSheet(QString::fromUtf8("font: 700 26pt \"Segoe UI\";"));
+        label_bottom->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_4->addWidget(label_bottom_2);
+        layoutforcontent->addWidget(label_bottom);
 
-        widget_3 = new QWidget(widget_2);
-        widget_3->setObjectName("widget_3");
-        QSizePolicy sizePolicy11(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
-        sizePolicy11.setHorizontalStretch(100);
-        sizePolicy11.setVerticalStretch(105);
-        sizePolicy11.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
-        widget_3->setSizePolicy(sizePolicy11);
-        horizontalLayout_3 = new QHBoxLayout(widget_3);
+        widget = new QWidget(content);
+        widget->setObjectName("widget");
+        QSizePolicy sizePolicy10(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy10.setHorizontalStretch(100);
+        sizePolicy10.setVerticalStretch(105);
+        sizePolicy10.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy10);
+        horizontalLayout_3 = new QHBoxLayout(widget);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+        horizontalSpacer_1 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
-        horizontalLayout_3->addItem(horizontalSpacer_4);
+        horizontalLayout_3->addItem(horizontalSpacer_1);
 
-        form_2 = new QWidget(widget_3);
-        form_2->setObjectName("form_2");
-        QSizePolicy sizePolicy12(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
-        sizePolicy12.setHorizontalStretch(100);
-        sizePolicy12.setVerticalStretch(100);
-        sizePolicy12.setHeightForWidth(form_2->sizePolicy().hasHeightForWidth());
-        form_2->setSizePolicy(sizePolicy12);
-        form_2->setMinimumSize(QSize(500, 400));
-        form_2->setStyleSheet(QString::fromUtf8("background-color: rgb(229, 176, 130);\n"
+        form = new QWidget(widget);
+        form->setObjectName("form");
+        QSizePolicy sizePolicy11(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
+        sizePolicy11.setHorizontalStretch(100);
+        sizePolicy11.setVerticalStretch(100);
+        sizePolicy11.setHeightForWidth(form->sizePolicy().hasHeightForWidth());
+        form->setSizePolicy(sizePolicy11);
+        form->setMinimumSize(QSize(500, 400));
+        form->setStyleSheet(QString::fromUtf8("background-color: rgb(229, 176, 130);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;"));
-        horizontalLayout_4 = new QHBoxLayout(form_2);
+        horizontalLayout_4 = new QHBoxLayout(form);
         horizontalLayout_4->setSpacing(22);
         horizontalLayout_4->setObjectName("horizontalLayout_4");
         horizontalLayout_4->setContentsMargins(15, 15, 15, 15);
         verticalLayout_5 = new QVBoxLayout();
         verticalLayout_5->setSpacing(15);
         verticalLayout_5->setObjectName("verticalLayout_5");
-        name_2 = new QLineEdit(form_2);
-        name_2->setObjectName("name_2");
-        QSizePolicy sizePolicy13(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
-        sizePolicy13.setHorizontalStretch(0);
-        sizePolicy13.setVerticalStretch(0);
-        sizePolicy13.setHeightForWidth(name_2->sizePolicy().hasHeightForWidth());
-        name_2->setSizePolicy(sizePolicy13);
-        name_2->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
+        name = new QLineEdit(form);
+        name->setObjectName("name");
+        QSizePolicy sizePolicy12(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy12.setHorizontalStretch(0);
+        sizePolicy12.setVerticalStretch(0);
+        sizePolicy12.setHeightForWidth(name->sizePolicy().hasHeightForWidth());
+        name->setSizePolicy(sizePolicy12);
+        name->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;\n"
 ""));
 
-        verticalLayout_5->addWidget(name_2);
+        verticalLayout_5->addWidget(name);
 
-        number_2 = new QLineEdit(form_2);
-        number_2->setObjectName("number_2");
-        sizePolicy13.setHeightForWidth(number_2->sizePolicy().hasHeightForWidth());
-        number_2->setSizePolicy(sizePolicy13);
-        number_2->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
+        number = new QLineEdit(form);
+        number->setObjectName("number");
+        sizePolicy12.setHeightForWidth(number->sizePolicy().hasHeightForWidth());
+        number->setSizePolicy(sizePolicy12);
+        number->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;"));
 
-        verticalLayout_5->addWidget(number_2);
+        verticalLayout_5->addWidget(number);
 
-        people_2 = new QLineEdit(form_2);
-        people_2->setObjectName("people_2");
-        sizePolicy13.setHeightForWidth(people_2->sizePolicy().hasHeightForWidth());
-        people_2->setSizePolicy(sizePolicy13);
-        people_2->setMinimumSize(QSize(20, 0));
-        people_2->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
+        people2 = new QLineEdit(form);
+        people2->setObjectName("people2");
+        sizePolicy12.setHeightForWidth(people2->sizePolicy().hasHeightForWidth());
+        people2->setSizePolicy(sizePolicy12);
+        people2->setMinimumSize(QSize(20, 0));
+        people2->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;"));
 
-        verticalLayout_5->addWidget(people_2);
+        verticalLayout_5->addWidget(people2);
 
-        dateEdit_2 = new QDateEdit(form_2);
-        dateEdit_2->setObjectName("dateEdit_2");
-        sizePolicy13.setHeightForWidth(dateEdit_2->sizePolicy().hasHeightForWidth());
-        dateEdit_2->setSizePolicy(sizePolicy13);
-        dateEdit_2->setMinimumSize(QSize(150, 0));
-        dateEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
+        dateEdit = new QDateEdit(form);
+        dateEdit->setObjectName("dateEdit");
+        sizePolicy12.setHeightForWidth(dateEdit->sizePolicy().hasHeightForWidth());
+        dateEdit->setSizePolicy(sizePolicy12);
+        dateEdit->setMinimumSize(QSize(150, 0));
+        dateEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(217, 217, 217);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;"));
 
-        verticalLayout_5->addWidget(dateEdit_2);
+        verticalLayout_5->addWidget(dateEdit);
 
-        ButtonBook_2 = new QPushButton(form_2);
-        ButtonBook_2->setObjectName("ButtonBook_2");
-        sizePolicy13.setHeightForWidth(ButtonBook_2->sizePolicy().hasHeightForWidth());
-        ButtonBook_2->setSizePolicy(sizePolicy13);
-        ButtonBook_2->setStyleSheet(QString::fromUtf8("font: 700 16pt \"Segoe UI\";\n"
+        ButtonBook = new QPushButton(form);
+        ButtonBook->setObjectName("ButtonBook");
+        sizePolicy12.setHeightForWidth(ButtonBook->sizePolicy().hasHeightForWidth());
+        ButtonBook->setSizePolicy(sizePolicy12);
+        ButtonBook->setStyleSheet(QString::fromUtf8("font: 700 16pt \"Segoe UI\";\n"
 "background-color: rgb(217, 217, 217);\n"
 "border-top-left-radius: 13px;\n"
 "border-top-right-radius: 13px;\n"
 "border-bottom-left-radius: 13px;\n"
 "border-bottom-right-radius: 13px;"));
 
-        verticalLayout_5->addWidget(ButtonBook_2);
+        verticalLayout_5->addWidget(ButtonBook);
 
 
         horizontalLayout_4->addLayout(verticalLayout_5);
 
 
-        horizontalLayout_3->addWidget(form_2);
+        horizontalLayout_3->addWidget(form);
 
-        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
-        horizontalLayout_3->addItem(horizontalSpacer_5);
-
-
-        verticalLayout_4->addWidget(widget_3);
+        horizontalLayout_3->addItem(horizontalSpacer_2);
 
 
-        verticalLayout->addLayout(verticalLayout_4);
+        layoutforcontent->addWidget(widget);
 
 
-        verticalLayout_2->addWidget(widget_2);
+        verticalLayout->addLayout(layoutforcontent);
+
+
+        verticalLayout_2->addWidget(content);
 
 
         Content_verticalLayout->addWidget(PageContent);
@@ -617,15 +614,15 @@ public:
         Heading->setText(QCoreApplication::translate("BookingWindow", "Booking", nullptr));
         Cart->setText(QString());
         Account->setText(QString());
-        label_top_2->setText(QCoreApplication::translate("BookingWindow", "Book a table or an event.", nullptr));
-        label_bottom_2->setText(QCoreApplication::translate("BookingWindow", "And we will take care of all the details.", nullptr));
-        name_2->setText(QString());
-        name_2->setPlaceholderText(QCoreApplication::translate("BookingWindow", "What is your name?", nullptr));
-        number_2->setText(QString());
-        number_2->setPlaceholderText(QCoreApplication::translate("BookingWindow", "+7(___)___ ___ ___", nullptr));
-        people_2->setText(QString());
-        people_2->setPlaceholderText(QCoreApplication::translate("BookingWindow", "Specify the number of people", nullptr));
-        ButtonBook_2->setText(QCoreApplication::translate("BookingWindow", "To book", nullptr));
+        label_top->setText(QCoreApplication::translate("BookingWindow", "Book a table or an event.", nullptr));
+        label_bottom->setText(QCoreApplication::translate("BookingWindow", "And we will take care of all the details.", nullptr));
+        name->setText(QString());
+        name->setPlaceholderText(QCoreApplication::translate("BookingWindow", "What is your name?", nullptr));
+        number->setText(QString());
+        number->setPlaceholderText(QCoreApplication::translate("BookingWindow", "+7(___)___ ___ ___", nullptr));
+        people2->setText(QString());
+        people2->setPlaceholderText(QCoreApplication::translate("BookingWindow", "Specify the number of people", nullptr));
+        ButtonBook->setText(QCoreApplication::translate("BookingWindow", "To book", nullptr));
     } // retranslateUi
 
 };
