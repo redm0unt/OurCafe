@@ -14,6 +14,7 @@ ICON = resources/AppIcon.png
 
 SOURCES += \
     backendclient.cpp \
+    basketwindow.cpp \
     bookingwindow.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -23,6 +24,7 @@ SOURCES += \
 
 HEADERS += \
     backendclient.h \
+    basketwindow.h \
     bookingwindow.h \
     mainwindow.h \
     menuwindow.h \
@@ -30,6 +32,7 @@ HEADERS += \
     register_window.h
 
 FORMS += \
+    basketwindow.ui \
     bookingwindow.ui \
     mainwindow.ui \
     menuwindow.ui \

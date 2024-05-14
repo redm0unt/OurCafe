@@ -2,7 +2,7 @@
 #define BOOKINGWINDOW_H
 
 #include <QMainWindow>
-#include "menuwindow.h"
+// #include "menuwindow.h"
 
 namespace Ui {
 class BookingWindow;
@@ -20,10 +20,11 @@ public:
 private slots:
     void on_MainLogo_clicked();
     void on_MenuButton_clicked();
+    void on_BasketButton_clicked();
 
 private:
     Ui::BookingWindow *ui;
-    MenuWindow *menuWindow;
+    //MenuWindow *menuWindow;
 };
 
 #endif // BOOKINGWINDOW_H

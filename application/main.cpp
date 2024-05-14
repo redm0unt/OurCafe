@@ -3,6 +3,8 @@
 #include "backendclient.h"
 #include "entering_window.h"
 #include "register_window.h"
+#include "bookingwindow.h"
+#include "basketwindow.h"
 
 #include <QApplication>
 #include <QLabel>

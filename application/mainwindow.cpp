@@ -28,3 +28,8 @@ void MainWindow::on_BookingButton_clicked()
     this->hide();
 }
 
+void MainWindow::on_BasketButton_clicked()
+{
+    BackendClient::open_basket_window();
+    this->hide();
+}

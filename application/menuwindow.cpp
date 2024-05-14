@@ -22,3 +22,14 @@ void MenuWindow::on_MainLogo_clicked()
     this->hide();
 }
 
+void MenuWindow::on_BookingButton_clicked()
+{
+    BackendClient::open_booking_window();
+    this->hide();
+}
+
+void MenuWindow::on_BasketButton_clicked()
+{
+    BackendClient::open_basket_window();
+    this->hide();
+}

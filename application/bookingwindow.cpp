@@ -26,3 +26,9 @@ void BookingWindow::on_MenuButton_clicked()
     this->hide();
 }
 
+void BookingWindow::on_BasketButton_clicked()
+{
+    BackendClient::open_basket_window();
+    this->hide();
+}
+

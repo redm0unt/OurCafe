@@ -37,7 +37,7 @@ public:
     QSpacerItem *Sidebar_verticalSpacer_3;
     QPushButton *MenuButton;
     QPushButton *BookingButton;
-    QPushButton *DeliveryButton;
+    QPushButton *BasketButton;
     QSpacerItem *Sidebar_verticalSpacer;
     QLabel *ContactsHeader;
     QSpacerItem *Sidebar_verticalSpacer_4;
@@ -183,12 +183,12 @@ public:
 
         Sidebar_verticalLayout->addWidget(BookingButton);
 
-        DeliveryButton = new QPushButton(Sidebar);
-        DeliveryButton->setObjectName("DeliveryButton");
-        DeliveryButton->setMinimumSize(QSize(0, 90));
-        DeliveryButton->setBaseSize(QSize(0, 0));
-        DeliveryButton->setCursor(QCursor(Qt::PointingHandCursor));
-        DeliveryButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        BasketButton = new QPushButton(Sidebar);
+        BasketButton->setObjectName("BasketButton");
+        BasketButton->setMinimumSize(QSize(0, 90));
+        BasketButton->setBaseSize(QSize(0, 0));
+        BasketButton->setCursor(QCursor(Qt::PointingHandCursor));
+        BasketButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	\n"
 "	border-top: 1px solid black;\n"
 "	border-bottom: 1px solid black;\n"
@@ -198,7 +198,7 @@ public:
 "	background-color: #E59C59;\n"
 "}"));
 
-        Sidebar_verticalLayout->addWidget(DeliveryButton);
+        Sidebar_verticalLayout->addWidget(BasketButton);
 
         Sidebar_verticalSpacer = new QSpacerItem(45, 10, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
@@ -604,7 +604,7 @@ public:
 "	background-color: #E59C59;\n"
 "}", nullptr));
         BookingButton->setText(QCoreApplication::translate("BookingWindow", "Booking", nullptr));
-        DeliveryButton->setText(QCoreApplication::translate("BookingWindow", "Delivery", nullptr));
+        BasketButton->setText(QCoreApplication::translate("BookingWindow", "Basket", nullptr));
         ContactsHeader->setText(QCoreApplication::translate("BookingWindow", "Contacts", nullptr));
         ContactsText->setText(QCoreApplication::translate("BookingWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700;\">Address:</span> 11 Kolotushkina St., Building 3, Moscow<br/><span style=\" font-weight:700;\">Metro station:</span> Pushkino<br/><span style=\" font-weight:700;\">Phone number:</span> +7-888-888-88-88<br/><span style=\" font-weight:700;\">Mail:</span> OurCafe@mail.ru</p></body></html>", nullptr));
         Telegram->setText(QString());

@@ -271,7 +271,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="DeliveryButton">
+        <widget class="QPushButton" name="BasketButton">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -299,7 +299,7 @@ QPushButton:hover {
 }</string>
          </property>
          <property name="text">
-          <string>Delivery</string>
+          <string>Basket</string>
          </property>
         </widget>
        </item>

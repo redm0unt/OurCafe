@@ -14,5 +14,6 @@
         <file>resources/cocoa.png</file>
         <file>resources/dessert.png</file>
         <file>resources/coffee.png</file>
+        <file>resources/minus.png</file>
     </qresource>
 </RCC>

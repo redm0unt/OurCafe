@@ -12,6 +12,7 @@
 #include "mainwindow.h"
 #include "menuwindow.h"
 #include "bookingwindow.h"
+#include "basketwindow.h"
 
 
 class BackendClient;
@@ -41,6 +42,7 @@ class BackendClient : public QObject
         static MainWindow* mainWindow;
         static MenuWindow* menuWindow;
         static BookingWindow* bookingWindow;
+        static BasketWindow* basketWindow;
     protected:
         explicit BackendClient (QObject* parent = nullptr);
         BackendClient( BackendClient& ) = delete;
@@ -52,6 +54,7 @@ class BackendClient : public QObject
             delete mainWindow;
             delete menuWindow;
             delete bookingWindow;
+            delete basketWindow;
         }
         friend class BackendClientDestroyer;
     public:
@@ -64,6 +67,8 @@ class BackendClient : public QObject
         static void open_main_window();
         static void open_menu_window();
         static void open_booking_window();
+        static void open_basket_window();
+
 
         signals:
             void message_from_server( QString message );

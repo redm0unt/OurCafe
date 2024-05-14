@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "menuwindow.h"
 #include "bookingwindow.h"
+#include "basketwindow.h"
 
 
 namespace Ui {
@@ -23,10 +24,13 @@ private slots:
 
     void on_BookingButton_clicked();
 
+    void on_BasketButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     MenuWindow *menuWindow;
     BookingWindow *bookingWindow;
+    BasketWindow *basketWindow;
 };
 
 
