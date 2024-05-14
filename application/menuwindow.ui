@@ -382,54 +382,27 @@ QPushButton:hover {
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="ContactsText">
+           <widget class="QPushButton" name="ContactsText">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="maximumSize">
+            <property name="minimumSize">
              <size>
               <width>180</width>
-              <height>16777215</height>
+              <height>130</height>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>ArrowCursor</cursorShape>
-            </property>
-            <property name="mouseTracking">
-             <bool>true</bool>
-            </property>
-            <property name="focusPolicy">
-             <enum>Qt::NoFocus</enum>
+             <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 14px</string>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
+             <string notr="true">border-image: url(:/resources/resources/About_text.png) 0;</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::AutoText</enum>
-            </property>
-            <property name="scaledContents">
-             <bool>false</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="wordWrap">
-             <bool>true</bool>
-            </property>
-            <property name="indent">
-             <number>0</number>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::LinksAccessibleByMouse</set>
+             <string/>
             </property>
            </widget>
           </item>
@@ -1472,6 +1445,12 @@ border-bottom-right-radius: 10px;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="mouseTracking">
+                             <bool>false</bool>
+                            </property>
+                            <property name="focusPolicy">
+                             <enum>Qt::NoFocus</enum>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">

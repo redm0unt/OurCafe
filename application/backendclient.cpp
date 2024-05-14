@@ -58,7 +58,7 @@ bool BackendClient::authentificate(QString login, QString password) {
         authorization_state = true;
         delete enteringWindow;
     }
-    else{
+    else {
         QMessageBox message_box;
         message_box.setText("Authorization not successful");
         message_box.setInformativeText(QString("Try another combination of login and password"));
@@ -93,6 +93,7 @@ void BackendClient::slotServerRead()
     qDebug() << message;
     emit message_from_server(message);
 }
+
 
 
 // ———————————————————————————————————————

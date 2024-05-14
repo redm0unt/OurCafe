@@ -2,6 +2,7 @@
 #define MENUWINDOW_H
 
 #include <QMainWindow>
+#include <QDesktopServices>
 
 
 namespace Ui {
@@ -21,6 +22,8 @@ public:
 
 private slots:
     void on_MainLogo_clicked();
+
+    void on_ContactsText_clicked();
 
 private:
     Ui::MenuWindow *ui;

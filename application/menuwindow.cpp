@@ -22,3 +22,10 @@ void MenuWindow::on_MainLogo_clicked()
     this->hide();
 }
 
+
+void MenuWindow::on_ContactsText_clicked()
+{
+    QString link = "https://yandex.ru/maps/-/CDbGVFIE";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
