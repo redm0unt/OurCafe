@@ -20,6 +20,10 @@ public:
 private slots:
     void on_MainLogo_clicked();
     void on_ContactsText_clicked();
+    void on_BookingButton_clicked();
+    void on_BasketButton_clicked();
+
+
 
 private:
     Ui::MenuWindow *ui;

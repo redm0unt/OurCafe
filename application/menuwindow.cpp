@@ -15,18 +15,10 @@ MenuWindow::~MenuWindow()
     delete ui;
 }
 
-
 void MenuWindow::on_MainLogo_clicked()
 {
     BackendClient::open_main_window();
     this->hide();
-}
-
-
-void MenuWindow::on_ContactsText_clicked()
-{
-    QString link = "https://yandex.ru/maps/-/CDbGVFIE";
-    QDesktopServices::openUrl(QUrl(link));
 }
 void MenuWindow::on_BookingButton_clicked()
 {
@@ -38,5 +30,10 @@ void MenuWindow::on_BasketButton_clicked()
 {
     BackendClient::open_basket_window();
     this->hide();
+}
+void MenuWindow::on_ContactsText_clicked()
+{
+    QString link = "https://yandex.ru/maps/-/CDbGVFIE";
+    QDesktopServices::openUrl(QUrl(link));
 }
 
