@@ -15,5 +15,20 @@
         <file>resources/dessert.png</file>
         <file>resources/coffee.png</file>
         <file>resources/minus.png</file>
+        <file>resources/americano.png</file>
+        <file>resources/birds_milk.png</file>
+        <file>resources/cappuccino.png</file>
+        <file>resources/cocoa_menu.png</file>
+        <file>resources/espresso.png</file>
+        <file>resources/hot_chocolate.png</file>
+        <file>resources/latte.png</file>
+        <file>resources/matcha-tonic.png</file>
+        <file>resources/medovik.png</file>
+        <file>resources/milkshake.png</file>
+        <file>resources/raf.png</file>
+        <file>resources/shu_cake.png</file>
+        <file>resources/tea.png</file>
+        <file>resources/three_chocolates.png</file>
+        <file>resources/napoleon.png</file>
     </qresource>
 </RCC>

@@ -209,17 +209,32 @@ compiler_rcc_clean:
 debug\qrc_resources.cpp: ..\application\resources.qrc \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\rcc.exe \
 		..\application\resources\dessert.png \
+		..\application\resources\medovik.png \
 		..\application\resources\plus_menu.png \
+		..\application\resources\cappuccino.png \
+		..\application\resources\matcha-tonic.png \
+		..\application\resources\shu_cake.png \
+		..\application\resources\three_chocolates.png \
+		..\application\resources\raf.png \
+		..\application\resources\hot_chocolate.png \
+		..\application\resources\birds_milk.png \
 		..\application\resources\CafeBackground.png \
 		..\application\resources\Telegram.png \
 		..\application\resources\Cart.png \
+		..\application\resources\milkshake.png \
 		..\application\resources\cocoa.png \
+		..\application\resources\latte.png \
 		..\application\resources\coffee.png \
+		..\application\resources\napoleon.png \
+		..\application\resources\americano.png \
+		..\application\resources\tea.png \
 		..\application\resources\MainLogo.png \
 		..\application\resources\Account.png \
 		..\application\resources\AppIcon.png \
+		..\application\resources\cocoa_menu.png \
 		..\application\resources\Instagram.png \
 		..\application\resources\Whatsapp.png \
+		..\application\resources\espresso.png \
 		..\application\resources\Welcome_photo.png \
 		..\application\resources\minus.png \
 		..\application\resources\VK.png
@@ -777,7 +792,6 @@ debug\moc_basketwindow.cpp: ..\application\basketwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\QTransform \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
-		..\application\menuwindow.h \
 		debug\moc_predefs.h \
 		..\..\..\QT\6.6.2\msvc2019_64\bin\moc.exe
 	D:\QT\6.6.2\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/qt_projects/OurCafe/build-OurCafe-Desktop_x86_windows_msvc2022_pe_64bit-Debug/debug/moc_predefs.h -ID:/QT/6.6.2/msvc2019_64/mkspecs/win32-msvc -ID:/qt_projects/OurCafe/application -ID:/QT/6.6.2/msvc2019_64/include -ID:/QT/6.6.2/msvc2019_64/include/QtWidgets -ID:/QT/6.6.2/msvc2019_64/include/QtGui -ID:/QT/6.6.2/msvc2019_64/include/QtNetwork -ID:/QT/6.6.2/msvc2019_64/include/QtCore -I. -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\application\basketwindow.h -o debug\moc_basketwindow.cpp
@@ -2213,7 +2227,6 @@ debug\basketwindow.obj: ..\application\basketwindow.cpp ..\application\basketwin
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtGui\QTransform \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\qnativeinterface.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
-		..\application\menuwindow.h \
 		ui_basketwindow.h \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtCore\QVariant \
 		..\..\..\QT\6.6.2\msvc2019_64\include\QtWidgets\QApplication \
@@ -2447,6 +2460,7 @@ debug\basketwindow.obj: ..\application\basketwindow.cpp ..\application\basketwin
 		..\application\entering_window.h \
 		..\application\register_window.h \
 		..\application\mainwindow.h \
+		..\application\menuwindow.h \
 		..\application\bookingwindow.h
 
 debug\bookingwindow.obj: ..\application\bookingwindow.cpp ..\application\bookingwindow.h \

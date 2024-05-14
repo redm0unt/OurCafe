@@ -923,7 +923,7 @@ QPushButton:hover {
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1070,7 +1070,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1213,7 +1213,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1356,7 +1356,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1499,7 +1499,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1651,7 +1651,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1798,7 +1798,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -1941,7 +1941,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2084,7 +2084,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2227,7 +2227,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2379,7 +2379,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2522,7 +2522,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2668,7 +2668,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2811,7 +2811,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">
@@ -2954,7 +2954,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>130</height>
+                           <height>165</height>
                           </size>
                          </property>
                          <property name="styleSheet">

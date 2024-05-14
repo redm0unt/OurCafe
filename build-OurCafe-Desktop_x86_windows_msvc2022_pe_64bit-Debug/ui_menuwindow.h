@@ -564,8 +564,9 @@ public:
         picture_3->setObjectName("picture_3");
         sizePolicy3.setHeightForWidth(picture_3->sizePolicy().hasHeightForWidth());
         picture_3->setSizePolicy(sizePolicy3);
-        picture_3->setMinimumSize(QSize(0, 130));
-        picture_3->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_3->setMinimumSize(QSize(0, 165));
+        picture_3->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/cappuccino.png);\n"
+"background-color: rgb(203,202,202);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -573,7 +574,9 @@ public:
 
         description_3 = new QLabel(card_3);
         description_3->setObjectName("description_3");
-        description_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_3->setAlignment(Qt::AlignCenter);
 
         verticalLayout_5->addWidget(description_3);
 
@@ -592,6 +595,9 @@ public:
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         space_3 = new QLabel(bottom_3);
         space_3->setObjectName("space_3");
+        space_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_3->addWidget(space_3);
 
@@ -620,8 +626,9 @@ public:
         picture_7->setObjectName("picture_7");
         sizePolicy3.setHeightForWidth(picture_7->sizePolicy().hasHeightForWidth());
         picture_7->setSizePolicy(sizePolicy3);
-        picture_7->setMinimumSize(QSize(0, 130));
-        picture_7->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_7->setMinimumSize(QSize(0, 165));
+        picture_7->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/latte.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -629,7 +636,9 @@ public:
 
         description_7 = new QLabel(card_7);
         description_7->setObjectName("description_7");
-        description_7->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_7->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_7->setAlignment(Qt::AlignCenter);
 
         verticalLayout_9->addWidget(description_7);
 
@@ -645,6 +654,9 @@ public:
         horizontalLayout_7->setObjectName("horizontalLayout_7");
         space_7 = new QLabel(bottom_7);
         space_7->setObjectName("space_7");
+        space_7->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_7->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_7->addWidget(space_7);
 
@@ -673,8 +685,9 @@ public:
         picture_6->setObjectName("picture_6");
         sizePolicy3.setHeightForWidth(picture_6->sizePolicy().hasHeightForWidth());
         picture_6->setSizePolicy(sizePolicy3);
-        picture_6->setMinimumSize(QSize(0, 130));
-        picture_6->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_6->setMinimumSize(QSize(0, 165));
+        picture_6->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/raf.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -682,7 +695,9 @@ public:
 
         description_6 = new QLabel(card_6);
         description_6->setObjectName("description_6");
-        description_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_6->setAlignment(Qt::AlignCenter);
 
         verticalLayout_8->addWidget(description_6);
 
@@ -698,6 +713,9 @@ public:
         horizontalLayout_6->setObjectName("horizontalLayout_6");
         space_6 = new QLabel(bottom_6);
         space_6->setObjectName("space_6");
+        space_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_6->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_6->addWidget(space_6);
 
@@ -726,8 +744,9 @@ public:
         picture_4->setObjectName("picture_4");
         sizePolicy3.setHeightForWidth(picture_4->sizePolicy().hasHeightForWidth());
         picture_4->setSizePolicy(sizePolicy3);
-        picture_4->setMinimumSize(QSize(0, 130));
+        picture_4->setMinimumSize(QSize(0, 165));
         picture_4->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+"border-image: url(:/resources/resources/hot_chocolate.png);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -735,7 +754,9 @@ public:
 
         description_4 = new QLabel(card_4);
         description_4->setObjectName("description_4");
-        description_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_4->setAlignment(Qt::AlignCenter);
 
         verticalLayout_6->addWidget(description_4);
 
@@ -751,6 +772,9 @@ public:
         horizontalLayout_4->setObjectName("horizontalLayout_4");
         space_4 = new QLabel(bottom_4);
         space_4->setObjectName("space_4");
+        space_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_4->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_4->addWidget(space_4);
 
@@ -779,8 +803,9 @@ public:
         picture_5->setObjectName("picture_5");
         sizePolicy3.setHeightForWidth(picture_5->sizePolicy().hasHeightForWidth());
         picture_5->setSizePolicy(sizePolicy3);
-        picture_5->setMinimumSize(QSize(0, 130));
-        picture_5->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_5->setMinimumSize(QSize(0, 165));
+        picture_5->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/cocoa_menu.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -788,7 +813,9 @@ public:
 
         description_5 = new QLabel(card_5);
         description_5->setObjectName("description_5");
-        description_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_5->setAlignment(Qt::AlignCenter);
 
         verticalLayout_7->addWidget(description_5);
 
@@ -804,6 +831,9 @@ public:
         horizontalLayout_5->setObjectName("horizontalLayout_5");
         space_5 = new QLabel(bottom_5);
         space_5->setObjectName("space_5");
+        space_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_5->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_5->addWidget(space_5);
 
@@ -839,8 +869,9 @@ public:
         picture_8->setObjectName("picture_8");
         sizePolicy3.setHeightForWidth(picture_8->sizePolicy().hasHeightForWidth());
         picture_8->setSizePolicy(sizePolicy3);
-        picture_8->setMinimumSize(QSize(0, 130));
-        picture_8->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_8->setMinimumSize(QSize(0, 165));
+        picture_8->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/espresso.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -848,7 +879,10 @@ public:
 
         description_8 = new QLabel(card_8);
         description_8->setObjectName("description_8");
-        description_8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";\n"
+""));
+        description_8->setAlignment(Qt::AlignCenter);
 
         verticalLayout_10->addWidget(description_8);
 
@@ -864,6 +898,9 @@ public:
         horizontalLayout_8->setObjectName("horizontalLayout_8");
         space_8 = new QLabel(bottom_8);
         space_8->setObjectName("space_8");
+        space_8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_8->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_8->addWidget(space_8);
 
@@ -892,8 +929,9 @@ public:
         picture_9->setObjectName("picture_9");
         sizePolicy3.setHeightForWidth(picture_9->sizePolicy().hasHeightForWidth());
         picture_9->setSizePolicy(sizePolicy3);
-        picture_9->setMinimumSize(QSize(0, 130));
-        picture_9->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_9->setMinimumSize(QSize(0, 165));
+        picture_9->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/americano.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -901,7 +939,9 @@ public:
 
         description_9 = new QLabel(card_9);
         description_9->setObjectName("description_9");
-        description_9->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_9->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_9->setAlignment(Qt::AlignCenter);
 
         verticalLayout_11->addWidget(description_9);
 
@@ -917,6 +957,10 @@ public:
         horizontalLayout_9->setObjectName("horizontalLayout_9");
         space_9 = new QLabel(bottom_9);
         space_9->setObjectName("space_9");
+        space_9->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";\n"
+""));
+        space_9->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_9->addWidget(space_9);
 
@@ -945,8 +989,9 @@ public:
         picture_10->setObjectName("picture_10");
         sizePolicy3.setHeightForWidth(picture_10->sizePolicy().hasHeightForWidth());
         picture_10->setSizePolicy(sizePolicy3);
-        picture_10->setMinimumSize(QSize(0, 130));
-        picture_10->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_10->setMinimumSize(QSize(0, 165));
+        picture_10->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/tea.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -954,7 +999,9 @@ public:
 
         description_10 = new QLabel(card_10);
         description_10->setObjectName("description_10");
-        description_10->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_10->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_10->setAlignment(Qt::AlignCenter);
 
         verticalLayout_12->addWidget(description_10);
 
@@ -970,6 +1017,9 @@ public:
         horizontalLayout_10->setObjectName("horizontalLayout_10");
         space_10 = new QLabel(bottom_10);
         space_10->setObjectName("space_10");
+        space_10->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_10->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_10->addWidget(space_10);
 
@@ -998,8 +1048,9 @@ public:
         picture_11->setObjectName("picture_11");
         sizePolicy3.setHeightForWidth(picture_11->sizePolicy().hasHeightForWidth());
         picture_11->setSizePolicy(sizePolicy3);
-        picture_11->setMinimumSize(QSize(0, 130));
-        picture_11->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_11->setMinimumSize(QSize(0, 165));
+        picture_11->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/matcha-tonic.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1007,7 +1058,9 @@ public:
 
         description_11 = new QLabel(card_11);
         description_11->setObjectName("description_11");
-        description_11->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_11->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_11->setAlignment(Qt::AlignCenter);
 
         verticalLayout_13->addWidget(description_11);
 
@@ -1023,6 +1076,9 @@ public:
         horizontalLayout_11->setObjectName("horizontalLayout_11");
         space_11 = new QLabel(bottom_11);
         space_11->setObjectName("space_11");
+        space_11->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_11->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_11->addWidget(space_11);
 
@@ -1051,8 +1107,9 @@ public:
         picture_12->setObjectName("picture_12");
         sizePolicy3.setHeightForWidth(picture_12->sizePolicy().hasHeightForWidth());
         picture_12->setSizePolicy(sizePolicy3);
-        picture_12->setMinimumSize(QSize(0, 130));
-        picture_12->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_12->setMinimumSize(QSize(0, 165));
+        picture_12->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/milkshake.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1060,7 +1117,9 @@ public:
 
         description_12 = new QLabel(card_12);
         description_12->setObjectName("description_12");
-        description_12->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_12->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_12->setAlignment(Qt::AlignCenter);
 
         verticalLayout_14->addWidget(description_12);
 
@@ -1076,6 +1135,9 @@ public:
         horizontalLayout_12->setObjectName("horizontalLayout_12");
         space_12 = new QLabel(bottom_12);
         space_12->setObjectName("space_12");
+        space_12->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
+        space_12->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_12->addWidget(space_12);
 
@@ -1111,8 +1173,9 @@ public:
         picture_13->setObjectName("picture_13");
         sizePolicy3.setHeightForWidth(picture_13->sizePolicy().hasHeightForWidth());
         picture_13->setSizePolicy(sizePolicy3);
-        picture_13->setMinimumSize(QSize(0, 130));
-        picture_13->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_13->setMinimumSize(QSize(0, 165));
+        picture_13->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/three_chocolates.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1120,7 +1183,9 @@ public:
 
         description_13 = new QLabel(card_13);
         description_13->setObjectName("description_13");
-        description_13->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_13->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_13->setAlignment(Qt::AlignCenter);
 
         verticalLayout_15->addWidget(description_13);
 
@@ -1136,6 +1201,8 @@ public:
         horizontalLayout_14->setObjectName("horizontalLayout_14");
         space_13 = new QLabel(bottom_13);
         space_13->setObjectName("space_13");
+        space_13->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
 
         horizontalLayout_14->addWidget(space_13);
 
@@ -1164,8 +1231,9 @@ public:
         picture_14->setObjectName("picture_14");
         sizePolicy3.setHeightForWidth(picture_14->sizePolicy().hasHeightForWidth());
         picture_14->setSizePolicy(sizePolicy3);
-        picture_14->setMinimumSize(QSize(0, 130));
-        picture_14->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_14->setMinimumSize(QSize(0, 165));
+        picture_14->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/birds_milk.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1173,7 +1241,9 @@ public:
 
         description_14 = new QLabel(card_14);
         description_14->setObjectName("description_14");
-        description_14->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_14->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_14->setAlignment(Qt::AlignCenter);
 
         verticalLayout_16->addWidget(description_14);
 
@@ -1189,6 +1259,8 @@ public:
         horizontalLayout_15->setObjectName("horizontalLayout_15");
         space_14 = new QLabel(bottom_14);
         space_14->setObjectName("space_14");
+        space_14->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
 
         horizontalLayout_15->addWidget(space_14);
 
@@ -1217,8 +1289,9 @@ public:
         picture_15->setObjectName("picture_15");
         sizePolicy3.setHeightForWidth(picture_15->sizePolicy().hasHeightForWidth());
         picture_15->setSizePolicy(sizePolicy3);
-        picture_15->setMinimumSize(QSize(0, 130));
-        picture_15->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_15->setMinimumSize(QSize(0, 165));
+        picture_15->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/napoleon.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1226,7 +1299,9 @@ public:
 
         description_15 = new QLabel(card_15);
         description_15->setObjectName("description_15");
-        description_15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_15->setAlignment(Qt::AlignCenter);
 
         verticalLayout_17->addWidget(description_15);
 
@@ -1242,6 +1317,8 @@ public:
         horizontalLayout_16->setObjectName("horizontalLayout_16");
         space_15 = new QLabel(bottom_15);
         space_15->setObjectName("space_15");
+        space_15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
 
         horizontalLayout_16->addWidget(space_15);
 
@@ -1270,8 +1347,9 @@ public:
         picture_16->setObjectName("picture_16");
         sizePolicy3.setHeightForWidth(picture_16->sizePolicy().hasHeightForWidth());
         picture_16->setSizePolicy(sizePolicy3);
-        picture_16->setMinimumSize(QSize(0, 130));
-        picture_16->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_16->setMinimumSize(QSize(0, 165));
+        picture_16->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/medovik.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1279,7 +1357,9 @@ public:
 
         description_16 = new QLabel(card_16);
         description_16->setObjectName("description_16");
-        description_16->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_16->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_16->setAlignment(Qt::AlignCenter);
 
         verticalLayout_18->addWidget(description_16);
 
@@ -1295,6 +1375,8 @@ public:
         horizontalLayout_17->setObjectName("horizontalLayout_17");
         space_16 = new QLabel(bottom_16);
         space_16->setObjectName("space_16");
+        space_16->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
 
         horizontalLayout_17->addWidget(space_16);
 
@@ -1323,8 +1405,9 @@ public:
         picture_17->setObjectName("picture_17");
         sizePolicy3.setHeightForWidth(picture_17->sizePolicy().hasHeightForWidth());
         picture_17->setSizePolicy(sizePolicy3);
-        picture_17->setMinimumSize(QSize(0, 130));
-        picture_17->setStyleSheet(QString::fromUtf8("background-color: rgb(112, 110, 110);\n"
+        picture_17->setMinimumSize(QSize(0, 165));
+        picture_17->setStyleSheet(QString::fromUtf8("border-image: url(:/resources/resources/shu_cake.png);\n"
+"background-color: rgb(112, 110, 110);\n"
 "border-top-left-radius: 10px;\n"
 "border-top-right-radius: 10px;"));
 
@@ -1332,7 +1415,9 @@ public:
 
         description_17 = new QLabel(card_17);
         description_17->setObjectName("description_17");
-        description_17->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        description_17->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Segoe UI\";"));
+        description_17->setAlignment(Qt::AlignCenter);
 
         verticalLayout_19->addWidget(description_17);
 
@@ -1348,6 +1433,8 @@ public:
         horizontalLayout_18->setObjectName("horizontalLayout_18");
         space_17 = new QLabel(bottom_17);
         space_17->setObjectName("space_17");
+        space_17->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"font: 600 9pt \"Segoe UI\";"));
 
         horizontalLayout_18->addWidget(space_17);
 
@@ -1416,64 +1503,64 @@ public:
         Cart->setText(QString());
         Account->setText(QString());
         picture_3->setText(QString());
-        description_3->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_3->setText(QString());
+        description_3->setText(QCoreApplication::translate("MenuWindow", "cappuccino", nullptr));
+        space_3->setText(QCoreApplication::translate("MenuWindow", "170 rub.", nullptr));
         plus_3->setText(QString());
         picture_7->setText(QString());
-        description_7->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_7->setText(QString());
+        description_7->setText(QCoreApplication::translate("MenuWindow", "latte", nullptr));
+        space_7->setText(QCoreApplication::translate("MenuWindow", "170 rub.", nullptr));
         plus_7->setText(QString());
         picture_6->setText(QString());
-        description_6->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_6->setText(QString());
+        description_6->setText(QCoreApplication::translate("MenuWindow", "raf", nullptr));
+        space_6->setText(QCoreApplication::translate("MenuWindow", "190 rub.", nullptr));
         plus_6->setText(QString());
         picture_4->setText(QString());
-        description_4->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_4->setText(QString());
+        description_4->setText(QCoreApplication::translate("MenuWindow", "hot chocolate", nullptr));
+        space_4->setText(QCoreApplication::translate("MenuWindow", "200 rub.", nullptr));
         plus_4->setText(QString());
         picture_5->setText(QString());
-        description_5->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_5->setText(QString());
+        description_5->setText(QCoreApplication::translate("MenuWindow", "cocoa", nullptr));
+        space_5->setText(QCoreApplication::translate("MenuWindow", "180 rub.", nullptr));
         plus_5->setText(QString());
         picture_8->setText(QString());
-        description_8->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_8->setText(QString());
+        description_8->setText(QCoreApplication::translate("MenuWindow", "espresso", nullptr));
+        space_8->setText(QCoreApplication::translate("MenuWindow", "120 rub.", nullptr));
         plus_8->setText(QString());
         picture_9->setText(QString());
-        description_9->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_9->setText(QString());
+        description_9->setText(QCoreApplication::translate("MenuWindow", "americano", nullptr));
+        space_9->setText(QCoreApplication::translate("MenuWindow", "130 rub.", nullptr));
         plus_9->setText(QString());
         picture_10->setText(QString());
-        description_10->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_10->setText(QString());
+        description_10->setText(QCoreApplication::translate("MenuWindow", "tea", nullptr));
+        space_10->setText(QCoreApplication::translate("MenuWindow", "90 rub.", nullptr));
         plus_10->setText(QString());
         picture_11->setText(QString());
-        description_11->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_11->setText(QString());
+        description_11->setText(QCoreApplication::translate("MenuWindow", "matcha", nullptr));
+        space_11->setText(QCoreApplication::translate("MenuWindow", "180 rub.", nullptr));
         plus_11->setText(QString());
         picture_12->setText(QString());
-        description_12->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_12->setText(QString());
+        description_12->setText(QCoreApplication::translate("MenuWindow", "milkshake", nullptr));
+        space_12->setText(QCoreApplication::translate("MenuWindow", "210 rub.", nullptr));
         plus_12->setText(QString());
         picture_13->setText(QString());
-        description_13->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_13->setText(QString());
+        description_13->setText(QCoreApplication::translate("MenuWindow", "three chocolates", nullptr));
+        space_13->setText(QCoreApplication::translate("MenuWindow", "230 rub.", nullptr));
         plus_13->setText(QString());
         picture_14->setText(QString());
-        description_14->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_14->setText(QString());
+        description_14->setText(QCoreApplication::translate("MenuWindow", "bird's milk", nullptr));
+        space_14->setText(QCoreApplication::translate("MenuWindow", "210 rub.", nullptr));
         plus_14->setText(QString());
         picture_15->setText(QString());
-        description_15->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_15->setText(QString());
+        description_15->setText(QCoreApplication::translate("MenuWindow", "napoleon", nullptr));
+        space_15->setText(QCoreApplication::translate("MenuWindow", "190 rub.", nullptr));
         plus_15->setText(QString());
         picture_16->setText(QString());
-        description_16->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_16->setText(QString());
+        description_16->setText(QCoreApplication::translate("MenuWindow", "medovik", nullptr));
+        space_16->setText(QCoreApplication::translate("MenuWindow", "200 rub.", nullptr));
         plus_16->setText(QString());
         picture_17->setText(QString());
-        description_17->setText(QCoreApplication::translate("MenuWindow", "TextLabel", nullptr));
-        space_17->setText(QString());
+        description_17->setText(QCoreApplication::translate("MenuWindow", "shu cake", nullptr));
+        space_17->setText(QCoreApplication::translate("MenuWindow", "150 rub.", nullptr));
         plus_17->setText(QString());
     } // retranslateUi
 
