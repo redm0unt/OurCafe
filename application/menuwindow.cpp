@@ -28,4 +28,15 @@ void MenuWindow::on_ContactsText_clicked()
     QString link = "https://yandex.ru/maps/-/CDbGVFIE";
     QDesktopServices::openUrl(QUrl(link));
 }
+void MenuWindow::on_BookingButton_clicked()
+{
+    BackendClient::open_booking_window();
+    this->hide();
+}
+
+void MenuWindow::on_BasketButton_clicked()
+{
+    BackendClient::open_basket_window();
+    this->hide();
+}
 

@@ -26,3 +26,15 @@ void MainWindow::on_ContactsText_clicked()
     QDesktopServices::openUrl(QUrl(link));
 }
 
+
+void MainWindow::on_BookingButton_clicked()
+{
+    BackendClient::open_booking_window();
+    this->hide();
+}
+
+void MainWindow::on_BasketButton_clicked()
+{
+    BackendClient::open_basket_window();
+    this->hide();
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MenuWindow</class>
- <widget class="QMainWindow" name="MenuWindow">
+ <class>BasketWindow</class>
+ <widget class="QMainWindow" name="BasketWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -382,27 +382,54 @@ QPushButton:hover {
            <number>0</number>
           </property>
           <item>
-           <widget class="QPushButton" name="ContactsText">
+           <widget class="QLabel" name="ContactsText">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="minimumSize">
+            <property name="maximumSize">
              <size>
               <width>180</width>
-              <height>130</height>
+              <height>16777215</height>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">border-image: url(:/resources/resources/About_text.png) 0;</string>
+             <string notr="true">font: 14px</string>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
             </property>
             <property name="text">
-             <string/>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByMouse</set>
             </property>
            </widget>
           </item>
@@ -676,7 +703,7 @@ QPushButton:hover {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Menu</string>
+             <string>Basket</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -877,6 +904,734 @@ QPushButton:hover {
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_3">
                  <item>
+                  <widget class="QWidget" name="widget_5" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_19">
+                    <item>
+                     <widget class="QWidget" name="card_18" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_20">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="picture_18">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>165</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(112, 110, 110);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="description_18">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="bottom_18" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>4</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>5</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_20">
+                          <item>
+                           <widget class="QLabel" name="label_11">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="counter_2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">P { text-align: center }
+H2 { text-align: center }</string>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_12">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="plus_18">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+image: url(:/resources/resources/plus_menu.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="card_19" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="picture_19">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>165</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(112, 110, 110);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="description_19">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="bottom_19" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>4</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>5</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_21">
+                          <item>
+                           <widget class="QLabel" name="label_13">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_14">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_18">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="plus_19">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+image: url(:/resources/resources/plus_menu.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="card_20" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="picture_20">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>165</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(112, 110, 110);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="description_20">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="bottom_20" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>4</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>5</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_22">
+                          <item>
+                           <widget class="QLabel" name="label_15">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_16">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_19">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="plus_20">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+image: url(:/resources/resources/plus_menu.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="card_21" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_23">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="picture_21">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>165</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(112, 110, 110);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="description_21">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="bottom_21" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>4</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>5</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_23">
+                          <item>
+                           <widget class="QLabel" name="label_17">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_18">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_20">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="plus_21">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+image: url(:/resources/resources/plus_menu.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="card_22" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_24">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="picture_22">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>165</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(112, 110, 110);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="description_22">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="bottom_22" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>4</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>5</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_24">
+                          <item>
+                           <widget class="QLabel" name="label_19">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_20">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_21">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="plus_22">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+image: url(:/resources/resources/plus_menu.png);</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QWidget" name="widget" native="true">
                    <layout class="QHBoxLayout" name="horizontalLayout">
                     <item>
@@ -900,8 +1655,7 @@ QPushButton:hover {
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/cappuccino.png);
-background-color: rgb(203,202,202);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -913,14 +1667,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_3">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>cappuccino</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -945,16 +1695,60 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_3">
                           <item>
-                           <widget class="QLabel" name="space_3">
+                           <widget class="QLabel" name="label">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>170 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="counter">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">P { text-align: center }
+H2 { text-align: center }</string>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_2">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1008,8 +1802,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/latte.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1021,14 +1814,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_7">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>latte</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1053,16 +1842,56 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_7">
                           <item>
-                           <widget class="QLabel" name="space_7">
+                           <widget class="QLabel" name="label_4">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>170 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_7">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1116,8 +1945,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/raf.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1129,14 +1957,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_6">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>raf</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1161,16 +1985,56 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_6">
                           <item>
-                           <widget class="QLabel" name="space_6">
+                           <widget class="QLabel" name="label_6">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>190 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_5">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_6">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1225,7 +2089,6 @@ image: url(:/resources/resources/plus_menu.png);</string>
                          </property>
                          <property name="styleSheet">
                           <string notr="true">background-color: rgb(112, 110, 110);
-border-image: url(:/resources/resources/hot_chocolate.png);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1237,14 +2100,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_4">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>hot chocolate</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1269,16 +2128,56 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_4">
                           <item>
-                           <widget class="QLabel" name="space_4">
+                           <widget class="QLabel" name="label_8">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>200 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_7">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_4">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1332,8 +2231,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/cocoa_menu.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1345,14 +2243,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_5">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>cocoa</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1377,16 +2271,59 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_5">
                           <item>
-                           <widget class="QLabel" name="space_5">
+                           <widget class="QLabel" name="label_10">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>180 rub.</string>
+                             <string/>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_9">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_5">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1446,8 +2383,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/espresso.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1459,15 +2395,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_8">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;
-</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>espresso</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1493,15 +2424,55 @@ border-bottom-right-radius: 10px;</string>
                          <layout class="QHBoxLayout" name="horizontalLayout_8">
                           <item>
                            <widget class="QLabel" name="space_8">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>120 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_22">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_21">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1518,12 +2489,6 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
-                            </property>
-                            <property name="mouseTracking">
-                             <bool>false</bool>
-                            </property>
-                            <property name="focusPolicy">
-                             <enum>Qt::NoFocus</enum>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">
@@ -1561,8 +2526,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/americano.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1574,14 +2538,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_9">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>americano</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1606,17 +2566,59 @@ border-bottom-right-radius: 10px;</string>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_9">
                           <item>
-                           <widget class="QLabel" name="space_9">
+                           <widget class="QLabel" name="label_24">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;
-</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>130 rub.</string>
+                             <string/>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_23">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="space_9">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1670,8 +2672,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/tea.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1683,14 +2684,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_10">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>tea</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1716,15 +2713,55 @@ border-bottom-right-radius: 10px;</string>
                          <layout class="QHBoxLayout" name="horizontalLayout_10">
                           <item>
                            <widget class="QLabel" name="space_10">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>90 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_26">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_25">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1778,8 +2815,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/matcha-tonic.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1791,14 +2827,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_11">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>matcha</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1824,15 +2856,55 @@ border-bottom-right-radius: 10px;</string>
                          <layout class="QHBoxLayout" name="horizontalLayout_11">
                           <item>
                            <widget class="QLabel" name="space_11">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>180 rub.</string>
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_28">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_27">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
@@ -1886,8 +2958,7 @@ image: url(:/resources/resources/plus_menu.png);</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/milkshake.png);
-background-color: rgb(112, 110, 110);
+                          <string notr="true">background-color: rgb(112, 110, 110);
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;</string>
                          </property>
@@ -1899,14 +2970,10 @@ border-top-right-radius: 10px;</string>
                        <item>
                         <widget class="QLabel" name="description_12">
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
+                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                          </property>
                          <property name="text">
-                          <string>milkshake</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
+                          <string>TextLabel</string>
                          </property>
                         </widget>
                        </item>
@@ -1932,551 +2999,63 @@ border-bottom-right-radius: 10px;</string>
                          <layout class="QHBoxLayout" name="horizontalLayout_12">
                           <item>
                            <widget class="QLabel" name="space_12">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>20</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
+                             <string notr="true">image: url(:/resources/resources/minus.png);</string>
                             </property>
                             <property name="text">
-                             <string>210 rub.</string>
+                             <string/>
                             </property>
                             <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_30">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>30</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_29">
+                            <property name="text">
+                             <string>price</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
                             </property>
                            </widget>
                           </item>
                           <item>
                            <widget class="QLabel" name="plus_12">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QWidget" name="widget_3" native="true">
-                   <layout class="QHBoxLayout" name="horizontalLayout_13">
-                    <item>
-                     <widget class="QWidget" name="card_13" native="true">
-                      <layout class="QVBoxLayout" name="verticalLayout_15">
-                       <property name="spacing">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="picture_13">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>165</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/three_chocolates.png);
-background-color: rgb(112, 110, 110);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="description_13">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>three chocolates</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="bottom_13" native="true">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>4</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>5</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;</string>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_14">
-                          <item>
-                           <widget class="QLabel" name="space_13">
-                            <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
-                            </property>
-                            <property name="text">
-                             <string>230 rub.</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="plus_13">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QWidget" name="card_14" native="true">
-                      <layout class="QVBoxLayout" name="verticalLayout_16">
-                       <property name="spacing">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="picture_14">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>165</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/birds_milk.png);
-background-color: rgb(112, 110, 110);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="description_14">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>bird's milk</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="bottom_14" native="true">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>4</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>5</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;</string>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_15">
-                          <item>
-                           <widget class="QLabel" name="space_14">
-                            <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
-                            </property>
-                            <property name="text">
-                             <string>210 rub.</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="plus_14">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QWidget" name="card_15" native="true">
-                      <layout class="QVBoxLayout" name="verticalLayout_17">
-                       <property name="spacing">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="picture_15">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>165</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/napoleon.png);
-background-color: rgb(112, 110, 110);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="description_15">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>napoleon</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="bottom_15" native="true">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>4</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>5</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;</string>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_16">
-                          <item>
-                           <widget class="QLabel" name="space_15">
-                            <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
-                            </property>
-                            <property name="text">
-                             <string>190 rub.</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="plus_15">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QWidget" name="card_16" native="true">
-                      <layout class="QVBoxLayout" name="verticalLayout_18">
-                       <property name="spacing">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="picture_16">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>165</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/medovik.png);
-background-color: rgb(112, 110, 110);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="description_16">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>medovik</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="bottom_16" native="true">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>4</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>5</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;</string>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_17">
-                          <item>
-                           <widget class="QLabel" name="space_16">
-                            <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
-                            </property>
-                            <property name="text">
-                             <string>200 rub.</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="plus_16">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QWidget" name="card_17" native="true">
-                      <layout class="QVBoxLayout" name="verticalLayout_19">
-                       <property name="spacing">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="picture_17">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>165</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">border-image: url(:/resources/resources/shu_cake.png);
-background-color: rgb(112, 110, 110);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="description_17">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 12pt &quot;Segoe UI&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>shu cake</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="bottom_17" native="true">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>4</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>5</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;</string>
-                         </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_18">
-                          <item>
-                           <widget class="QLabel" name="space_17">
-                            <property name="styleSheet">
-                             <string notr="true">background-color: rgb(255, 255, 255);
-font: 600 9pt &quot;Segoe UI&quot;;</string>
-                            </property>
-                            <property name="text">
-                             <string>150 rub.</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="plus_17">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>

@@ -13,6 +13,8 @@
 #include "mainwindow.h"
 #include "menuwindow.h"
 #include "hash.h"
+#include "bookingwindow.h"
+#include "basketwindow.h"
 
 
 class BackendClient;
@@ -43,6 +45,8 @@ private:
     static register_window* registerWindow;
     static MainWindow* mainWindow;
     static MenuWindow* menuWindow;
+    static BookingWindow* bookingWindow;
+    static BasketWindow* basketWindow;
 protected:
     explicit BackendClient (QObject* parent = nullptr);
     BackendClient( BackendClient& ) = delete;
@@ -59,10 +63,13 @@ public:
     static bool authentificate(QString, QString);
     static void start_application();
 
-    static void open_entering_window();
-    static void open_register_window();
-    static void open_main_window();
-    static void open_menu_window();
+        static void open_entering_window();
+        static void open_register_window();
+        static void open_main_window();
+        static void open_menu_window();
+        static void open_booking_window();
+        static void open_basket_window();
+
 
 signals:
     void message_from_server( QString message );

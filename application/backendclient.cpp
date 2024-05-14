@@ -132,6 +132,20 @@ void BackendClient::open_menu_window()
     }
     menuWindow->show();
 }
+void BackendClient::open_booking_window()
+{
+    if (!bookingWindow) {
+        bookingWindow = new BookingWindow();
+    }
+    bookingWindow->show();
+}
+void BackendClient::open_basket_window()
+{
+    if (!basketWindow) {
+        basketWindow = new BasketWindow();
+    }
+    basketWindow->show();
+}
 
 
 // ———————————————————————————————————————
@@ -148,3 +162,6 @@ MainWindow* BackendClient::mainWindow;
 MenuWindow* BackendClient::menuWindow;
 entering_window* BackendClient::enteringWindow;
 register_window* BackendClient::registerWindow;
+BookingWindow* BackendClient::bookingWindow;
+BasketWindow* BackendClient::basketWindow;
+
