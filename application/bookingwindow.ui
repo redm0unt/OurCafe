@@ -382,54 +382,27 @@ QPushButton:hover {
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="ContactsText">
+           <widget class="QPushButton" name="ContactsText">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="maximumSize">
+            <property name="minimumSize">
              <size>
               <width>180</width>
-              <height>16777215</height>
+              <height>130</height>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>ArrowCursor</cursorShape>
-            </property>
-            <property name="mouseTracking">
-             <bool>true</bool>
-            </property>
-            <property name="focusPolicy">
-             <enum>Qt::NoFocus</enum>
+             <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 14px</string>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
+             <string notr="true">border-image: url(:/resources/resources/About_text.png) 0;</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::AutoText</enum>
-            </property>
-            <property name="scaledContents">
-             <bool>false</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="wordWrap">
-             <bool>true</bool>
-            </property>
-            <property name="indent">
-             <number>0</number>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::LinksAccessibleByMouse</set>
+             <string/>
             </property>
            </widget>
           </item>
@@ -723,13 +696,13 @@ QPushButton:hover {
             </property>
             <property name="minimumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>16777215</height>
              </size>
             </property>
@@ -749,37 +722,6 @@ QPushButton:hover {
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QPushButton" name="Cart">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border-image: url(:/resources/resources/Cart.png) 0 stretch stretch;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
              <item>
               <widget class="QPushButton" name="Account">
                <property name="sizePolicy">
@@ -986,7 +928,7 @@ QPushButton:hover {
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgb(229, 176, 130);
+                     <string notr="true">background-color: #E9A86D;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 border-bottom-left-radius: 13px;
@@ -1022,12 +964,12 @@ border-bottom-right-radius: 13px;</string>
                           </sizepolicy>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(217, 217, 217);
-border-top-left-radius: 13px;
-border-top-right-radius: 13px;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;
-</string>
+                          <string notr="true">font: 15px;
+color: #000000;
+
+background-color: #F5F0EB;
+border-radius: 13px;
+padding: 0 13px;</string>
                          </property>
                          <property name="text">
                           <string/>
@@ -1046,11 +988,12 @@ border-bottom-right-radius: 13px;
                           </sizepolicy>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(217, 217, 217);
-border-top-left-radius: 13px;
-border-top-right-radius: 13px;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;</string>
+                          <string notr="true">font: 15px;
+color: #000000;
+
+background-color: #F5F0EB;
+border-radius: 13px;
+padding: 0 13px;</string>
                          </property>
                          <property name="text">
                           <string/>
@@ -1075,11 +1018,12 @@ border-bottom-right-radius: 13px;</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(217, 217, 217);
-border-top-left-radius: 13px;
-border-top-right-radius: 13px;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;</string>
+                          <string notr="true">font: 15px;
+color: #000000;
+
+background-color: #F5F0EB;
+border-radius: 13px;
+padding: 0 13px;</string>
                          </property>
                          <property name="text">
                           <string/>
@@ -1104,11 +1048,12 @@ border-bottom-right-radius: 13px;</string>
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background-color: rgb(217, 217, 217);
-border-top-left-radius: 13px;
-border-top-right-radius: 13px;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;</string>
+                          <string notr="true">font: 15px;
+color: #000000;
+
+background-color: #F5F0EB;
+border-radius: 13px;
+padding: 0 13px;</string>
                          </property>
                         </widget>
                        </item>
@@ -1121,12 +1066,11 @@ border-bottom-right-radius: 13px;</string>
                           </sizepolicy>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
-background-color: rgb(217, 217, 217);
-border-top-left-radius: 13px;
-border-top-right-radius: 13px;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;</string>
+                          <string notr="true">font: 700 18px;
+color: #F5F0EB;
+
+background-color: #351A00;
+border-radius: 13px;</string>
                          </property>
                          <property name="text">
                           <string>To book</string>

@@ -48,6 +48,9 @@ color: #000000;</string>
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <layout class="QHBoxLayout" name="Window_horizontalLayout">
     <property name="spacing">
      <number>0</number>
@@ -696,13 +699,13 @@ QPushButton:hover {
             </property>
             <property name="minimumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>16777215</height>
              </size>
             </property>
@@ -722,37 +725,6 @@ QPushButton:hover {
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QPushButton" name="Cart">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border-image: url(:/resources/resources/Cart.png) 0 stretch stretch;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
              <item>
               <widget class="QPushButton" name="Account">
                <property name="sizePolicy">
@@ -848,6 +820,89 @@ QPushButton:hover {
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true">* {
+	border: none;
+}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(226, 205, 187);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(212, 191, 173);
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: #C0AA97;
+}
+
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(226, 205, 187);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(226, 205, 187);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+/* HORIZONTAL SCROLLBAR - HOMEWORK */
+QScrollBar:horizontal {
+   
+}
+QScrollBar::handle:horizontal {
+    
+}
+QScrollBar::add-line:horizontal {
+    
+}
+QScrollBar::sub-line:horizontal {
+    
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+
+}</string>
+            </property>
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
@@ -856,8 +911,8 @@ QPushButton:hover {
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>1085</width>
-               <height>922</height>
+               <width>1090</width>
+               <height>924</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_2">

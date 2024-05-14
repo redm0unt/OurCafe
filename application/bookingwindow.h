@@ -22,6 +22,8 @@ private slots:
     void on_MenuButton_clicked();
     void on_BasketButton_clicked();
 
+    void on_ContactsText_clicked();
+
 private:
     Ui::BookingWindow *ui;
     //MenuWindow *menuWindow;

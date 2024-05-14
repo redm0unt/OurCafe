@@ -31,3 +31,10 @@ void BasketWindow::on_BookingButton_clicked()
     BackendClient::open_booking_window();
     this->hide();
 }
+
+void BasketWindow::on_ContactsText_clicked()
+{
+    QString link = "https://yandex.ru/maps/-/CDbGVFIE";
+    QDesktopServices::openUrl(QUrl(link));
+}
+

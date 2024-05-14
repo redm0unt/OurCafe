@@ -382,54 +382,24 @@ QPushButton:hover {
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="ContactsText">
+           <widget class="QPushButton" name="ContactsText">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="maximumSize">
+            <property name="minimumSize">
              <size>
               <width>180</width>
-              <height>16777215</height>
+              <height>130</height>
              </size>
             </property>
-            <property name="cursor">
-             <cursorShape>ArrowCursor</cursorShape>
-            </property>
-            <property name="mouseTracking">
-             <bool>true</bool>
-            </property>
-            <property name="focusPolicy">
-             <enum>Qt::NoFocus</enum>
-            </property>
             <property name="styleSheet">
-             <string notr="true">font: 14px</string>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
+             <string notr="true">border-image: url(:/resources/resources/About_text.png) 0;</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Address:&lt;/span&gt; 11 Kolotushkina St., Building 3, Moscow&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Metro station:&lt;/span&gt; Pushkino&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Phone number:&lt;/span&gt; +7-888-888-88-88&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Mail:&lt;/span&gt; OurCafe@mail.ru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::AutoText</enum>
-            </property>
-            <property name="scaledContents">
-             <bool>false</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="wordWrap">
-             <bool>true</bool>
-            </property>
-            <property name="indent">
-             <number>0</number>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::LinksAccessibleByMouse</set>
+             <string/>
             </property>
            </widget>
           </item>
@@ -723,13 +693,13 @@ QPushButton:hover {
             </property>
             <property name="minimumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>16777215</height>
              </size>
             </property>
@@ -749,37 +719,6 @@ QPushButton:hover {
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QPushButton" name="Cart">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border-image: url(:/resources/resources/Cart.png) 0 stretch stretch;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
              <item>
               <widget class="QPushButton" name="Account">
                <property name="sizePolicy">
@@ -875,6 +814,92 @@ QPushButton:hover {
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">* {
+	border: none;
+}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(226, 205, 187);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(212, 191, 173);
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: #C0AA97;
+}
+
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(226, 205, 187);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(226, 205, 187);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+/* HORIZONTAL SCROLLBAR - HOMEWORK */
+QScrollBar:horizontal {
+   
+}
+QScrollBar::handle:horizontal {
+    
+}
+QScrollBar::add-line:horizontal {
+    
+}
+QScrollBar::sub-line:horizontal {
+    
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+
+}</string>
+            </property>
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
@@ -883,8 +908,8 @@ QPushButton:hover {
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>1085</width>
-               <height>922</height>
+               <width>1090</width>
+               <height>924</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_2">

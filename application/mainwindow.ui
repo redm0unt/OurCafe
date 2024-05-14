@@ -691,13 +691,13 @@ QPushButton:hover {
             </property>
             <property name="minimumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>140</width>
+              <width>70</width>
               <height>16777215</height>
              </size>
             </property>
@@ -717,37 +717,6 @@ QPushButton:hover {
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QPushButton" name="Cart">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>45</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border-image: url(:/resources/resources/Cart.png) 0 stretch stretch;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
              <item>
               <widget class="QPushButton" name="Account">
                <property name="sizePolicy">
