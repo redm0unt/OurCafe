@@ -1065,6 +1065,9 @@ padding: 0 13px;</string>
                            <verstretch>0</verstretch>
                           </sizepolicy>
                          </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true">font: 700 18px;
 color: #F5F0EB;
