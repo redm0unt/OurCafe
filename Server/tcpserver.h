@@ -10,20 +10,40 @@
 #include <QDebug>
 
 
+class TCPServer;
+
+class ServerDestroyer {
+private:
+    TCPServer *server;
+public:
+    ~ServerDestroyer() { delete server; }
+    void initialize(TCPServer *Server) { server = Server; }
+};
+
+
 class TCPServer : public QObject
 {
-    Q_OBJECT
-public:
+Q_OBJECT
+private:
+    static TCPServer *server;
+    static ServerDestroyer destroyer;
+
+    QTcpServer *TcpServer;
+    QList<QTcpSocket *> clients;
+    int server_status;
+protected:
     explicit TCPServer(QObject *parent = nullptr);
     ~TCPServer();
+    TCPServer( TCPServer& ) = delete;
+    TCPServer& operator = (TCPServer&) = delete;
+    friend class ServerDestroyer;
+public:
+    static TCPServer *getserver();
 public slots:
     void slotNewConnection();
     void slotClientDisconnected();
     void slotServerRead();
-private:
-    QTcpServer * TcpServer;
-    QTcpSocket * TcpSocket;
-    int server_status;
+    void stopServer();
 };
 
 

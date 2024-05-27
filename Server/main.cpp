@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    TCPServer server;
+    TCPServer *server = TCPServer::getserver();
 
     return a.exec();
 }
