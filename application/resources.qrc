@@ -31,5 +31,6 @@
         <file>resources/tea.png</file>
         <file>resources/three_chocolates.png</file>
         <file>resources/napoleon.png</file>
+        <file>resources/Account_profile.png</file>
     </qresource>
 </RCC>

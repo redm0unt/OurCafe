@@ -28,6 +28,10 @@ BackendClient::~BackendClient() {
     }
     delete mainWindow;
     delete menuWindow;
+    delete bookingWindow;
+    delete basketWindow;
+    delete profileWindow;
+
 }
 
 
@@ -175,6 +179,7 @@ void BackendClient::open_menu_window()
     }
     menuWindow->show();
 }
+// Booking
 void BackendClient::open_booking_window()
 {
     if (!bookingWindow) {
@@ -182,12 +187,21 @@ void BackendClient::open_booking_window()
     }
     bookingWindow->show();
 }
+// Basket
 void BackendClient::open_basket_window()
 {
     if (!basketWindow) {
         basketWindow = new BasketWindow();
     }
     basketWindow->show();
+}
+// Profile
+void BackendClient::open_profile_window()
+{
+    if (!profileWindow) {
+        profileWindow = new ProfileWindow();
+    }
+    profileWindow->show();
 }
 
 
@@ -207,4 +221,5 @@ entering_window* BackendClient::enteringWindow;
 register_window* BackendClient::registerWindow;
 BookingWindow* BackendClient::bookingWindow;
 BasketWindow* BackendClient::basketWindow;
+ProfileWindow* BackendClient::profileWindow;
 

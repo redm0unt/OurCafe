@@ -33,6 +33,12 @@ void BookingWindow::on_BasketButton_clicked()
     this->hide();
 }
 
+void BookingWindow::on_AccountButton_clicked()
+{
+    BackendClient::open_profile_window();
+    this->hide();
+}
+
 
 void BookingWindow::on_ContactsText_clicked()
 {

@@ -19,6 +19,7 @@ SOURCES += \
     mainwindow.cpp \
     menuwindow.cpp \
     entering_window.cpp \
+    profilewindow.cpp \
     register_window.cpp
 
 HEADERS += \
@@ -29,6 +30,7 @@ HEADERS += \
     mainwindow.h \
     menuwindow.h \
     entering_window.h \
+    profilewindow.h \
     register_window.h
 
 FORMS += \
@@ -37,6 +39,7 @@ FORMS += \
     mainwindow.ui \
     menuwindow.ui \
     entering_window.ui \
+    profilewindow.ui \
     register_window.ui
 
 

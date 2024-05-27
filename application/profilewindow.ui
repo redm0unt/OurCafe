@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>BookingWindow</class>
- <widget class="QMainWindow" name="BookingWindow">
+ <class>ProfileWindow</class>
+ <widget class="QMainWindow" name="ProfileWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -676,7 +676,7 @@ QPushButton:hover {
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Booking</string>
+             <string>Profile</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -746,7 +746,8 @@ QPushButton:hover {
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
                <property name="styleSheet">
-                <string notr="true">border-image: url(:/resources/resources/Account.png) 0 stretch stretch;</string>
+                <string notr="true">border-image: url(:/resources/resources/Account_profile.png) 0 stretch stretch;
+</string>
                </property>
                <property name="text">
                 <string/>
@@ -826,71 +827,12 @@ QPushButton:hover {
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <layout class="QVBoxLayout" name="verticalLayout">
              <item>
               <layout class="QVBoxLayout" name="layoutforcontent">
-               <item>
-                <widget class="QLabel" name="label_top">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                   <horstretch>50</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>50</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>50</height>
-                  </size>
-                 </property>
-                 <property name="baseSize">
-                  <size>
-                   <width>0</width>
-                   <height>50</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 700 26pt &quot;Segoe UI&quot;;</string>
-                 </property>
-                 <property name="text">
-                  <string>Book a table or an event.</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_bottom">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>50</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 700 26pt &quot;Segoe UI&quot;;</string>
-                 </property>
-                 <property name="text">
-                  <string>And we will take care of all the details.</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
                <item>
                 <widget class="QWidget" name="widget" native="true">
                  <property name="sizePolicy">
@@ -928,8 +870,7 @@ QPushButton:hover {
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: #E9A86D;
-border-top-left-radius: 13px;
+                     <string notr="true">border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 border-bottom-left-radius: 13px;
 border-bottom-right-radius: 13px;</string>
@@ -966,13 +907,15 @@ border-bottom-right-radius: 13px;</string>
                          <property name="styleSheet">
                           <string notr="true">font: 15px;
 color: #000000;
-
-background-color: #F5F0EB;
+border-style : Solid;
+border-color : #351A00;
+border-width : 2px;
+background-color: #e6b083;
 border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
                          <property name="text">
-                          <string/>
+                          <string>Ivan</string>
                          </property>
                          <property name="placeholderText">
                           <string>What is your name?</string>
@@ -990,13 +933,15 @@ padding: 0 13px;</string>
                          <property name="styleSheet">
                           <string notr="true">font: 15px;
 color: #000000;
-
-background-color: #F5F0EB;
+border-style : Solid;
+border-color : #351A00;
+border-width : 2px;
+background-color: #e6b083;
 border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
                          <property name="text">
-                          <string/>
+                          <string>+7(888) 888 88 88</string>
                          </property>
                          <property name="placeholderText">
                           <string>+7(___)___ ___ ___</string>
@@ -1020,13 +965,15 @@ padding: 0 13px;</string>
                          <property name="styleSheet">
                           <string notr="true">font: 15px;
 color: #000000;
-
-background-color: #F5F0EB;
+border-style : Solid;
+border-color : #351A00;
+border-width : 2px;
+background-color: #e6b083;
 border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
                          <property name="text">
-                          <string/>
+                          <string>Ivan@gmail.com</string>
                          </property>
                          <property name="placeholderText">
                           <string>Specify the number of people</string>
@@ -1034,24 +981,20 @@ padding: 0 13px;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QDateEdit" name="dateEdit">
+                        <widget class="QLineEdit" name="lineEdit">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                            <horstretch>0</horstretch>
                            <verstretch>0</verstretch>
                           </sizepolicy>
                          </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>150</width>
-                           <height>0</height>
-                          </size>
-                         </property>
                          <property name="styleSheet">
                           <string notr="true">font: 15px;
 color: #000000;
-
-background-color: #F5F0EB;
+border-style : Solid;
+border-color : #351A00;
+border-width : 2px;
+background-color: #e6b083;
 border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
@@ -1076,7 +1019,7 @@ background-color: #351A00;
 border-radius: 13px;</string>
                          </property>
                          <property name="text">
-                          <string>To book</string>
+                          <string>Edit</string>
                          </property>
                         </widget>
                        </item>

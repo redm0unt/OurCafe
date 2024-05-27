@@ -38,3 +38,10 @@ void MainWindow::on_BasketButton_clicked()
     BackendClient::open_basket_window();
     this->hide();
 }
+
+void MainWindow::on_AccountButton_clicked()
+{
+    BackendClient::open_profile_window();
+    this->hide();
+}
+

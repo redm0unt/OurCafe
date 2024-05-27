@@ -25,6 +25,8 @@ private slots:
 
     void on_BasketButton_clicked();
 
+    void on_AccountButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

@@ -16,6 +16,7 @@
 #include "hash.h"
 #include "bookingwindow.h"
 #include "basketwindow.h"
+#include "profilewindow.h"
 
 
 class BackendClient;
@@ -48,6 +49,7 @@ private:
     static MenuWindow* menuWindow;
     static BookingWindow* bookingWindow;
     static BasketWindow* basketWindow;
+    static ProfileWindow* profileWindow;
 protected:
     explicit BackendClient (QObject* parent = nullptr);
     BackendClient( BackendClient& ) = delete;
@@ -71,6 +73,7 @@ public:
     static void open_menu_window();
     static void open_booking_window();
     static void open_basket_window();
+    static void open_profile_window();
 
 
 signals:

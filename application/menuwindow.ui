@@ -726,7 +726,7 @@ QPushButton:hover {
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="Account">
+              <widget class="QPushButton" name="AccountButton">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
                  <horstretch>0</horstretch>
@@ -910,9 +910,9 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-273</y>
                <width>1090</width>
-               <height>924</height>
+               <height>922</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1014,7 +1014,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_3">
+                           <widget class="QPushButton" name="pushButton">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1028,8 +1028,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1122,7 +1121,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_7">
+                           <widget class="QPushButton" name="pushButton_2">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1136,8 +1135,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1230,7 +1228,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_6">
+                           <widget class="QPushButton" name="pushButton_3">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1244,8 +1242,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1338,7 +1335,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_4">
+                           <widget class="QPushButton" name="pushButton_4">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1352,8 +1349,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1446,7 +1442,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_5">
+                           <widget class="QPushButton" name="pushButton_5">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1459,9 +1455,14 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="baseSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1561,7 +1562,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_8">
+                           <widget class="QPushButton" name="pushButton_6">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1574,15 +1575,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
-                            <property name="mouseTracking">
-                             <bool>false</bool>
-                            </property>
-                            <property name="focusPolicy">
-                             <enum>Qt::NoFocus</enum>
-                            </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);
+</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1676,7 +1671,7 @@ font: 600 9pt &quot;Segoe UI&quot;;
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_9">
+                           <widget class="QPushButton" name="pushButton_7">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1690,8 +1685,7 @@ font: 600 9pt &quot;Segoe UI&quot;;
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1784,7 +1778,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_10">
+                           <widget class="QPushButton" name="pushButton_8">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1798,8 +1792,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -1892,7 +1885,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_11">
+                           <widget class="QPushButton" name="pushButton_9">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -1906,8 +1899,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2000,7 +1992,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_12">
+                           <widget class="QPushButton" name="pushButton_10">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -2014,8 +2006,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2111,7 +2102,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_13">
+                           <widget class="QPushButton" name="pushButton_11">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -2125,8 +2116,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2216,7 +2206,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_14">
+                           <widget class="QPushButton" name="pushButton_12">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -2230,8 +2220,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2321,22 +2310,15 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_15">
+                           <widget class="QPushButton" name="pushButton_13">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
                               <verstretch>0</verstretch>
                              </sizepolicy>
                             </property>
-                            <property name="minimumSize">
-                             <size>
-                              <width>20</width>
-                              <height>0</height>
-                             </size>
-                            </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2426,7 +2408,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_16">
+                           <widget class="QPushButton" name="pushButton_14">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -2440,8 +2422,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -2531,7 +2512,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLabel" name="plus_17">
+                           <widget class="QPushButton" name="pushButton_15">
                             <property name="sizePolicy">
                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                               <horstretch>0</horstretch>
@@ -2545,8 +2526,7 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                              </size>
                             </property>
                             <property name="styleSheet">
-                             <string notr="true">
-image: url(:/resources/resources/plus_menu.png);</string>
+                             <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
                             <property name="text">
                              <string/>

@@ -31,6 +31,13 @@ void MenuWindow::on_BasketButton_clicked()
     BackendClient::open_basket_window();
     this->hide();
 }
+
+void MenuWindow::on_AccountButton_clicked()
+{
+    BackendClient::open_profile_window();
+    this->hide();
+}
+
 void MenuWindow::on_ContactsText_clicked()
 {
     QString link = "https://yandex.ru/maps/-/CDbGVFIE";

@@ -22,6 +22,7 @@ private slots:
     void on_ContactsText_clicked();
     void on_BookingButton_clicked();
     void on_BasketButton_clicked();
+    void on_AccountButton_clicked();
 
 
 
