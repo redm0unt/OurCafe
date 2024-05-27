@@ -2,6 +2,7 @@
 #include "ui_bookingwindow.h"
 #include "backendclient.h"
 
+
 BookingWindow::BookingWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::BookingWindow)

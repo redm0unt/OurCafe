@@ -1,7 +1,6 @@
-#include "backendclient.h"
-
 #include <QApplication>
-#include <QString>
+
+#include "backendclient.h"
 
 
 int main(int argc, char* argv[])
@@ -11,8 +10,6 @@ int main(int argc, char* argv[])
 
     // Initialize connection with server and send message after drawing GUI
     BackendClient* client = BackendClient::getclient();
-
-    client->send_message_to_server(QString::fromStdString("Hi Server!!! I'm application"));
 
     return app.exec();
 }

@@ -2,9 +2,7 @@ QT += gui core network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++17
-
-CONFIG += app_bundle
+CONFIG += c++17 app_bundle
 
 ICON = resources/AppIcon.png
 
@@ -40,6 +38,7 @@ FORMS += \
     menuwindow.ui \
     entering_window.ui \
     register_window.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

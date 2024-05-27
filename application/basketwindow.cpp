@@ -2,6 +2,7 @@
 #include "ui_basketwindow.h"
 #include "backendclient.h"
 
+
 BasketWindow::BasketWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::BasketWindow)

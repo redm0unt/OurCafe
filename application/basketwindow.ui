@@ -395,6 +395,9 @@ QPushButton:hover {
               <height>130</height>
              </size>
             </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/resources/resources/About_text.png) 0;</string>
             </property>
