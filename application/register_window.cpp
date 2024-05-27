@@ -17,10 +17,7 @@ register_window::~register_window()
 
 void register_window::on_SingUpButton_clicked()
 {
-    // Send info to server
-    // –––––––––––––––––––
-    BackendClient::open_main_window();
-    this->hide();
+    BackendClient::registration(ui->NameInput->text(), ui->LoginInput->text(), ui->EmailInput->text(), ui->PasswordInput->text(), ui->RepeatPasswordInput->text());
 }
 
 

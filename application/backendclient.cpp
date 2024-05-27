@@ -18,12 +18,14 @@ BackendClient::BackendClient(QObject* parent) : QObject(parent)
 
     TcpSocket = new QTcpSocket(this);
     TcpSocket->connectToHost("127.0.0.1", 33333);
-    // connect(TcpSocket, SIGNAL(readyRead()), this, SLOT(slotServerRead));
+    connect(TcpSocket, &QTcpSocket::readyRead, this, &BackendClient::slotServerRead);
 }
 BackendClient::~BackendClient() {
     if (TcpSocket->isOpen()) TcpSocket->close();
-    if (!authorization_state) delete enteringWindow;
-    delete registerWindow;
+    if (!authorization_state) {
+        delete enteringWindow;
+        delete registerWindow;
+    }
     delete mainWindow;
     delete menuWindow;
 }
@@ -32,7 +34,7 @@ BackendClient::~BackendClient() {
 // Check authorization
 
 // Compare hash from server to locally obtained
-bool BackendClient::registration_server_responce(QString login, QString password) {
+bool BackendClient::authorization_server_responce(QString login, QString password) {
     QString hashed_pass = Hash(password.toStdString()).get_hash();
     // Send this tuple to server
     // Function that sends only login and returns only hash
@@ -49,21 +51,62 @@ bool BackendClient::registration_server_responce(QString login, QString password
     return false;
 }
 
-bool BackendClient::authentificate(QString login, QString password) {
-    if (client->registration_server_responce(login, password)) {
+void BackendClient::authentificate(QString login, QString password) {
+    QMessageBox message_box;
+    message_box.setText("Authorization is not successful");
+
+
+    if (client->authorization_server_responce(login, password)) {
         qDebug() << QString("Authorized as " + login);
 
         open_main_window();
 
         authorization_state = true;
         delete enteringWindow;
+        delete registerWindow;
     }
     else {
-        QMessageBox message_box;
-        message_box.setText("Authorization not successful");
         message_box.setInformativeText(QString("Try another combination of login and password"));
         message_box.exec();
     }
+}
+void BackendClient::registration(QString name, QString login, QString email, QString password, QString password_repeat) {
+    QMessageBox message_box;
+    message_box.setText("Registration not successful");
+
+    QRegularExpression regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    QRegularExpressionMatch match = regex.match(email);
+
+    if (password.isEmpty() || name.isEmpty() || login.isEmpty() || email.isEmpty() || password_repeat.isEmpty()) {
+        message_box.setInformativeText(QString("Some fields are empty"));
+        message_box.exec();
+    }
+    else if (!match.hasMatch()) {
+        message_box.setInformativeText(QString("Not valid email format"));
+        message_box.exec();
+    }
+    else if (password == password_repeat) {
+        if (true) {
+            QString hashed_password = Hash(password.toStdString()).get_hash();
+            qDebug() << QString("Registred as " + name + " " +  login + " " + email);
+            qDebug() << QString("Password is " + hashed_password);
+
+            open_main_window();
+
+            // ———————————————————
+            // Send info to server
+            // ———————————————————
+
+            authorization_state = true;
+            delete enteringWindow;
+            delete registerWindow;
+        }
+    }
+    else {
+        message_box.setInformativeText(QString("Passwords do not match"));
+        message_box.exec();
+    }
+
 }
 
 

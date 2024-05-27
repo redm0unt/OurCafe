@@ -7,6 +7,7 @@
 #include <QByteArray>
 #include <QDebug>
 #include <QMessageBox>
+#include <QRegularExpression>
 
 #include "entering_window.h"
 #include "register_window.h"
@@ -22,17 +23,17 @@ class BackendClient;
 class BackendClientDestroyer
 {
 private:
-    BackendClient* client;
+    BackendClient *client;
 public:
     ~BackendClientDestroyer() { delete client; }
-    void initialize(BackendClient* p) { client = p; }
+    void initialize(BackendClient *p) { client = p; }
 };
 
 class BackendClient : public QObject
 {
 Q_OBJECT
 private:
-    static BackendClient* client;
+    static BackendClient *client;
     static BackendClientDestroyer destroyer;
 
     // Client Server Socket
@@ -59,22 +60,23 @@ public:
     void send_message_to_server ( QString query );
 
     bool get_auth_state() { return authorization_state; }
-    bool registration_server_responce(QString, QString);
-    static bool authentificate(QString, QString);
+    bool authorization_server_responce(QString, QString);
+    static void authentificate(QString, QString);
+    static void registration(QString, QString, QString, QString, QString);
     static void start_application();
 
-        static void open_entering_window();
-        static void open_register_window();
-        static void open_main_window();
-        static void open_menu_window();
-        static void open_booking_window();
-        static void open_basket_window();
+    static void open_entering_window();
+    static void open_register_window();
+    static void open_main_window();
+    static void open_menu_window();
+    static void open_booking_window();
+    static void open_basket_window();
 
 
 signals:
     void message_from_server( QString message );
 
-private slots:
+public slots:
     void slotServerRead();
 };
 
