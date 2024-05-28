@@ -39,6 +39,18 @@ void BasketWindow::on_AccountButton_clicked()
     this->hide();
 }
 
+void BasketWindow::slot_cappuccino(QString url, QString name, qint64 price)
+{
+    ui->picture_1->setStyleSheet(url);
+    ui->description_1->setText(name);
+    int multiplier = ui->counter_1->text().toInt();
+    QString price_string = QString::number(price);
+    ui->price_1->setText(price_string);
+    QString price_full_string = QString::number(price*multiplier);
+    ui->price_full_1->setText(price_full_string);
+
+}
+
 void BasketWindow::on_ContactsText_clicked()
 {
     QString link = "https://yandex.ru/maps/-/CDbGVFIE";

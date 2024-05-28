@@ -22,7 +22,10 @@ private slots:
     void on_ContactsText_clicked();
     void on_AccountButton_clicked();
 
-private:
+public slots:
+    void slot_cappuccino(QString url, QString name, qint64 price);
+
+public:
     Ui::BasketWindow *ui;
 //    MenuWindow *menuWindow;
 };

@@ -46,9 +46,9 @@ private:
     static entering_window* enteringWindow;
     static register_window* registerWindow;
     static MainWindow* mainWindow;
-    static MenuWindow* menuWindow;
+
     static BookingWindow* bookingWindow;
-    static BasketWindow* basketWindow;
+
     static ProfileWindow* profileWindow;
 protected:
     explicit BackendClient (QObject* parent = nullptr);
@@ -58,6 +58,8 @@ protected:
     friend class BackendClientDestroyer;
 public:
     static BackendClient* getclient();
+    static BasketWindow* basketWindow;
+    static MenuWindow* menuWindow;
 
     void send_message_to_server ( QString query );
 
