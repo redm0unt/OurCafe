@@ -881,7 +881,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
                <x>0</x>
                <y>0</y>
                <width>1090</width>
-               <height>922</height>
+               <height>924</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -899,7 +899,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QWidget" name="widget_2" native="true">
+                <widget class="QWidget" name="card_1" native="true">
                  <property name="geometry">
                   <rect>
                    <x>11</x>
@@ -1110,7 +1110,7 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
                   </item>
                  </layout>
                 </widget>
-                <widget class="QWidget" name="widget_4" native="true">
+                <widget class="QWidget" name="card_2" native="true">
                  <property name="geometry">
                   <rect>
                    <x>11</x>

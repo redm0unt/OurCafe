@@ -8,6 +8,7 @@ BasketWindow::BasketWindow(QWidget *parent)
     , ui(new Ui::BasketWindow)
 {
     ui->setupUi(this);
+    ui->card_1->hide();
 }
 
 BasketWindow::~BasketWindow()
@@ -41,6 +42,7 @@ void BasketWindow::on_AccountButton_clicked()
 
 void BasketWindow::slot_cappuccino(QString url, QString name, qint64 price)
 {
+    ui->card_1->show();
     ui->picture_1->setStyleSheet(url);
     ui->description_1->setText(name);
     int multiplier = ui->counter_1->text().toInt();

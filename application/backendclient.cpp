@@ -168,6 +168,7 @@ void BackendClient::open_main_window()
 {
     if (!mainWindow) {
         mainWindow = new MainWindow();
+        basketWindow = new BasketWindow();
     }
     mainWindow->show();
 }
