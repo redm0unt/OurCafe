@@ -12,6 +12,7 @@ ICON = resources/AppIcon.png
 
 SOURCES += \
     backendclient.cpp \
+    emailsender.cpp \
     hash.cpp \
     basketwindow.cpp \
     bookingwindow.cpp \
@@ -24,12 +25,14 @@ SOURCES += \
 
 HEADERS += \
     backendclient.h \
+    emailsender.h \
     hash.h \
     basketwindow.h \
     bookingwindow.h \
     mainwindow.h \
     menuwindow.h \
     entering_window.h \
+    message.h \
     profilewindow.h \
     register_window.h
 
