@@ -123,6 +123,7 @@ bool BackendClient::registration_server_responce(QString name, QString login, QS
     // Write the JSON string to the server
     TcpSocket->write(strJson.toUtf8());
     TcpSocket->flush();
+    return true;
 }
 void BackendClient::registration(QString name, QString login, QString email, QString password, QString password_repeat) {
     QMessageBox message_box;

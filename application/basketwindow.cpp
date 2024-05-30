@@ -8,7 +8,21 @@ BasketWindow::BasketWindow(QWidget *parent)
     , ui(new Ui::BasketWindow)
 {
     ui->setupUi(this);
-    ui->card_1->hide();
+    for (int i = 1; i <= 15; i++) {
+        QString cardName = QString("card_%1").arg(i);
+        QWidget *card = findChild<QWidget*>(cardName);
+        if (card) {
+            card->hide();
+        }
+    }
+
+    for (int i = 1; i <= 15; i++) {
+        cards.append(findChild<QWidget*>("card_" + QString::number(i)));
+        pictures.append(findChild<QLabel*>("picture_" + QString::number(i)));
+        descriptions.append(findChild<QLabel*>("description_" + QString::number(i)));
+        prices.append(findChild<QLabel*>("price_" + QString::number(i)));
+        prices_full.append(findChild<QLabel*>("price_full_" + QString::number(i)));
+    }
 }
 
 BasketWindow::~BasketWindow()
@@ -40,22 +54,73 @@ void BasketWindow::on_AccountButton_clicked()
     this->hide();
 }
 
-void BasketWindow::slot_cappuccino(QString url, QString name, qint64 price)
-{
-    ui->card_1->show();
-    ui->picture_1->setStyleSheet(url);
-    ui->description_1->setText(name);
-    int multiplier = ui->counter_1->text().toInt();
-    QString price_string = QString::number(price);
-    ui->price_1->setText(price_string);
-    QString price_full_string = QString::number(price*multiplier);
-    ui->price_full_1->setText(price_full_string);
-
+void BasketWindow::slot_dish(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num){
+    card->show();
+    picture->setStyleSheet(url);
+    description->setText(name);
+    QString price_string = QString::number(price_num);
+    price->setText(price_string);
+    ui->price_full_1->setText(QString::number(price_num));
 }
 
-void BasketWindow::on_ContactsText_clicked()
+void BasketWindow::slot_cappuccino(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num)
 {
+    slot_dish(card, picture, description, price, price_full, url, name, price_num);
+}
+
+void BasketWindow::on_ContactsText_clicked(){
     QString link = "https://yandex.ru/maps/-/CDbGVFIE";
     QDesktopServices::openUrl(QUrl(link));
 }
+
+void BasketWindow::for_plus(QLabel *counter, QLabel *price_full, QLabel *price_per_unit) {
+    int counter_value = counter->text().toInt();
+    int price_per_unit_int = price_per_unit->text().toInt();
+    QString new_counter = QString::number(counter_value + 1);
+    counter->setText(new_counter);
+    QString price_full_string = QString::number(price_per_unit_int * (counter_value + 1));
+    price_full->setText(price_full_string);
+}
+
+void BasketWindow::for_minus(QLabel *counter, QLabel *price_full, QLabel *price_per_unit) {
+    int counter_value = counter->text().toInt();
+    if (counter_value == 1){
+
+
+    }
+    else{
+        int price_per_unit_int = price_per_unit->text().toInt();
+        QString new_counter = QString::number(counter_value - 1);
+        counter->setText(new_counter);
+        QString price_full_string = QString::number(price_per_unit_int * (counter_value - 1));
+        price_full->setText(price_full_string);}
+
+}
+
+void BasketWindow::on_plus_1_clicked(){
+    for_plus(ui->counter_1, ui->price_full_1, ui->price_1);}
+void BasketWindow::on_minus_1_clicked(){
+    for_minus(ui->counter_1, ui->price_full_1, ui->price_1);}
+void BasketWindow::on_plus_2_clicked(){
+    for_plus(ui->counter_2, ui->price_full_2, ui->price_2);}
+void BasketWindow::on_minus_2_clicked(){
+    for_minus(ui->counter_2, ui->price_full_2, ui->price_2);}
+void BasketWindow::on_plus_3_clicked(){
+    for_plus(ui->counter_3, ui->price_full_3, ui->price_3);}
+void BasketWindow::on_minus_3_clicked(){
+    for_minus(ui->counter_3, ui->price_full_3, ui->price_3);}
+void BasketWindow::on_plus_4_clicked(){
+    for_plus(ui->counter_4, ui->price_full_4, ui->price_4);}
+void BasketWindow::on_minus_4_clicked(){
+    for_minus(ui->counter_4, ui->price_full_4, ui->price_4);}
+void BasketWindow::on_plus_5_clicked(){
+    for_plus(ui->counter_5, ui->price_full_5, ui->price_5);}
+void BasketWindow::on_minus_5_clicked(){
+    for_minus(ui->counter_5, ui->price_full_5, ui->price_5);}
+
+
+
+
+
+
 
