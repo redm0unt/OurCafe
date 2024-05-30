@@ -4,6 +4,9 @@
 #include <QObject>
 #include <QTcpServer>
 #include <QTcpSocket>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 #include <QtNetwork>
 #include <QByteArray>
@@ -29,8 +32,10 @@ private:
     static ServerDestroyer destroyer;
 
     QTcpServer *TcpServer;
+    QSqlDatabase Database;
     QList<QTcpSocket *> clients;
-    int server_status;
+    bool server_status;
+    bool database_status;
 protected:
     explicit TCPServer(QObject *parent = nullptr);
     ~TCPServer();
@@ -38,6 +43,7 @@ protected:
     TCPServer& operator = (TCPServer&) = delete;
     friend class ServerDestroyer;
 public:
+
     static TCPServer *getserver();
 public slots:
     void slotNewConnection();

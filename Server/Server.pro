@@ -16,13 +16,9 @@ CONFIG += c++17 console
 
 HEADERS += \
     tcpserver.h
-
-# database.h \
 SOURCES += \
     main.cpp \
     tcpserver.cpp
-
-# database.cpp \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

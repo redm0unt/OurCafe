@@ -40,39 +40,89 @@ BackendClient::~BackendClient() {
 // Compare hash from server to locally obtained
 bool BackendClient::authorization_server_responce(QString login, QString password) {
     QString hashed_pass = Hash(password.toStdString()).get_hash();
-    // Send this tuple to server
-    // Function that sends only login and returns only hash
-    // ...
 
-    // Hashed placeholder password "1111"
-    QString hashed_pass_from_server = QString("1011110111010100011101010001001001110010111101000010101101000110000010000000011010110100010000100011000111000100001111100000010110001011000111011011011000100000110100110111111010010100111101101000010101100010101111011110110011001010010001100111110010010000");
+    qDebug() << "Checking password validity";
 
-    qDebug() << "Input hashed password:" << hashed_pass;
-    qDebug() << "Hashed password from server:" << hashed_pass_from_server;
-    if (hashed_pass == hashed_pass_from_server) {
-        return true;
+    // Create a JSON object to send to the server
+    QJsonObject json;
+    json.insert("type", "authorization");
+    json.insert("login", login);
+    json.insert("hashed_pass", hashed_pass);
+    QJsonDocument doc(json);
+    QString strJson(doc.toJson(QJsonDocument::Compact));
+
+    // Write the JSON string to the server
+    TcpSocket->write(strJson.toUtf8());
+    TcpSocket->flush();
+
+    // Wait for the server to send a response
+    while (TcpSocket->waitForReadyRead(5000)) {
+        QByteArray response = TcpSocket->readAll();
+        QJsonDocument jsonResponse = QJsonDocument::fromJson(response);
+        QJsonObject jsonObject = jsonResponse.object();
+        qDebug() << jsonObject["auth_status"].toBool();
+        qDebug() << jsonObject;
+
+        // Check if the password is correct
+        if (jsonObject["auth_status"].toBool()) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
+    qDebug() << "error: response timed out\n";
     return false;
+    // // Hashed placeholder password "1111"
+    // QString hashed_pass_from_server = QString("1011110111010100011101010001001001110010111101000010101101000110000010000000011010110100010000100011000111000100001111100000010110001011000111011011011000100000110100110111111010010100111101101000010101100010101111011110110011001010010001100111110010010000");
+
+    // qDebug() << "Input hashed password:" << hashed_pass;
+    // qDebug() << "Hashed password from server:" << hashed_pass_from_server;
+    // if (hashed_pass == hashed_pass_from_server) {
+    //     return true;
+    // }
+    // return false;
 }
 
 void BackendClient::authentificate(QString login, QString password) {
     QMessageBox message_box;
     message_box.setText("Authorization is not successful");
 
-
-    if (client->authorization_server_responce(login, password)) {
-        qDebug() << QString("Authorized as " + login);
-
-        open_main_window();
-
-        authorization_state = true;
-        delete enteringWindow;
-        delete registerWindow;
-    }
-    else {
-        message_box.setInformativeText(QString("Try another combination of login and password"));
+    if (login == "" || password == "") {
+        message_box.setInformativeText(QString("Some fields are empty"));
         message_box.exec();
     }
+    else {
+        if (client->authorization_server_responce(login, password)) {
+            qDebug() << QString("Authorized as " + login);
+
+            open_main_window();
+
+            authorization_state = true;
+            delete enteringWindow;
+            delete registerWindow;
+        }
+        else {
+            message_box.setInformativeText(QString("Try another combination of login and password"));
+            message_box.exec();
+        }
+    }
+}
+
+
+bool BackendClient::registration_server_responce(QString name, QString login, QString email, QString hashed_pass) {
+    QJsonObject json;
+    json.insert("type", "registration");
+    json.insert("name", name);
+    json.insert("login", login);
+    json.insert("email", email);
+    json.insert("hashed_pass", hashed_pass);
+    QJsonDocument doc(json);
+    QString strJson(doc.toJson(QJsonDocument::Compact));
+
+    // Write the JSON string to the server
+    TcpSocket->write(strJson.toUtf8());
+    TcpSocket->flush();
 }
 void BackendClient::registration(QString name, QString login, QString email, QString password, QString password_repeat) {
     QMessageBox message_box;
@@ -90,20 +140,20 @@ void BackendClient::registration(QString name, QString login, QString email, QSt
         message_box.exec();
     }
     else if (password == password_repeat) {
-        if (true) {
-            QString hashed_password = Hash(password.toStdString()).get_hash();
-            qDebug() << QString("Registred as " + name + " " +  login + " " + email);
-            qDebug() << QString("Password is " + hashed_password);
+        QString hashed_pass = Hash(password.toStdString()).get_hash();
+
+        qDebug() << "\nsending info to server";
+        if (client->registration_server_responce(name, login, email, hashed_pass)) {
+            qDebug() << ("successfully registred with name: " + name + "; login: " +  login + "; email: " + email);
 
             open_main_window();
-
-            // ———————————————————
-            // Send info to server
-            // ———————————————————
 
             authorization_state = true;
             delete enteringWindow;
             delete registerWindow;
+        }
+        else {
+            qDebug() << ("error: unable to register with name: " + name + "; login: " + login + "; email: " + email);
         }
     }
     else {
