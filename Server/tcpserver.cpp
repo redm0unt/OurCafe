@@ -35,6 +35,7 @@ TCPServer::TCPServer(QObject *parent) : QObject(parent){
     else {
         database_status = true;
         qDebug() << "database opened";
+        qDebug() << "count of table:" << Database.tables().size();
     }
 }
 

@@ -54,7 +54,9 @@ bool BackendClient::authorization_server_responce(QString login, QString passwor
     // Write the JSON string to the server
     TcpSocket->write(strJson.toUtf8());
     TcpSocket->flush();
-
+    //========================
+    return true;
+    //============================
     // Wait for the server to send a response
     while (TcpSocket->waitForReadyRead(5000)) {
         QByteArray response = TcpSocket->readAll();

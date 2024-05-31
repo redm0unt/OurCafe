@@ -5,6 +5,7 @@
 #include <QDesktopServices>
 #include <QLabel>
 #include <basketwindow.h>
+#include <QVector>
 
 struct ui_elements {
     QWidget *card;
@@ -25,12 +26,17 @@ class MenuWindow : public QMainWindow
 public:
     explicit MenuWindow(QWidget *parent = nullptr);
     ~MenuWindow();
+    QVector<bool> flags_for_cards;
+
 
 
 
 
 private slots:
+    void incrementCardCount();
+    void return_flag(int index);
     ui_elements get_ui_elements(int index);
+    bool flags(int a);
     void on_MainLogo_clicked();
     void on_ContactsText_clicked();
     void on_BookingButton_clicked();

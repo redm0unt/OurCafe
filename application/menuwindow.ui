@@ -910,7 +910,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-273</y>
+               <y>-255</y>
                <width>1090</width>
                <height>922</height>
               </rect>
@@ -1247,6 +1247,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -1353,6 +1356,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
@@ -1466,6 +1472,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>0</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
@@ -1581,6 +1590,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);
 </string>
@@ -1690,6 +1702,9 @@ font: 600 9pt &quot;Segoe UI&quot;;
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -1796,6 +1811,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
@@ -1904,6 +1922,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -2010,6 +2031,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
@@ -2121,6 +2145,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -2225,6 +2252,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -2322,6 +2352,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <horstretch>0</horstretch>
                               <verstretch>0</verstretch>
                              </sizepolicy>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
@@ -2427,6 +2460,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <height>0</height>
                              </size>
                             </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>
                             </property>
@@ -2530,6 +2566,9 @@ font: 600 9pt &quot;Segoe UI&quot;;</string>
                               <width>20</width>
                               <height>0</height>
                              </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">image: url(:/resources/resources/plus_menu.png);</string>

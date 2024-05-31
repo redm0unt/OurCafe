@@ -41,17 +41,20 @@ private slots:
     void on_minus_5_clicked();
 
     void for_plus(QLabel *counter, QLabel *price_full, QLabel *price_per_unit);
-    void for_minus(QLabel *counter, QLabel *price_full, QLabel *price_per_unit);
+    void for_minus(QLabel *counter, QLabel *price_full, QLabel *price_per_unit, qint64 number_card);
 
-
+signals:
+    void incrementCardCount();
+    void return_flag(int index);
+    void requestNumberOfCard(); // Сигнал для запроса значения number_of_card
+    void sendNumberOfCard(int number);
 
 public slots:
-    void slot_dish(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num);
     void slot_cappuccino(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num);
+
 
 public:
     Ui::BasketWindow *ui;
-//    MenuWindow *menuWindow;
 };
 
 #endif // BASKETWINDOW_H
