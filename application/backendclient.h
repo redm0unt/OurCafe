@@ -65,7 +65,7 @@ public:
 
     bool get_auth_state() { return authorization_state; }
     bool authorization_server_responce(QString, QString);
-    bool registration_server_responce(QString, QString, QString, QString);
+    void registration_info_to_server(QString, QString, QString, QString);
     static void authentificate(QString, QString);
     static void registration(QString, QString, QString, QString, QString);
     static void start_application();

@@ -146,12 +146,21 @@ void TCPServer::slotServerRead(){
 
             qDebug() << "new user registration" << login;
 
-            // ...
-            // ...
-            // ...
+            QSqlQuery query;
+            query.prepare("INSERT INTO users (user_name, user_login, user_email, user_pass_hash) VALUES (:name, :login, :email, :hashed_pass)");
+            query.bindValue(":name", name);
+            query.bindValue(":login", login);
+            query.bindValue(":email", email);
+            query.bindValue(":hashed_pass", QByteArray::fromHex(hashed_pass.toUtf8()));
 
-            qDebug() << '\n';
-            qDebug() << "new register: (login: " + login + "; name: " + name + "; email: " + email + ")";
+            if (!query.exec()) {
+                qDebug() << "error: could not execute query.";
+                qDebug() << query.lastError();
+            }
+            else {
+                qDebug() << '\n';
+                qDebug() << "new register: (login: " + login + "; name: " + name + "; email: " + email + ")";
+            }
         }
         else {
             qDebug() << ("unhandled message (" + client->peerAddress().toString() + " " + QString::number(client->peerPort()) + "):") << data << "\n";

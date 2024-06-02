@@ -112,7 +112,7 @@ void BackendClient::authentificate(QString login, QString password) {
 }
 
 
-bool BackendClient::registration_server_responce(QString name, QString login, QString email, QString hashed_pass) {
+void BackendClient::registration_info_to_server(QString name, QString login, QString email, QString hashed_pass) {
     QJsonObject json;
     json.insert("type", "registration");
     json.insert("name", name);
@@ -125,7 +125,6 @@ bool BackendClient::registration_server_responce(QString name, QString login, QS
     // Write the JSON string to the server
     TcpSocket->write(strJson.toUtf8());
     TcpSocket->flush();
-    return true;
 }
 void BackendClient::registration(QString name, QString login, QString email, QString password, QString password_repeat) {
     QMessageBox message_box;
@@ -146,18 +145,16 @@ void BackendClient::registration(QString name, QString login, QString email, QSt
         QString hashed_pass = Hash(password.toStdString()).get_hash();
 
         qDebug() << "\nsending info to server";
-        if (client->registration_server_responce(name, login, email, hashed_pass)) {
-            qDebug() << ("successfully registred with name: " + name + "; login: " +  login + "; email: " + email);
 
-            open_main_window();
+        client->registration_info_to_server(name, login, email, hashed_pass);
 
-            authorization_state = true;
-            delete enteringWindow;
-            delete registerWindow;
-        }
-        else {
-            qDebug() << ("error: unable to register with name: " + name + "; login: " + login + "; email: " + email);
-        }
+        qDebug() << ("successfully registred with name: " + name + "; login: " +  login + "; email: " + email);
+
+        open_main_window();
+
+        authorization_state = true;
+        delete enteringWindow;
+        delete registerWindow;
     }
     else {
         message_box.setInformativeText(QString("Passwords do not match"));
