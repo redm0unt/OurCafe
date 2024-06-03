@@ -52,6 +52,11 @@ signals:
 public slots:
     void slot_cappuccino(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num);
 
+private slots:
+    void on_Telegram_clicked();
+    void on_VK_clicked();
+    void on_Instagram_clicked();
+    void on_Whatsapp_clicked();
 
 public:
     Ui::BasketWindow *ui;

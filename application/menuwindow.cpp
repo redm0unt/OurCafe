@@ -189,3 +189,23 @@ void MenuWindow::on_shucake_pushButton_clicked()
                 "border-image: url(:/resources/resources/shu_cake.png);", "shu cake", 150);}
 }
 
+
+
+
+void MenuWindow::on_Telegram_clicked()
+{
+    BackendClient::open_external("telegram");
+}
+void MenuWindow::on_Instagram_clicked()
+{
+    BackendClient::open_external("instagram");
+}
+void MenuWindow::on_VK_clicked()
+{
+    BackendClient::open_external("vk");
+}
+void MenuWindow::on_Whatsapp_clicked()
+{
+    BackendClient::open_external("whatsapp");
+}
+

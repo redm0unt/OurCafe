@@ -46,3 +46,22 @@ void BookingWindow::on_ContactsText_clicked()
     QDesktopServices::openUrl(QUrl(link));
 }
 
+
+
+void BookingWindow::on_Telegram_clicked()
+{
+    BackendClient::open_external("telegram");
+}
+void BookingWindow::on_Instagram_clicked()
+{
+    BackendClient::open_external("instagram");
+}
+void BookingWindow::on_VK_clicked()
+{
+    BackendClient::open_external("vk");
+}
+void BookingWindow::on_Whatsapp_clicked()
+{
+    BackendClient::open_external("whatsapp");
+}
+

@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QDesktopServices>
 
 
 namespace Ui {
@@ -26,6 +25,14 @@ private slots:
     void on_BasketButton_clicked();
 
     void on_AccountButton_clicked();
+
+    void on_Telegram_clicked();
+
+    void on_VK_clicked();
+
+    void on_Instagram_clicked();
+
+    void on_Whatsapp_clicked();
 
 private:
     Ui::MainWindow *ui;

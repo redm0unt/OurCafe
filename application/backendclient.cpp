@@ -35,6 +35,27 @@ BackendClient::~BackendClient() {
 }
 
 
+void BackendClient::open_external(QString dest) {
+    QUrl link;
+    if (dest == "telegram") {
+        link = QUrl("https://t.me/+wm6yN06sQCI0Yzky");
+    }
+    else if (dest == "instagram") {
+        link = QUrl("https://www.instagram.com/ourca_fe?igsh=MThydzRlY3pkMmZ2aQ==");
+    }
+    else if (dest == "vk") {
+        link = QUrl("https://vk.com/club226092698");
+    }
+    else if (dest == "whatsapp") {
+        link = QUrl("https://chat.whatsapp.com/IwareBrmpWG5ocEjjaz3ro");
+    }
+    else {
+        link = QUrl(dest);
+    }
+
+    QDesktopServices::openUrl(link);
+}
+
 // Check authorization
 
 // Compare hash from server to locally obtained

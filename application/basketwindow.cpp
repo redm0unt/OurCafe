@@ -127,6 +127,25 @@ void BasketWindow::on_minus_5_clicked(){
 
 
 
+void BasketWindow::on_Telegram_clicked()
+{
+    BackendClient::open_external("telegram");
+}
+void BasketWindow::on_Instagram_clicked()
+{
+    BackendClient::open_external("instagram");
+}
+void BasketWindow::on_VK_clicked()
+{
+    BackendClient::open_external("vk");
+}
+void BasketWindow::on_Whatsapp_clicked()
+{
+    BackendClient::open_external("whatsapp");
+}
+
+
+
 
 
 

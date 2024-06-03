@@ -8,6 +8,7 @@
 #include <QDebug>
 #include <QMessageBox>
 #include <QRegularExpression>
+#include <QDesktopServices>
 
 #include "entering_window.h"
 #include "register_window.h"
@@ -62,9 +63,10 @@ public:
     static BasketWindow* basketWindow;
     static MenuWindow* menuWindow;
 
-    void send_message_to_server ( QString query );
+    void send_message_to_server (QString query);
 
     bool get_auth_state() { return authorization_state; }
+    static void open_external(QString link);
     bool authorization_server_responce(QString, QString);
     void registration_info_to_server(QString, QString, QString, QString);
     static void authentificate(QString, QString);

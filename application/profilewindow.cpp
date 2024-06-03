@@ -46,3 +46,22 @@ void ProfileWindow::on_MainLogo_clicked()
     this->hide();
 }
 
+
+
+void ProfileWindow::on_Telegram_clicked()
+{
+    BackendClient::open_external("telegram");
+}
+void ProfileWindow::on_Instagram_clicked()
+{
+    BackendClient::open_external("instagram");
+}
+void ProfileWindow::on_VK_clicked()
+{
+    BackendClient::open_external("vk");
+}
+void ProfileWindow::on_Whatsapp_clicked()
+{
+    BackendClient::open_external("whatsapp");
+}
+

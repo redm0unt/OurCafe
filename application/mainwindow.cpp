@@ -22,8 +22,7 @@ void MainWindow::on_MenuButton_clicked()
 }
 void MainWindow::on_ContactsText_clicked()
 {
-    QString link = "https://yandex.ru/maps/-/CDbGVFIE";
-    QDesktopServices::openUrl(QUrl(link));
+    BackendClient::open_external("https://yandex.ru/maps/-/CDbGVFIE");
 }
 
 
@@ -43,5 +42,23 @@ void MainWindow::on_AccountButton_clicked()
 {
     BackendClient::open_profile_window();
     this->hide();
+}
+
+
+void MainWindow::on_Telegram_clicked()
+{
+    BackendClient::open_external("telegram");
+}
+void MainWindow::on_Instagram_clicked()
+{
+    BackendClient::open_external("instagram");
+}
+void MainWindow::on_VK_clicked()
+{
+    BackendClient::open_external("vk");
+}
+void MainWindow::on_Whatsapp_clicked()
+{
+    BackendClient::open_external("whatsapp");
 }
 

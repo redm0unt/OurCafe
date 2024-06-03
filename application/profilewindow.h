@@ -23,6 +23,10 @@ private slots:
     void on_BasketButton_clicked();
     void on_MainLogo_clicked();
 
+    void on_Telegram_clicked();
+    void on_VK_clicked();
+    void on_Instagram_clicked();
+    void on_Whatsapp_clicked();
 private:
     Ui::ProfileWindow *ui;
 };

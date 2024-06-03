@@ -70,6 +70,14 @@ private slots:
 
     void on_shucake_pushButton_clicked();
 
+
+    void on_Telegram_clicked();
+
+    void on_VK_clicked();
+
+    void on_Instagram_clicked();
+
+    void on_Whatsapp_clicked();
 signals:
     void signal(QWidget *card, QLabel *picture, QLabel *description, QLabel *price, QLabel *price_full, QString url, QString name, qint64 price_num);
 
