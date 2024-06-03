@@ -11,6 +11,7 @@ ICON = resources/AppIcon.png
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminwindow.cpp \
     backendclient.cpp \
     emailsender.cpp \
     hash.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
     register_window.cpp
 
 HEADERS += \
+    adminwindow.h \
     backendclient.h \
     emailsender.h \
     hash.h \
@@ -37,6 +39,7 @@ HEADERS += \
     register_window.h
 
 FORMS += \
+    adminwindow.ui \
     basketwindow.ui \
     bookingwindow.ui \
     mainwindow.ui \

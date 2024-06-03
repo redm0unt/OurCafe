@@ -923,7 +923,7 @@ padding: 0 13px;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="number">
+                        <widget class="QLineEdit" name="login">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                            <horstretch>0</horstretch>
@@ -941,7 +941,7 @@ border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
                          <property name="text">
-                          <string>+7(888) 888 88 88</string>
+                          <string>login</string>
                          </property>
                          <property name="placeholderText">
                           <string>+7(___)___ ___ ___</string>
@@ -949,7 +949,7 @@ padding: 0 13px;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="people2">
+                        <widget class="QLineEdit" name="email">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                            <horstretch>0</horstretch>
@@ -981,7 +981,7 @@ padding: 0 13px;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="lineEdit">
+                        <widget class="QLineEdit" name="password">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                            <horstretch>0</horstretch>
@@ -998,10 +998,13 @@ background-color: #e6b083;
 border-radius: 13px;
 padding: 0 13px;</string>
                          </property>
+                         <property name="text">
+                          <string>password</string>
+                         </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="ButtonBook">
+                        <widget class="QPushButton" name="edit_button">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                            <horstretch>0</horstretch>

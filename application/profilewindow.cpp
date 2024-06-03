@@ -7,6 +7,13 @@ ProfileWindow::ProfileWindow(QWidget *parent)
     , ui(new Ui::ProfileWindow)
 {
     ui->setupUi(this);
+
+
+
+    ui->name->setReadOnly(true);
+    ui->login->setReadOnly(true);
+    ui->email->setReadOnly(true);
+    ui->password->setReadOnly(true);
 }
 
 ProfileWindow::~ProfileWindow()

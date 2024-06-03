@@ -155,7 +155,61 @@ void TCPServer::slotServerRead(){
                 qDebug() << "new register: (login: " + login + "; name: " + name + "; email: " + email + ")";
             }
         }
-        else {
+        // Admin handler
+        else if (type =="admin_delete_user") {
+            QString login = incomingMessage["login"].toString();
+            QSqlQuery query;
+            bool user_exists = false;
+            query.prepare("select count(*) from users where user_login = :login");
+            query.bindValue(":login", login);
+
+            bool user_delete_state = false;
+
+
+            if (query.exec()) {
+                if (query.next()) {
+                    QVariant cellValue = query.value(0); // 0 is the index of the column
+                    qDebug() << "Cell value: " << cellValue.toString();
+                    if (cellValue.toInt() > 0) user_exists = true;
+                    else {
+                        qDebug() << '\n';
+                        qDebug() << "There is no users with this email";
+                    }
+                }
+                else{
+                    qDebug() << "error: could not execute query 3.";
+                    qDebug() << query.lastError();}
+            }
+            else{
+                qDebug() << "error: could not execute query 2.";
+                qDebug() << query.lastQuery();
+                qDebug() << query.lastError();}
+
+
+
+            if (user_exists){
+                query.prepare("delete from users where user_login = :login ");
+                query.bindValue(":login", login);
+
+                if (!query.exec()) {
+                    qDebug() << "error: could not execute query 1.";
+                    qDebug() << query.lastError();
+                }
+                else {
+                    qDebug() << '\n';
+                    qDebug() << "user " + login + " successfully deleted!";
+                    user_delete_state = true;
+                }
+            }
+            QJsonObject outgoingMessage;
+            outgoingMessage["user_delete_state"] = user_delete_state;
+            QJsonDocument out_doc(outgoingMessage);
+            QString out_strJson(out_doc.toJson(QJsonDocument::Compact));
+            client->write(out_strJson.toUtf8());
+        }
+
+
+        else {            
             qDebug() << ("unhandled message (" + client->peerAddress().toString() + " " + QString::number(client->peerPort()) + "):") << data << "\n";
 
             QString reply = "";

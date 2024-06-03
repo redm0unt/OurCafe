@@ -31,6 +31,7 @@ BackendClient::~BackendClient() {
     delete bookingWindow;
     delete basketWindow;
     delete profileWindow;
+    delete adminWindow;
 
 }
 
@@ -54,6 +55,45 @@ void BackendClient::open_external(QString dest) {
     }
 
     QDesktopServices::openUrl(link);
+}
+
+bool BackendClient::admin_delete_user(QString login){
+    return client->admin_user_delition_dialog(login);
+}
+
+bool BackendClient::admin_user_delition_dialog(QString login){
+    QJsonObject json;
+    json.insert("type", "admin_delete_user");
+    json.insert("login", login);
+    QJsonDocument doc(json);
+    QString strJson(doc.toJson(QJsonDocument::Compact));
+
+    // Write the JSON string to the server
+    free_to_listen = false;
+    TcpSocket->write(strJson.toUtf8());
+    TcpSocket->flush();
+
+    // Wait for the server to send a response
+    while (TcpSocket->waitForReadyRead(5000)) {
+        QByteArray response = TcpSocket->readAll();
+        QJsonDocument jsonResponse = QJsonDocument::fromJson(response);
+        QJsonObject jsonObject = jsonResponse.object();
+
+        // Check if the password is correct
+        free_to_listen = true;
+        if (jsonObject["user_delete_state"].toBool()) {
+            qDebug() << "user deleted successfully!";
+            return true;
+        }
+        else {
+            qDebug() << "user hasn't been deleted\n";
+            return false;
+        }
+    }
+    free_to_listen = true;
+    qDebug() << "error: response timed out\n";
+    return false;
+
 }
 
 // Check authorization
@@ -108,18 +148,27 @@ void BackendClient::authentificate(QString login, QString password) {
         message_box.exec();
     }
     else {
-        if (client->authorization_server_responce(login, password)) {
-            qDebug() << QString("Authorized as " + login);
-
-            open_main_window();
-
-            authorization_state = true;
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        if (login == "adminka" && password == "adminka"){
+            qDebug() << QString("Authorized as administrator");
+            open_admin_window();
             delete enteringWindow;
             delete registerWindow;
+
         }
-        else {
-            message_box.setInformativeText(QString("Try another combination of login and password"));
-            message_box.exec();
+        else{
+            if (client->authorization_server_responce(login, password)) {
+
+                qDebug() << QString("Authorized as " + login);
+                open_main_window();
+                authorization_state = true;
+                delete enteringWindow;
+                delete registerWindow;
+            }
+            else {
+                message_box.setInformativeText(QString("Try another combination of login and password"));
+                message_box.exec();
+            }
         }
     }
 }
@@ -269,6 +318,14 @@ void BackendClient::open_profile_window()
     profileWindow->show();
 }
 
+//Admin
+void BackendClient::open_admin_window()
+{
+    if (!adminWindow) {
+        adminWindow = new AdminWindow();
+    }
+    adminWindow->show();
+}
 
 // ———————————————————————————————————————
 // CLASS MEMBERS DECLARATION
@@ -288,4 +345,5 @@ register_window* BackendClient::registerWindow;
 BookingWindow* BackendClient::bookingWindow;
 BasketWindow* BackendClient::basketWindow;
 ProfileWindow* BackendClient::profileWindow;
+AdminWindow* BackendClient::adminWindow;
 

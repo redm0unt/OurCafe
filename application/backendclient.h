@@ -18,6 +18,7 @@
 #include "bookingwindow.h"
 #include "basketwindow.h"
 #include "profilewindow.h"
+#include "adminwindow.h"
 
 
 class BackendClient;
@@ -52,6 +53,7 @@ private:
     static BookingWindow* bookingWindow;
 
     static ProfileWindow* profileWindow;
+    static AdminWindow* adminWindow;
 protected:
     explicit BackendClient (QObject* parent = nullptr);
     BackendClient( BackendClient& ) = delete;
@@ -66,7 +68,11 @@ public:
     void send_message_to_server (QString query);
 
     bool get_auth_state() { return authorization_state; }
+    bool admin_user_delition_dialog(QString login);
     static void open_external(QString link);
+
+    static bool admin_delete_user(QString login);
+
     bool authorization_server_responce(QString, QString);
     void registration_info_to_server(QString, QString, QString, QString);
     static void authentificate(QString, QString);
@@ -80,6 +86,7 @@ public:
     static void open_booking_window();
     static void open_basket_window();
     static void open_profile_window();
+    static void open_admin_window();
 
 
 signals:
