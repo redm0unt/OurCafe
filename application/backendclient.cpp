@@ -52,38 +52,30 @@ bool BackendClient::authorization_server_responce(QString login, QString passwor
     QString strJson(doc.toJson(QJsonDocument::Compact));
 
     // Write the JSON string to the server
+    free_to_listen = false;
     TcpSocket->write(strJson.toUtf8());
     TcpSocket->flush();
-    //========================
-    return true;
-    //============================
+
     // Wait for the server to send a response
     while (TcpSocket->waitForReadyRead(5000)) {
         QByteArray response = TcpSocket->readAll();
         QJsonDocument jsonResponse = QJsonDocument::fromJson(response);
         QJsonObject jsonObject = jsonResponse.object();
-        qDebug() << jsonObject["auth_status"].toBool();
-        qDebug() << jsonObject;
 
         // Check if the password is correct
+        free_to_listen = true;
         if (jsonObject["auth_status"].toBool()) {
+            qDebug() << "success!";
             return true;
         }
         else {
+            qDebug() << "error: authentification attempt failed\n";
             return false;
         }
     }
+    free_to_listen = true;
     qDebug() << "error: response timed out\n";
     return false;
-    // // Hashed placeholder password "1111"
-    // QString hashed_pass_from_server = QString("1011110111010100011101010001001001110010111101000010101101000110000010000000011010110100010000100011000111000100001111100000010110001011000111011011011000100000110100110111111010010100111101101000010101100010101111011110110011001010010001100111110010010000");
-
-    // qDebug() << "Input hashed password:" << hashed_pass;
-    // qDebug() << "Hashed password from server:" << hashed_pass_from_server;
-    // if (hashed_pass == hashed_pass_from_server) {
-    //     return true;
-    // }
-    // return false;
 }
 
 void BackendClient::authentificate(QString login, QString password) {
@@ -177,18 +169,19 @@ void BackendClient::send_message_to_server(QString query)
 // ———————————————————————————————————————
 // SLOTS
 
-
-// ???
+// default listener
 void BackendClient::slotServerRead()
 {
-    QString message = "";
-    while (TcpSocket->bytesAvailable()>0)
-    {
-        QByteArray array = TcpSocket->readAll();
-        message.append(array);
+    if (free_to_listen) {
+        QString message = "";
+        while (TcpSocket->bytesAvailable()>0)
+        {
+            QByteArray array = TcpSocket->readAll();
+            message.append(array);
+        }
+        qDebug() << message;
+        emit message_from_server(message);
     }
-    qDebug() << message;
-    emit message_from_server(message);
 }
 
 
@@ -264,6 +257,7 @@ BackendClient* BackendClient::client;
 BackendClientDestroyer BackendClient::destroyer;
 
 bool BackendClient::authorization_state = false;
+bool BackendClient::free_to_listen = true;
 
 // Declare application windows
 MainWindow* BackendClient::mainWindow;

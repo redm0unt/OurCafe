@@ -41,6 +41,7 @@ private:
     QTcpSocket* TcpSocket;
 
     static bool authorization_state;
+    static bool free_to_listen;
 
     // Application Windows
     static entering_window* enteringWindow;

@@ -107,33 +107,26 @@ void TCPServer::slotServerRead(){
 
             bool auth_status = false;
             if (query.next()) {
-                // —————————————————————————————————————————————————————————
-                // Need to be done: sending 'true' back to client if success
-                // —————————————————————————————————————————————————————————
-
                 QByteArray blob_hash = query.value("user_pass_hash").toByteArray();
                 QString hashed_pass_from_server = blob_hash.toHex();
 
-                if (hashed_pass_from_server == incoming_hashed_pass) {
-
-                    auth_status = true;
-                    qDebug() << "login attempt satisfied";
-                }
-                else {
-                    auth_status = false;
-                    qDebug() << "login attempt rejected";
-                }                
+                if (hashed_pass_from_server == incoming_hashed_pass) auth_status = true;
+                else auth_status = false;
             }
             QJsonObject outgoingMessage;
             outgoingMessage["auth_status"] = auth_status;
+
+            if (auth_status) {
+                qDebug() << ("authorization (" + client->peerAddress().toString() + " " + QString::number(client->peerPort()) + "): login attempt satisfied");
+            }
+            else {
+                qDebug() << ("authorization (" + client->peerAddress().toString() + " " + QString::number(client->peerPort()) + "): login attempt failed");
+            }
 
             QJsonDocument out_doc(outgoingMessage);
             QString out_strJson(out_doc.toJson(QJsonDocument::Compact));
 
             client->write(out_strJson.toUtf8());
-
-            // // Hashed placeholder password "1111"
-            // //QString hashed_pass_from_server = QString("1011110111010100011101010001001001110010111101000010101101000110000010000000011010110100010000100011000111000100001111100000010110001011000111011011011000100000110100110111111010010100111101101000010101100010101111011110110011001010010001100111110010010000");
         }
 
 
