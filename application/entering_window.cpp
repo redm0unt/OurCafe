@@ -17,7 +17,7 @@ entering_window::~entering_window()
 
 void entering_window::on_SingInButton_clicked()
 {
-    BackendClient::authentificate(ui->EmailInput->text(), ui->PasswordInput->text());
+    BackendClient::authentificate(ui->LoginInput->text(), ui->PasswordInput->text());
 }
 
 void entering_window::on_RegisterButton_clicked()

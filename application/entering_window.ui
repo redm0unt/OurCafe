@@ -277,12 +277,12 @@ color: #000000;</string>
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="EmailLabel">
+        <widget class="QLabel" name="LoginLabel">
          <property name="styleSheet">
           <string notr="true">font: 400 17pt;</string>
          </property>
          <property name="text">
-          <string>Email</string>
+          <string>Login</string>
          </property>
         </widget>
        </item>
@@ -303,7 +303,7 @@ color: #000000;</string>
         </spacer>
        </item>
        <item>
-        <widget class="QLineEdit" name="EmailInput">
+        <widget class="QLineEdit" name="LoginInput">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -349,7 +349,7 @@ padding: 0 13px;</string>
           <number>0</number>
          </property>
          <property name="placeholderText">
-          <string>Enter your email</string>
+          <string>Enter your login</string>
          </property>
         </widget>
        </item>
