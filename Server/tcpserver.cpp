@@ -168,20 +168,21 @@ void TCPServer::slotServerRead(){
 
             if (query.exec()) {
                 if (query.next()) {
-                    QVariant cellValue = query.value(0); // 0 is the index of the column
-                    qDebug() << "Cell value: " << cellValue.toString();
-                    if (cellValue.toInt() > 0) user_exists = true;
+                    QVariant cellValue = query.value(0);
+                    if (cellValue.toInt() > 0) {
+                        user_exists = true;
+                        qDebug() << "User with this login found";
+                    }
                     else {
-                        qDebug() << '\n';
-                        qDebug() << "There is no users with this email";
+                        qDebug() << "There is no users with this login";
                     }
                 }
                 else{
-                    qDebug() << "error: could not execute query 3.";
+                    qDebug() << "error: could not execute query";
                     qDebug() << query.lastError();}
             }
             else{
-                qDebug() << "error: could not execute query 2.";
+                qDebug() << "error: could not execute query";
                 qDebug() << query.lastQuery();
                 qDebug() << query.lastError();}
 
@@ -192,7 +193,7 @@ void TCPServer::slotServerRead(){
                 query.bindValue(":login", login);
 
                 if (!query.exec()) {
-                    qDebug() << "error: could not execute query 1.";
+                    qDebug() << "error: could not execute query";
                     qDebug() << query.lastError();
                 }
                 else {
