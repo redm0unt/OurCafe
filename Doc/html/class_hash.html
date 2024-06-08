@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OurCafe: Класс Hash</title>
+<link rel="icon" href="MainLogo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MainLogo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OurCafe<span id="projectnumber">&#160;1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="class_hash-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Hash</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="hash_8h_source.html">hash.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a47e26eb6cc018dbe756dab7e4d7d08e8" id="r_a47e26eb6cc018dbe756dab7e4d7d08e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e26eb6cc018dbe756dab7e4d7d08e8">Hash</a> (std::string pass)</td></tr>
+<tr class="memdesc:a47e26eb6cc018dbe756dab7e4d7d08e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_hash.html">Hash</a>.  <br /></td></tr>
+<tr class="separator:a47e26eb6cc018dbe756dab7e4d7d08e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcce1f821c92704376d32a504e8870a" id="r_adfcce1f821c92704376d32a504e8870a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfcce1f821c92704376d32a504e8870a">bin</a> (char <a class="el" href="#a8b4420c49ba4b491de545e1520dfc637">c</a>)</td></tr>
+<tr class="memdesc:adfcce1f821c92704376d32a504e8870a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразования символа в бинарное представление.  <br /></td></tr>
+<tr class="separator:adfcce1f821c92704376d32a504e8870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd910e7c5cf253d254f52b883174113" id="r_a8cd910e7c5cf253d254f52b883174113"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cd910e7c5cf253d254f52b883174113">prime_hash</a> (std::string pass)</td></tr>
+<tr class="memdesc:a8cd910e7c5cf253d254f52b883174113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисления первичного хэша.  <br /></td></tr>
+<tr class="separator:a8cd910e7c5cf253d254f52b883174113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9beedcc372ccbbce0dd3d8b347d1c2" id="r_a3a9beedcc372ccbbce0dd3d8b347d1c2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a9beedcc372ccbbce0dd3d8b347d1c2">pad</a> (std::string line)</td></tr>
+<tr class="memdesc:a3a9beedcc372ccbbce0dd3d8b347d1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления нулей в конец строки.  <br /></td></tr>
+<tr class="separator:a3a9beedcc372ccbbce0dd3d8b347d1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ee6da1496bf3c5acb7399b213d3b86" id="r_a46ee6da1496bf3c5acb7399b213d3b86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ee6da1496bf3c5acb7399b213d3b86">complete_zero</a> (std::string line)</td></tr>
+<tr class="memdesc:a46ee6da1496bf3c5acb7399b213d3b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция дополнения строки нулями.  <br /></td></tr>
+<tr class="separator:a46ee6da1496bf3c5acb7399b213d3b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cf17041e54ff89a9115a872b7d301c" id="r_a04cf17041e54ff89a9115a872b7d301c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04cf17041e54ff89a9115a872b7d301c">xor_bit</a> (std::string a, std::string <a class="el" href="#a608fb5735a6959eabd79c5a1bb9378ce">b</a>)</td></tr>
+<tr class="memdesc:a04cf17041e54ff89a9115a872b7d301c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция применения операции XOR к последовательностям битов.  <br /></td></tr>
+<tr class="separator:a04cf17041e54ff89a9115a872b7d301c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7406da3eaca1f78f0110b72485388b33" id="r_a7406da3eaca1f78f0110b72485388b33"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7406da3eaca1f78f0110b72485388b33">xor_bit</a> (char a, char <a class="el" href="#a608fb5735a6959eabd79c5a1bb9378ce">b</a>)</td></tr>
+<tr class="memdesc:a7406da3eaca1f78f0110b72485388b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция применения операции XOR к отдельным битам.  <br /></td></tr>
+<tr class="separator:a7406da3eaca1f78f0110b72485388b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cadaded99f683e6fca33908e6cc092" id="r_a55cadaded99f683e6fca33908e6cc092"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55cadaded99f683e6fca33908e6cc092">rot</a> (char ***s, int x, int y, int z, int d)</td></tr>
+<tr class="memdesc:a55cadaded99f683e6fca33908e6cc092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вращения элемента.  <br /></td></tr>
+<tr class="separator:a55cadaded99f683e6fca33908e6cc092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d47ce8b155186a53ba9ae20332cb1e" id="r_a72d47ce8b155186a53ba9ae20332cb1e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72d47ce8b155186a53ba9ae20332cb1e">opposite</a> (char <a class="el" href="#a8b4420c49ba4b491de545e1520dfc637">c</a>)</td></tr>
+<tr class="memdesc:a72d47ce8b155186a53ba9ae20332cb1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция инверсии бита.  <br /></td></tr>
+<tr class="separator:a72d47ce8b155186a53ba9ae20332cb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a9147e625be316c7421c1a55e5c747" id="r_ae9a9147e625be316c7421c1a55e5c747"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a9147e625be316c7421c1a55e5c747">char_and</a> (char a, char <a class="el" href="#a608fb5735a6959eabd79c5a1bb9378ce">b</a>)</td></tr>
+<tr class="memdesc:ae9a9147e625be316c7421c1a55e5c747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выполнения операции AND над битами.  <br /></td></tr>
+<tr class="separator:ae9a9147e625be316c7421c1a55e5c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7becb1d92fdbe0d3e7e57a0e9e5143c" id="r_af7becb1d92fdbe0d3e7e57a0e9e5143c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7becb1d92fdbe0d3e7e57a0e9e5143c">permutation</a> (std::string S)</td></tr>
+<tr class="memdesc:af7becb1d92fdbe0d3e7e57a0e9e5143c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция перестановки.  <br /></td></tr>
+<tr class="separator:af7becb1d92fdbe0d3e7e57a0e9e5143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be1813233ee58af5e07b8475149554f" id="r_a7be1813233ee58af5e07b8475149554f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be1813233ee58af5e07b8475149554f">get_hash</a> ()</td></tr>
+<tr class="memdesc:a7be1813233ee58af5e07b8475149554f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение хэш-значения в виде QString.  <br /></td></tr>
+<tr class="separator:a7be1813233ee58af5e07b8475149554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834fb923e50632c5f9451aba35a66b71" id="r_a834fb923e50632c5f9451aba35a66b71"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a834fb923e50632c5f9451aba35a66b71">getStdHash</a> ()</td></tr>
+<tr class="memdesc:a834fb923e50632c5f9451aba35a66b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение хэш-значения в виде стандартной строки.  <br /></td></tr>
+<tr class="separator:a834fb923e50632c5f9451aba35a66b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a63691f5c5d3b4b4ca3121565abe8553b" id="r_a63691f5c5d3b4b4ca3121565abe8553b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63691f5c5d3b4b4ca3121565abe8553b">value</a></td></tr>
+<tr class="memdesc:a63691f5c5d3b4b4ca3121565abe8553b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш-значение.  <br /></td></tr>
+<tr class="separator:a63691f5c5d3b4b4ca3121565abe8553b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a608fb5735a6959eabd79c5a1bb9378ce" id="r_a608fb5735a6959eabd79c5a1bb9378ce"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608fb5735a6959eabd79c5a1bb9378ce">b</a> = 1600</td></tr>
+<tr class="memdesc:a608fb5735a6959eabd79c5a1bb9378ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина статус-бара.  <br /></td></tr>
+<tr class="separator:a608fb5735a6959eabd79c5a1bb9378ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858258db83a083a44785a65da957d0c0" id="r_a858258db83a083a44785a65da957d0c0"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a858258db83a083a44785a65da957d0c0">r</a> = 1088</td></tr>
+<tr class="memdesc:a858258db83a083a44785a65da957d0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина блока.  <br /></td></tr>
+<tr class="separator:a858258db83a083a44785a65da957d0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4420c49ba4b491de545e1520dfc637" id="r_a8b4420c49ba4b491de545e1520dfc637"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b4420c49ba4b491de545e1520dfc637">c</a> = 512</td></tr>
+<tr class="memdesc:a8b4420c49ba4b491de545e1520dfc637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина добавочной части.  <br /></td></tr>
+<tr class="separator:a8b4420c49ba4b491de545e1520dfc637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08479d61a09ac4e93a496d1c0e89193" id="r_ad08479d61a09ac4e93a496d1c0e89193"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad08479d61a09ac4e93a496d1c0e89193">w</a> = 64</td></tr>
+<tr class="memdesc:ad08479d61a09ac4e93a496d1c0e89193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина "слова".  <br /></td></tr>
+<tr class="separator:ad08479d61a09ac4e93a496d1c0e89193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8dc77d08637b17125d153af0923743" id="r_aaa8dc77d08637b17125d153af0923743"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa8dc77d08637b17125d153af0923743">nr</a> = 24</td></tr>
+<tr class="memdesc:aaa8dc77d08637b17125d153af0923743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество итераций.  <br /></td></tr>
+<tr class="separator:aaa8dc77d08637b17125d153af0923743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a47e26eb6cc018dbe756dab7e4d7d08e8" name="a47e26eb6cc018dbe756dab7e4d7d08e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e26eb6cc018dbe756dab7e4d7d08e8">&#9670;&#160;</a></span>Hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Hash::Hash </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>pass</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_hash.html">Hash</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pass</td><td>Пароль, для которого вычисляется хэш-значение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="adfcce1f821c92704376d32a504e8870a" name="adfcce1f821c92704376d32a504e8870a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfcce1f821c92704376d32a504e8870a">&#9670;&#160;</a></span>bin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::bin </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция преобразования символа в бинарное представление. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Символ для преобразования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Бинарное представление символа. </dd></dl>
+
+</div>
+</div>
+<a id="ae9a9147e625be316c7421c1a55e5c747" name="ae9a9147e625be316c7421c1a55e5c747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a9147e625be316c7421c1a55e5c747">&#9670;&#160;</a></span>char_and()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Hash::char_and </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция выполнения операции AND над битами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Первый бит. </td></tr>
+    <tr><td class="paramname">b</td><td>Второй бит. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат операции AND. </dd></dl>
+
+</div>
+</div>
+<a id="a46ee6da1496bf3c5acb7399b213d3b86" name="a46ee6da1496bf3c5acb7399b213d3b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ee6da1496bf3c5acb7399b213d3b86">&#9670;&#160;</a></span>complete_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::complete_zero </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция дополнения строки нулями. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Строка, которую нужно дополнить нулями. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дополненная строка. </dd></dl>
+
+</div>
+</div>
+<a id="a7be1813233ee58af5e07b8475149554f" name="a7be1813233ee58af5e07b8475149554f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be1813233ee58af5e07b8475149554f">&#9670;&#160;</a></span>get_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Hash::get_hash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение хэш-значения в виде QString. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Хэш-значение в виде QString. </dd></dl>
+
+</div>
+</div>
+<a id="a834fb923e50632c5f9451aba35a66b71" name="a834fb923e50632c5f9451aba35a66b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834fb923e50632c5f9451aba35a66b71">&#9670;&#160;</a></span>getStdHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::getStdHash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение хэш-значения в виде стандартной строки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Хэш-значение в виде стандартной строки. </dd></dl>
+
+</div>
+</div>
+<a id="a72d47ce8b155186a53ba9ae20332cb1e" name="a72d47ce8b155186a53ba9ae20332cb1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d47ce8b155186a53ba9ae20332cb1e">&#9670;&#160;</a></span>opposite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Hash::opposite </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция инверсии бита. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Бит для инверсии. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Инвертированный бит. </dd></dl>
+
+</div>
+</div>
+<a id="a3a9beedcc372ccbbce0dd3d8b347d1c2" name="a3a9beedcc372ccbbce0dd3d8b347d1c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9beedcc372ccbbce0dd3d8b347d1c2">&#9670;&#160;</a></span>pad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::pad </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления нулей в конец строки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Строка, к которой добавляются нули. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка с добавленными нулями. </dd></dl>
+
+</div>
+</div>
+<a id="af7becb1d92fdbe0d3e7e57a0e9e5143c" name="af7becb1d92fdbe0d3e7e57a0e9e5143c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7becb1d92fdbe0d3e7e57a0e9e5143c">&#9670;&#160;</a></span>permutation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::permutation </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>S</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция перестановки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">S</td><td>Строка для перестановки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат перестановки. </dd></dl>
+
+</div>
+</div>
+<a id="a8cd910e7c5cf253d254f52b883174113" name="a8cd910e7c5cf253d254f52b883174113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd910e7c5cf253d254f52b883174113">&#9670;&#160;</a></span>prime_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Hash::prime_hash </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>pass</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вычисления первичного хэша. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pass</td><td>Пароль для вычисления хэша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Первичное хэш-значение пароля. </dd></dl>
+
+</div>
+</div>
+<a id="a55cadaded99f683e6fca33908e6cc092" name="a55cadaded99f683e6fca33908e6cc092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cadaded99f683e6fca33908e6cc092">&#9670;&#160;</a></span>rot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Hash::rot </td>
+          <td>(</td>
+          <td class="paramtype">char ***</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вращения элемента. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>3D массив символов. </td></tr>
+    <tr><td class="paramname">x</td><td>Координата x. </td></tr>
+    <tr><td class="paramname">y</td><td>Координата y. </td></tr>
+    <tr><td class="paramname">z</td><td>Координата z. </td></tr>
+    <tr><td class="paramname">d</td><td>Расстояние вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вращенный элемент. </dd></dl>
+
+</div>
+</div>
+<a id="a7406da3eaca1f78f0110b72485388b33" name="a7406da3eaca1f78f0110b72485388b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7406da3eaca1f78f0110b72485388b33">&#9670;&#160;</a></span>xor_bit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Hash::xor_bit </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция применения операции XOR к отдельным битам. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Первый бит. </td></tr>
+    <tr><td class="paramname">b</td><td>Второй бит. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат применения операции XOR к отдельным битам. </dd></dl>
+
+</div>
+</div>
+<a id="a04cf17041e54ff89a9115a872b7d301c" name="a04cf17041e54ff89a9115a872b7d301c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cf17041e54ff89a9115a872b7d301c">&#9670;&#160;</a></span>xor_bit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Hash::xor_bit </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция применения операции XOR к последовательностям битов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Первая последовательность битов. </td></tr>
+    <tr><td class="paramname">b</td><td>Вторая последовательность битов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат применения операции XOR. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a608fb5735a6959eabd79c5a1bb9378ce" name="a608fb5735a6959eabd79c5a1bb9378ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a608fb5735a6959eabd79c5a1bb9378ce">&#9670;&#160;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::b = 1600</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина статус-бара. </p>
+
+</div>
+</div>
+<a id="a8b4420c49ba4b491de545e1520dfc637" name="a8b4420c49ba4b491de545e1520dfc637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4420c49ba4b491de545e1520dfc637">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::c = 512</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина добавочной части. </p>
+
+</div>
+</div>
+<a id="aaa8dc77d08637b17125d153af0923743" name="aaa8dc77d08637b17125d153af0923743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8dc77d08637b17125d153af0923743">&#9670;&#160;</a></span>nr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::nr = 24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество итераций. </p>
+
+</div>
+</div>
+<a id="a858258db83a083a44785a65da957d0c0" name="a858258db83a083a44785a65da957d0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858258db83a083a44785a65da957d0c0">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::r = 1088</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина блока. </p>
+
+</div>
+</div>
+<a id="a63691f5c5d3b4b4ca3121565abe8553b" name="a63691f5c5d3b4b4ca3121565abe8553b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63691f5c5d3b4b4ca3121565abe8553b">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Hash::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Хэш-значение. </p>
+
+</div>
+</div>
+<a id="ad08479d61a09ac4e93a496d1c0e89193" name="ad08479d61a09ac4e93a496d1c0e89193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08479d61a09ac4e93a496d1c0e89193">&#9670;&#160;</a></span>w</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::w = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина "слова". </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="hash_8h_source.html">hash.h</a></li>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="hash_8cpp.html">hash.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

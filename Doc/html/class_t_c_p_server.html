@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OurCafe: Класс TCPServer</title>
+<link rel="icon" href="MainLogo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MainLogo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OurCafe<span id="projectnumber">&#160;1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_t_c_p_server-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс TCPServer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a> class.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tcpserver_8h_source.html">tcpserver.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:TCPServer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_t_c_p_server.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:ac5ea426b821d6956fa1cf474ae851a65" id="r_ac5ea426b821d6956fa1cf474ae851a65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ea426b821d6956fa1cf474ae851a65">slotNewConnection</a> ()</td></tr>
+<tr class="memdesc:ac5ea426b821d6956fa1cf474ae851a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки новых подключений клиентов.  <br /></td></tr>
+<tr class="separator:ac5ea426b821d6956fa1cf474ae851a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9934e4f21cc98d750053b3eb2c527e5" id="r_ac9934e4f21cc98d750053b3eb2c527e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9934e4f21cc98d750053b3eb2c527e5">slotClientDisconnected</a> ()</td></tr>
+<tr class="memdesc:ac9934e4f21cc98d750053b3eb2c527e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки отключения клиента.  <br /></td></tr>
+<tr class="separator:ac9934e4f21cc98d750053b3eb2c527e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9633dc7ec431650a998d9c0f0313ad3" id="r_af9633dc7ec431650a998d9c0f0313ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9633dc7ec431650a998d9c0f0313ad3">slotServerRead</a> ()</td></tr>
+<tr class="memdesc:af9633dc7ec431650a998d9c0f0313ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для чтения данных от подключенных клиентов.  <br /></td></tr>
+<tr class="separator:af9633dc7ec431650a998d9c0f0313ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0635052b5b82999afb1af93efaf037" id="r_ade0635052b5b82999afb1af93efaf037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade0635052b5b82999afb1af93efaf037">stopServer</a> ()</td></tr>
+<tr class="memdesc:ade0635052b5b82999afb1af93efaf037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливает TCP-сервер и закрывает соединение с базой данных.  <br /></td></tr>
+<tr class="separator:ade0635052b5b82999afb1af93efaf037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a348c6ae0c5fce4eefab76647e1078f18" id="r_a348c6ae0c5fce4eefab76647e1078f18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_c_p_server.html">TCPServer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a348c6ae0c5fce4eefab76647e1078f18">getserver</a> ()</td></tr>
+<tr class="memdesc:a348c6ae0c5fce4eefab76647e1078f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить экземпляр сервера.  <br /></td></tr>
+<tr class="separator:a348c6ae0c5fce4eefab76647e1078f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:af9980f4c39e88fb8d8ff473764d3723d" id="r_af9980f4c39e88fb8d8ff473764d3723d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9980f4c39e88fb8d8ff473764d3723d">TCPServer</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:af9980f4c39e88fb8d8ff473764d3723d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <br /></td></tr>
+<tr class="separator:af9980f4c39e88fb8d8ff473764d3723d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc497ac52355e53986a6a1bd1acb9581" id="r_abc497ac52355e53986a6a1bd1acb9581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc497ac52355e53986a6a1bd1acb9581">~TCPServer</a> ()</td></tr>
+<tr class="memdesc:abc497ac52355e53986a6a1bd1acb9581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уничтожает объект <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a>.  <br /></td></tr>
+<tr class="separator:abc497ac52355e53986a6a1bd1acb9581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee1b53bad3d31c26abf5ea28c26a364" id="r_aeee1b53bad3d31c26abf5ea28c26a364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee1b53bad3d31c26abf5ea28c26a364">TCPServer</a> (<a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp;)=delete</td></tr>
+<tr class="separator:aeee1b53bad3d31c26abf5ea28c26a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0dc0c186ab86430847955efa7cea2c" id="r_aaa0dc0c186ab86430847955efa7cea2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa0dc0c186ab86430847955efa7cea2c">operator=</a> (<a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp;)=delete</td></tr>
+<tr class="separator:aaa0dc0c186ab86430847955efa7cea2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:abc16aa51e64ce612d7321decc134667b" id="r_abc16aa51e64ce612d7321decc134667b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc16aa51e64ce612d7321decc134667b">ServerDestroyer</a></td></tr>
+<tr class="separator:abc16aa51e64ce612d7321decc134667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>The <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a> class. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="af9980f4c39e88fb8d8ff473764d3723d" name="af9980f4c39e88fb8d8ff473764d3723d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9980f4c39e88fb8d8ff473764d3723d">&#9670;&#160;</a></span>TCPServer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCPServer::TCPServer </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<p>Конструирует объект <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Родительский объект.</td></tr>
+    <tr><td class="paramname">parent</td><td>Указатель на родительский объект QObject. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc497ac52355e53986a6a1bd1acb9581" name="abc497ac52355e53986a6a1bd1acb9581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc497ac52355e53986a6a1bd1acb9581">&#9670;&#160;</a></span>~TCPServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCPServer::~TCPServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Уничтожает объект <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a>. </p>
+<p>Деструктор класса. </p>
+
+</div>
+</div>
+<a id="aeee1b53bad3d31c26abf5ea28c26a364" name="aeee1b53bad3d31c26abf5ea28c26a364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee1b53bad3d31c26abf5ea28c26a364">&#9670;&#160;</a></span>TCPServer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCPServer::TCPServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a348c6ae0c5fce4eefab76647e1078f18" name="a348c6ae0c5fce4eefab76647e1078f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348c6ae0c5fce4eefab76647e1078f18">&#9670;&#160;</a></span>getserver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_c_p_server.html">TCPServer</a> * TCPServer::getserver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить экземпляр сервера. </p>
+<p>Возвращает единственный экземпляр <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a>.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на экземпляр сервера.</dd>
+<dd>
+Указатель на экземпляр <a class="el" href="class_t_c_p_server.html" title="The TCPServer class.">TCPServer</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aaa0dc0c186ab86430847955efa7cea2c" name="aaa0dc0c186ab86430847955efa7cea2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0dc0c186ab86430847955efa7cea2c">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp; TCPServer::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t_c_p_server.html">TCPServer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9934e4f21cc98d750053b3eb2c527e5" name="ac9934e4f21cc98d750053b3eb2c527e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9934e4f21cc98d750053b3eb2c527e5">&#9670;&#160;</a></span>slotClientDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPServer::slotClientDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки отключения клиента. </p>
+<p>Слот для обработки отключения клиента. </p>
+
+</div>
+</div>
+<a id="ac5ea426b821d6956fa1cf474ae851a65" name="ac5ea426b821d6956fa1cf474ae851a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ea426b821d6956fa1cf474ae851a65">&#9670;&#160;</a></span>slotNewConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPServer::slotNewConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки новых подключений клиентов. </p>
+<p>Слот для обработки нового клиентского соединения. </p>
+
+</div>
+</div>
+<a id="af9633dc7ec431650a998d9c0f0313ad3" name="af9633dc7ec431650a998d9c0f0313ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9633dc7ec431650a998d9c0f0313ad3">&#9670;&#160;</a></span>slotServerRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPServer::slotServerRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для чтения данных от подключенных клиентов. </p>
+<p>Слот для чтения данных от клиента. </p>
+
+</div>
+</div>
+<a id="ade0635052b5b82999afb1af93efaf037" name="ade0635052b5b82999afb1af93efaf037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0635052b5b82999afb1af93efaf037">&#9670;&#160;</a></span>stopServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPServer::stopServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Останавливает TCP-сервер и закрывает соединение с базой данных. </p>
+<p>Остановить сервер. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="abc16aa51e64ce612d7321decc134667b" name="abc16aa51e64ce612d7321decc134667b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc16aa51e64ce612d7321decc134667b">&#9670;&#160;</a></span>ServerDestroyer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_server_destroyer.html">ServerDestroyer</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/Server/<a class="el" href="tcpserver_8h_source.html">tcpserver.h</a></li>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/Server/<a class="el" href="tcpserver_8cpp.html">tcpserver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

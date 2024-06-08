@@ -1,0 +1,54 @@
+\doxysection{hash.\+h}
+\hypertarget{hash_8h_source}{}\label{hash_8h_source}\index{C:/Users/BARA/Documents/GitHub/OurCafe/application/hash.h@{C:/Users/BARA/Documents/GitHub/OurCafe/application/hash.h}}
+\mbox{\hyperlink{hash_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ HASH\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ HASH\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hash}{Hash}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}}\ =\ 1600;\ \ \ \ \ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hash_a858258db83a083a44785a65da957d0c0}{r}}\ =\ 1088;\ \ \ \ \ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}}\ =\ 512;\ \ \ \ \ \ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hash_ad08479d61a09ac4e93a496d1c0e89193}{w}}\ =\ 64;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hash_aaa8dc77d08637b17125d153af0923743}{nr}}\ =\ 24;\ \ \ \ \ \ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ QString\ \mbox{\hyperlink{class_hash_a63691f5c5d3b4b4ca3121565abe8553b}{value}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_hash_a47e26eb6cc018dbe756dab7e4d7d08e8}{Hash}}(std::string\ pass);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_adfcce1f821c92704376d32a504e8870a}{bin}}(\textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}});}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_a8cd910e7c5cf253d254f52b883174113}{prime\_hash}}(std::string\ pass);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_a3a9beedcc372ccbbce0dd3d8b347d1c2}{pad}}(std::string\ line);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_a46ee6da1496bf3c5acb7399b213d3b86}{complete\_zero}}(std::string\ line);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_a04cf17041e54ff89a9115a872b7d301c}{xor\_bit}}(std::string\ a,\ std::string\ \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}});}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a04cf17041e54ff89a9115a872b7d301c}{xor\_bit}}(\textcolor{keywordtype}{char}\ a,\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a55cadaded99f683e6fca33908e6cc092}{rot}}(\textcolor{keywordtype}{char}\ ***s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z,\ \textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a72d47ce8b155186a53ba9ae20332cb1e}{opposite}}(\textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}});}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_ae9a9147e625be316c7421c1a55e5c747}{char\_and}}(\textcolor{keywordtype}{char}\ a,\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}});}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00135\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_af7becb1d92fdbe0d3e7e57a0e9e5143c}{permutation}}(std::string\ S);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00142\ \ \ \ \ QString\ \mbox{\hyperlink{class_hash_a7be1813233ee58af5e07b8475149554f}{get\_hash}}();}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00149\ \ \ \ \ std::string\ \mbox{\hyperlink{class_hash_a834fb923e50632c5f9451aba35a66b71}{getStdHash}}();}
+\DoxyCodeLine{00150\ \};}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ HASH\_H}}
+
+\end{DoxyCode}

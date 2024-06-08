@@ -1,0 +1,383 @@
+\doxysection{Класс EMail\+Sender}
+\hypertarget{class_e_mail_sender}{}\label{class_e_mail_sender}\index{EMailSender@{EMailSender}}
+
+
+Класс для отправки электронной почты.  
+
+
+
+
+{\ttfamily \#include $<$emailsender.\+h$>$}
+
+Граф наследования\+:EMail\+Sender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_e_mail_sender}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_e_mail_sender_acb3776a314cd5019d576acbc23c9326e}{signal\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал о подключении к серверу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_mail_sender_ab2f357a64ebdd63e352e39e968dc14fc}{signal\+Disconnected}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал о отключении от сервера. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_mail_sender_ae4c816de57cd6efae58f6286b9b482dc}{signal\+Log}} (const QString \&log)
+\begin{DoxyCompactList}\small\item\em Сигнал о логе. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_mail_sender_a65e9f5d501c54e7c98cdc05d9a6442e3}{signal\+Send\+Result}} (bool is\+Ok)
+\begin{DoxyCompactList}\small\item\em Сигнал о результате отправки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_e_mail_sender_aa99c730e674a92dac70bc9735fbdc5a5}{EMail\+Sender}} (const QString \&host, const QString \&login, const QString \&password, int timeout=3000, QObject \texorpdfstring{$\ast$}{*}parent=0)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_mail_sender_a572e36f99b323a092140d255d1307b6a}{send\+Message}} (const \mbox{\hyperlink{struct_message}{Message}} \&message, const QString \&from, const QString \&to)
+\begin{DoxyCompactList}\small\item\em Отправить сообщение. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_e_mail_sender_a9bdbafd86b18d4dcda11f5149a9608d8}{mail\+Timestamp}} () const
+\begin{DoxyCompactList}\small\item\em Получить текущее время в формате электронной почты. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_e_mail_sender_af30a2bf76f5c57f47ded91daec1d5e48}{read\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Прочитать строку из сокета. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_e_mail_sender_aac14eee457abe64c7bcc46598b1af2f6}{exchange\+Messages}} (const QString \&send\+Data)
+\begin{DoxyCompactList}\small\item\em Обменять сообщения с сервером. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_e_mail_sender_a76db6724c92fe1810ce6159206203e38}{checked\+Exchange\+Message}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em Обменять сообщения с сервером с проверкой. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_e_mail_sender_a5d2167ca16db7cb1acf7b2939df31685}{response\+Code}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em Получить код ответа от сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_e_mail_sender_af8010a446060522e9b5c39e68fa40712}{m\+Smtp\+Host}}
+\begin{DoxyCompactList}\small\item\em SMTP-\/хост. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_e_mail_sender_acf72eb80c63bae4946d9061f9884a392}{m\+Login}}
+\begin{DoxyCompactList}\small\item\em Логин для аутентификации. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_e_mail_sender_ad618d71ccbe47eccf4688f01dddcf87b}{m\+Password}}
+\begin{DoxyCompactList}\small\item\em Пароль для аутентификации. \end{DoxyCompactList}\item 
+QTcp\+Socket \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_e_mail_sender_ac0ffe047fa99c8bcc7e4b2fec82da45e}{p\+Socket}}
+\begin{DoxyCompactList}\small\item\em Сокет для соединения с SMTP-\/сервером. \end{DoxyCompactList}\item 
+QText\+Stream \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_e_mail_sender_a09b00bceee9a30c6c7761e606416fc38}{p\+Socket\+Stream}}
+\begin{DoxyCompactList}\small\item\em Поток для обмена данными по сокету. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_e_mail_sender_aaea2a2ad2fd4483cad080b7733fcb7fb}{m\+Timeout}}
+\begin{DoxyCompactList}\small\item\em Таймаут ожидания ответа от сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_e_mail_sender_aea9030a519a975e4fd7f6cbb25f86283}{CONNECT\+\_\+\+PORT}} = 25
+\begin{DoxyCompactList}\small\item\em Порт подключения к SMTP серверу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для отправки электронной почты. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_e_mail_sender_aa99c730e674a92dac70bc9735fbdc5a5}\index{EMailSender@{EMailSender}!EMailSender@{EMailSender}}
+\index{EMailSender@{EMailSender}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{EMailSender()}{EMailSender()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_aa99c730e674a92dac70bc9735fbdc5a5} 
+EMail\+Sender\+::\+EMail\+Sender (\begin{DoxyParamCaption}\item[{const QString \&}]{host}{, }\item[{const QString \&}]{login}{, }\item[{const QString \&}]{password}{, }\item[{int}]{timeout}{ = {\ttfamily 3000}, }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Конструктор. 
+
+Конструктор класса \doxylink{class_e_mail_sender}{EMail\+Sender}.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em host} & SMTP-\/хост. \\
+\hline
+{\em login} & Логин для аутентификации. \\
+\hline
+{\em password} & Пароль для аутентификации. \\
+\hline
+{\em timeout} & Таймаут ожидания ответа от сервера (по умолчанию 3000 мс). \\
+\hline
+{\em parent} & Родительский объект.\\
+\hline
+{\em host} & Хост SMTP-\/сервера. \\
+\hline
+{\em login} & Логин для авторизации. \\
+\hline
+{\em password} & Пароль для авторизации. \\
+\hline
+{\em timeout} & Таймаут ожидания. \\
+\hline
+{\em parent} & Родительский объект. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_e_mail_sender_a76db6724c92fe1810ce6159206203e38}\index{EMailSender@{EMailSender}!checkedExchangeMessage@{checkedExchangeMessage}}
+\index{checkedExchangeMessage@{checkedExchangeMessage}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{checkedExchangeMessage()}{checkedExchangeMessage()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a76db6724c92fe1810ce6159206203e38} 
+QString EMail\+Sender\+::checked\+Exchange\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Обменять сообщения с сервером с проверкой. 
+
+Функция отправки сообщения на сервер SMTP и чтения ответа.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Отправляемое сообщение. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Полученный ответ от сервера.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Строка для отправки на сервер. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Полученный ответ от сервера. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_aac14eee457abe64c7bcc46598b1af2f6}\index{EMailSender@{EMailSender}!exchangeMessages@{exchangeMessages}}
+\index{exchangeMessages@{exchangeMessages}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{exchangeMessages()}{exchangeMessages()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_aac14eee457abe64c7bcc46598b1af2f6} 
+QString EMail\+Sender\+::exchange\+Messages (\begin{DoxyParamCaption}\item[{const QString \&}]{send\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Обменять сообщения с сервером. 
+
+Функция обмена сообщениями с сервером SMTP.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em send\+Data} & Отправляемые данные. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Полученные данные.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em send\+Data} & Строка для отправки на сервер. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Полученный ответ от сервера. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_a9bdbafd86b18d4dcda11f5149a9608d8}\index{EMailSender@{EMailSender}!mailTimestamp@{mailTimestamp}}
+\index{mailTimestamp@{mailTimestamp}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{mailTimestamp()}{mailTimestamp()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a9bdbafd86b18d4dcda11f5149a9608d8} 
+QString EMail\+Sender\+::mail\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Получить текущее время в формате электронной почты. 
+
+Функция формирования временной метки для письма.
+
+\begin{DoxyReturn}{Возвращает}
+Время в формате электронной почты.
+
+Временная метка в формате строки. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_af30a2bf76f5c57f47ded91daec1d5e48}\index{EMailSender@{EMailSender}!readLine@{readLine}}
+\index{readLine@{readLine}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_af30a2bf76f5c57f47ded91daec1d5e48} 
+QString EMail\+Sender\+::read\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Прочитать строку из сокета. 
+
+Функция чтения строки из сокета.
+
+\begin{DoxyReturn}{Возвращает}
+Прочитанная строка. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_a5d2167ca16db7cb1acf7b2939df31685}\index{EMailSender@{EMailSender}!responseCode@{responseCode}}
+\index{responseCode@{responseCode}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{responseCode()}{responseCode()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a5d2167ca16db7cb1acf7b2939df31685} 
+int EMail\+Sender\+::response\+Code (\begin{DoxyParamCaption}\item[{const QString \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Получить код ответа от сервера. 
+
+Функция получения кода ответа от сервера SMTP.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение от сервера. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код ответа.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Строка ответа от сервера. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код ответа. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_a572e36f99b323a092140d255d1307b6a}\index{EMailSender@{EMailSender}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a572e36f99b323a092140d255d1307b6a} 
+bool EMail\+Sender\+::send\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_message}{Message}} \&}]{message}{, }\item[{const QString \&}]{from}{, }\item[{const QString \&}]{to}{}\end{DoxyParamCaption})}
+
+
+
+Отправить сообщение. 
+
+Функция отправки сообщения.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение. \\
+\hline
+{\em from} & Адрес отправителя. \\
+\hline
+{\em to} & Адрес получателя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Успешность отправки.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение для отправки. \\
+\hline
+{\em from} & Адрес отправителя. \\
+\hline
+{\em to} & Адрес получателя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат отправки сообщения. 
+\end{DoxyReturn}
+\Hypertarget{class_e_mail_sender_acb3776a314cd5019d576acbc23c9326e}\index{EMailSender@{EMailSender}!signalConnected@{signalConnected}}
+\index{signalConnected@{signalConnected}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{signalConnected}{signalConnected}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_acb3776a314cd5019d576acbc23c9326e} 
+void EMail\+Sender\+::signal\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал о подключении к серверу. 
+
+\Hypertarget{class_e_mail_sender_ab2f357a64ebdd63e352e39e968dc14fc}\index{EMailSender@{EMailSender}!signalDisconnected@{signalDisconnected}}
+\index{signalDisconnected@{signalDisconnected}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{signalDisconnected}{signalDisconnected}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_ab2f357a64ebdd63e352e39e968dc14fc} 
+void EMail\+Sender\+::signal\+Disconnected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал о отключении от сервера. 
+
+\Hypertarget{class_e_mail_sender_ae4c816de57cd6efae58f6286b9b482dc}\index{EMailSender@{EMailSender}!signalLog@{signalLog}}
+\index{signalLog@{signalLog}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{signalLog}{signalLog}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_ae4c816de57cd6efae58f6286b9b482dc} 
+void EMail\+Sender\+::signal\+Log (\begin{DoxyParamCaption}\item[{const QString \&}]{log}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал о логе. 
+
+\Hypertarget{class_e_mail_sender_a65e9f5d501c54e7c98cdc05d9a6442e3}\index{EMailSender@{EMailSender}!signalSendResult@{signalSendResult}}
+\index{signalSendResult@{signalSendResult}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{signalSendResult}{signalSendResult}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a65e9f5d501c54e7c98cdc05d9a6442e3} 
+void EMail\+Sender\+::signal\+Send\+Result (\begin{DoxyParamCaption}\item[{bool}]{is\+Ok}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал о результате отправки. 
+
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_e_mail_sender_aea9030a519a975e4fd7f6cbb25f86283}\index{EMailSender@{EMailSender}!CONNECT\_PORT@{CONNECT\_PORT}}
+\index{CONNECT\_PORT@{CONNECT\_PORT}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{CONNECT\_PORT}{CONNECT\_PORT}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_aea9030a519a975e4fd7f6cbb25f86283} 
+const int EMail\+Sender\+::\+CONNECT\+\_\+\+PORT = 25\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Порт подключения к SMTP серверу. 
+
+\Hypertarget{class_e_mail_sender_acf72eb80c63bae4946d9061f9884a392}\index{EMailSender@{EMailSender}!mLogin@{mLogin}}
+\index{mLogin@{mLogin}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{mLogin}{mLogin}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_acf72eb80c63bae4946d9061f9884a392} 
+QString EMail\+Sender\+::m\+Login\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Логин для аутентификации. 
+
+\Hypertarget{class_e_mail_sender_ad618d71ccbe47eccf4688f01dddcf87b}\index{EMailSender@{EMailSender}!mPassword@{mPassword}}
+\index{mPassword@{mPassword}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{mPassword}{mPassword}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_ad618d71ccbe47eccf4688f01dddcf87b} 
+QString EMail\+Sender\+::m\+Password\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Пароль для аутентификации. 
+
+\Hypertarget{class_e_mail_sender_af8010a446060522e9b5c39e68fa40712}\index{EMailSender@{EMailSender}!mSmtpHost@{mSmtpHost}}
+\index{mSmtpHost@{mSmtpHost}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{mSmtpHost}{mSmtpHost}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_af8010a446060522e9b5c39e68fa40712} 
+QString EMail\+Sender\+::m\+Smtp\+Host\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+SMTP-\/хост. 
+
+\Hypertarget{class_e_mail_sender_aaea2a2ad2fd4483cad080b7733fcb7fb}\index{EMailSender@{EMailSender}!mTimeout@{mTimeout}}
+\index{mTimeout@{mTimeout}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{mTimeout}{mTimeout}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_aaea2a2ad2fd4483cad080b7733fcb7fb} 
+int EMail\+Sender\+::m\+Timeout\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Таймаут ожидания ответа от сервера. 
+
+\Hypertarget{class_e_mail_sender_ac0ffe047fa99c8bcc7e4b2fec82da45e}\index{EMailSender@{EMailSender}!pSocket@{pSocket}}
+\index{pSocket@{pSocket}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{pSocket}{pSocket}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_ac0ffe047fa99c8bcc7e4b2fec82da45e} 
+QTcp\+Socket\texorpdfstring{$\ast$}{*} EMail\+Sender\+::p\+Socket\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Сокет для соединения с SMTP-\/сервером. 
+
+\Hypertarget{class_e_mail_sender_a09b00bceee9a30c6c7761e606416fc38}\index{EMailSender@{EMailSender}!pSocketStream@{pSocketStream}}
+\index{pSocketStream@{pSocketStream}!EMailSender@{EMailSender}}
+\doxysubsubsection{\texorpdfstring{pSocketStream}{pSocketStream}}
+{\footnotesize\ttfamily \label{class_e_mail_sender_a09b00bceee9a30c6c7761e606416fc38} 
+QText\+Stream\texorpdfstring{$\ast$}{*} EMail\+Sender\+::p\+Socket\+Stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Поток для обмена данными по сокету. 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{emailsender_8h}{emailsender.\+h}}\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{emailsender_8cpp}{emailsender.\+cpp}}\end{DoxyCompactItemize}

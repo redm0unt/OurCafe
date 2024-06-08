@@ -1,0 +1,51 @@
+\doxysection{emailsender.\+h}
+\hypertarget{emailsender_8h_source}{}\label{emailsender_8h_source}\index{C:/Users/BARA/Documents/GitHub/OurCafe/application/emailsender.h@{C:/Users/BARA/Documents/GitHub/OurCafe/application/emailsender.h}}
+\mbox{\hyperlink{emailsender_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EMAILSENDER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EMAILSENDER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{message_8h}{message.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_e_mail_sender}{EMailSender}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_e_mail_sender_aa99c730e674a92dac70bc9735fbdc5a5}{EMailSender}}(\textcolor{keyword}{const}\ QString\ \&host,\ \textcolor{keyword}{const}\ QString\ \&login,\ \textcolor{keyword}{const}\ QString\ \&password,\ \textcolor{keywordtype}{int}\ timeout\ =\ 3000,\ QObject\ *parent\ =\ 0);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_mail_sender_a572e36f99b323a092140d255d1307b6a}{sendMessage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_message}{Message}}\ \&message,\ \textcolor{keyword}{const}\ QString\ \&from,\ \textcolor{keyword}{const}\ QString\ \&to);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ signals:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_mail_sender_acb3776a314cd5019d576acbc23c9326e}{signalConnected}}();\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_mail_sender_ab2f357a64ebdd63e352e39e968dc14fc}{signalDisconnected}}();\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_mail_sender_ae4c816de57cd6efae58f6286b9b482dc}{signalLog}}(\textcolor{keyword}{const}\ QString\ \&log);\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_mail_sender_a65e9f5d501c54e7c98cdc05d9a6442e3}{signalSendResult}}(\textcolor{keywordtype}{bool}\ isOk);\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00046\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_a9bdbafd86b18d4dcda11f5149a9608d8}{mailTimestamp}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_af30a2bf76f5c57f47ded91daec1d5e48}{readLine}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_aac14eee457abe64c7bcc46598b1af2f6}{exchangeMessages}}(\textcolor{keyword}{const}\ QString\ \&sendData);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_a76db6724c92fe1810ce6159206203e38}{checkedExchangeMessage}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_e_mail_sender_a5d2167ca16db7cb1acf7b2939df31685}{responseCode}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_af8010a446060522e9b5c39e68fa40712}{mSmtpHost}};\ }
+\DoxyCodeLine{00076\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_acf72eb80c63bae4946d9061f9884a392}{mLogin}};\ }
+\DoxyCodeLine{00077\ \ \ \ \ QString\ \mbox{\hyperlink{class_e_mail_sender_ad618d71ccbe47eccf4688f01dddcf87b}{mPassword}};\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ QTcpSocket\ *\mbox{\hyperlink{class_e_mail_sender_ac0ffe047fa99c8bcc7e4b2fec82da45e}{pSocket}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ QTextStream\ *\mbox{\hyperlink{class_e_mail_sender_a09b00bceee9a30c6c7761e606416fc38}{pSocketStream}};\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_e_mail_sender_aaea2a2ad2fd4483cad080b7733fcb7fb}{mTimeout}};\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_e_mail_sender_aea9030a519a975e4fd7f6cbb25f86283}{CONNECT\_PORT}}\ =\ 25;\ }
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EMAILSENDER\_H}}
+
+\end{DoxyCode}

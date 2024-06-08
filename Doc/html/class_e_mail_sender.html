@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OurCafe: Класс EMailSender</title>
+<link rel="icon" href="MainLogo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MainLogo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OurCafe<span id="projectnumber">&#160;1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#pro-static-attribs">Статические защищенные данные</a> &#124;
+<a href="class_e_mail_sender-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс EMailSender</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для отправки электронной почты.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="emailsender_8h_source.html">emailsender.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:EMailSender:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_e_mail_sender.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:acb3776a314cd5019d576acbc23c9326e" id="r_acb3776a314cd5019d576acbc23c9326e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb3776a314cd5019d576acbc23c9326e">signalConnected</a> ()</td></tr>
+<tr class="memdesc:acb3776a314cd5019d576acbc23c9326e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал о подключении к серверу.  <br /></td></tr>
+<tr class="separator:acb3776a314cd5019d576acbc23c9326e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f357a64ebdd63e352e39e968dc14fc" id="r_ab2f357a64ebdd63e352e39e968dc14fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f357a64ebdd63e352e39e968dc14fc">signalDisconnected</a> ()</td></tr>
+<tr class="memdesc:ab2f357a64ebdd63e352e39e968dc14fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал о отключении от сервера.  <br /></td></tr>
+<tr class="separator:ab2f357a64ebdd63e352e39e968dc14fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c816de57cd6efae58f6286b9b482dc" id="r_ae4c816de57cd6efae58f6286b9b482dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4c816de57cd6efae58f6286b9b482dc">signalLog</a> (const QString &amp;log)</td></tr>
+<tr class="memdesc:ae4c816de57cd6efae58f6286b9b482dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал о логе.  <br /></td></tr>
+<tr class="separator:ae4c816de57cd6efae58f6286b9b482dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e9f5d501c54e7c98cdc05d9a6442e3" id="r_a65e9f5d501c54e7c98cdc05d9a6442e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e9f5d501c54e7c98cdc05d9a6442e3">signalSendResult</a> (bool isOk)</td></tr>
+<tr class="memdesc:a65e9f5d501c54e7c98cdc05d9a6442e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал о результате отправки.  <br /></td></tr>
+<tr class="separator:a65e9f5d501c54e7c98cdc05d9a6442e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa99c730e674a92dac70bc9735fbdc5a5" id="r_aa99c730e674a92dac70bc9735fbdc5a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99c730e674a92dac70bc9735fbdc5a5">EMailSender</a> (const QString &amp;host, const QString &amp;login, const QString &amp;password, int timeout=3000, QObject *parent=0)</td></tr>
+<tr class="memdesc:aa99c730e674a92dac70bc9735fbdc5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <br /></td></tr>
+<tr class="separator:aa99c730e674a92dac70bc9735fbdc5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572e36f99b323a092140d255d1307b6a" id="r_a572e36f99b323a092140d255d1307b6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a572e36f99b323a092140d255d1307b6a">sendMessage</a> (const <a class="el" href="struct_message.html">Message</a> &amp;message, const QString &amp;from, const QString &amp;to)</td></tr>
+<tr class="memdesc:a572e36f99b323a092140d255d1307b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправить сообщение.  <br /></td></tr>
+<tr class="separator:a572e36f99b323a092140d255d1307b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a9bdbafd86b18d4dcda11f5149a9608d8" id="r_a9bdbafd86b18d4dcda11f5149a9608d8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bdbafd86b18d4dcda11f5149a9608d8">mailTimestamp</a> () const</td></tr>
+<tr class="memdesc:a9bdbafd86b18d4dcda11f5149a9608d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущее время в формате электронной почты.  <br /></td></tr>
+<tr class="separator:a9bdbafd86b18d4dcda11f5149a9608d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30a2bf76f5c57f47ded91daec1d5e48" id="r_af30a2bf76f5c57f47ded91daec1d5e48"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af30a2bf76f5c57f47ded91daec1d5e48">readLine</a> ()</td></tr>
+<tr class="memdesc:af30a2bf76f5c57f47ded91daec1d5e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать строку из сокета.  <br /></td></tr>
+<tr class="separator:af30a2bf76f5c57f47ded91daec1d5e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac14eee457abe64c7bcc46598b1af2f6" id="r_aac14eee457abe64c7bcc46598b1af2f6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac14eee457abe64c7bcc46598b1af2f6">exchangeMessages</a> (const QString &amp;sendData)</td></tr>
+<tr class="memdesc:aac14eee457abe64c7bcc46598b1af2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обменять сообщения с сервером.  <br /></td></tr>
+<tr class="separator:aac14eee457abe64c7bcc46598b1af2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76db6724c92fe1810ce6159206203e38" id="r_a76db6724c92fe1810ce6159206203e38"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76db6724c92fe1810ce6159206203e38">checkedExchangeMessage</a> (const QString &amp;message)</td></tr>
+<tr class="memdesc:a76db6724c92fe1810ce6159206203e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обменять сообщения с сервером с проверкой.  <br /></td></tr>
+<tr class="separator:a76db6724c92fe1810ce6159206203e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2167ca16db7cb1acf7b2939df31685" id="r_a5d2167ca16db7cb1acf7b2939df31685"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d2167ca16db7cb1acf7b2939df31685">responseCode</a> (const QString &amp;message)</td></tr>
+<tr class="memdesc:a5d2167ca16db7cb1acf7b2939df31685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить код ответа от сервера.  <br /></td></tr>
+<tr class="separator:a5d2167ca16db7cb1acf7b2939df31685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:af8010a446060522e9b5c39e68fa40712" id="r_af8010a446060522e9b5c39e68fa40712"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8010a446060522e9b5c39e68fa40712">mSmtpHost</a></td></tr>
+<tr class="memdesc:af8010a446060522e9b5c39e68fa40712"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP-хост.  <br /></td></tr>
+<tr class="separator:af8010a446060522e9b5c39e68fa40712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf72eb80c63bae4946d9061f9884a392" id="r_acf72eb80c63bae4946d9061f9884a392"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf72eb80c63bae4946d9061f9884a392">mLogin</a></td></tr>
+<tr class="memdesc:acf72eb80c63bae4946d9061f9884a392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Логин для аутентификации.  <br /></td></tr>
+<tr class="separator:acf72eb80c63bae4946d9061f9884a392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad618d71ccbe47eccf4688f01dddcf87b" id="r_ad618d71ccbe47eccf4688f01dddcf87b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad618d71ccbe47eccf4688f01dddcf87b">mPassword</a></td></tr>
+<tr class="memdesc:ad618d71ccbe47eccf4688f01dddcf87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пароль для аутентификации.  <br /></td></tr>
+<tr class="separator:ad618d71ccbe47eccf4688f01dddcf87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ffe047fa99c8bcc7e4b2fec82da45e" id="r_ac0ffe047fa99c8bcc7e4b2fec82da45e"><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ffe047fa99c8bcc7e4b2fec82da45e">pSocket</a></td></tr>
+<tr class="memdesc:ac0ffe047fa99c8bcc7e4b2fec82da45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сокет для соединения с SMTP-сервером.  <br /></td></tr>
+<tr class="separator:ac0ffe047fa99c8bcc7e4b2fec82da45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b00bceee9a30c6c7761e606416fc38" id="r_a09b00bceee9a30c6c7761e606416fc38"><td class="memItemLeft" align="right" valign="top">QTextStream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09b00bceee9a30c6c7761e606416fc38">pSocketStream</a></td></tr>
+<tr class="memdesc:a09b00bceee9a30c6c7761e606416fc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для обмена данными по сокету.  <br /></td></tr>
+<tr class="separator:a09b00bceee9a30c6c7761e606416fc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea2a2ad2fd4483cad080b7733fcb7fb" id="r_aaea2a2ad2fd4483cad080b7733fcb7fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea2a2ad2fd4483cad080b7733fcb7fb">mTimeout</a></td></tr>
+<tr class="memdesc:aaea2a2ad2fd4483cad080b7733fcb7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймаут ожидания ответа от сервера.  <br /></td></tr>
+<tr class="separator:aaea2a2ad2fd4483cad080b7733fcb7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Статические защищенные данные</h2></td></tr>
+<tr class="memitem:aea9030a519a975e4fd7f6cbb25f86283" id="r_aea9030a519a975e4fd7f6cbb25f86283"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9030a519a975e4fd7f6cbb25f86283">CONNECT_PORT</a> = 25</td></tr>
+<tr class="memdesc:aea9030a519a975e4fd7f6cbb25f86283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Порт подключения к SMTP серверу.  <br /></td></tr>
+<tr class="separator:aea9030a519a975e4fd7f6cbb25f86283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для отправки электронной почты. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa99c730e674a92dac70bc9735fbdc5a5" name="aa99c730e674a92dac70bc9735fbdc5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99c730e674a92dac70bc9735fbdc5a5">&#9670;&#160;</a></span>EMailSender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMailSender::EMailSender </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>host</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3000</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор класса <a class="el" href="class_e_mail_sender.html" title="Класс для отправки электронной почты.">EMailSender</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>SMTP-хост. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин для аутентификации. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль для аутентификации. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Таймаут ожидания ответа от сервера (по умолчанию 3000 мс). </td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект.</td></tr>
+    <tr><td class="paramname">host</td><td>Хост SMTP-сервера. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин для авторизации. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль для авторизации. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Таймаут ожидания. </td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a76db6724c92fe1810ce6159206203e38" name="a76db6724c92fe1810ce6159206203e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76db6724c92fe1810ce6159206203e38">&#9670;&#160;</a></span>checkedExchangeMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::checkedExchangeMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обменять сообщения с сервером с проверкой. </p>
+<p>Функция отправки сообщения на сервер SMTP и чтения ответа.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Отправляемое сообщение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный ответ от сервера.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Строка для отправки на сервер. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный ответ от сервера. </dd></dl>
+
+</div>
+</div>
+<a id="aac14eee457abe64c7bcc46598b1af2f6" name="aac14eee457abe64c7bcc46598b1af2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac14eee457abe64c7bcc46598b1af2f6">&#9670;&#160;</a></span>exchangeMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::exchangeMessages </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>sendData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обменять сообщения с сервером. </p>
+<p>Функция обмена сообщениями с сервером SMTP.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sendData</td><td>Отправляемые данные. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученные данные.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sendData</td><td>Строка для отправки на сервер. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный ответ от сервера. </dd></dl>
+
+</div>
+</div>
+<a id="a9bdbafd86b18d4dcda11f5149a9608d8" name="a9bdbafd86b18d4dcda11f5149a9608d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdbafd86b18d4dcda11f5149a9608d8">&#9670;&#160;</a></span>mailTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::mailTimestamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить текущее время в формате электронной почты. </p>
+<p>Функция формирования временной метки для письма.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Время в формате электронной почты.</dd>
+<dd>
+Временная метка в формате строки. </dd></dl>
+
+</div>
+</div>
+<a id="af30a2bf76f5c57f47ded91daec1d5e48" name="af30a2bf76f5c57f47ded91daec1d5e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30a2bf76f5c57f47ded91daec1d5e48">&#9670;&#160;</a></span>readLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::readLine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прочитать строку из сокета. </p>
+<p>Функция чтения строки из сокета.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Прочитанная строка. </dd></dl>
+
+</div>
+</div>
+<a id="a5d2167ca16db7cb1acf7b2939df31685" name="a5d2167ca16db7cb1acf7b2939df31685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2167ca16db7cb1acf7b2939df31685">&#9670;&#160;</a></span>responseCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EMailSender::responseCode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить код ответа от сервера. </p>
+<p>Функция получения кода ответа от сервера SMTP.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Сообщение от сервера. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ответа.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Строка ответа от сервера. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ответа. </dd></dl>
+
+</div>
+</div>
+<a id="a572e36f99b323a092140d255d1307b6a" name="a572e36f99b323a092140d255d1307b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572e36f99b323a092140d255d1307b6a">&#9670;&#160;</a></span>sendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EMailSender::sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_message.html">Message</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправить сообщение. </p>
+<p>Функция отправки сообщения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Сообщение. </td></tr>
+    <tr><td class="paramname">from</td><td>Адрес отправителя. </td></tr>
+    <tr><td class="paramname">to</td><td>Адрес получателя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Успешность отправки.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Сообщение для отправки. </td></tr>
+    <tr><td class="paramname">from</td><td>Адрес отправителя. </td></tr>
+    <tr><td class="paramname">to</td><td>Адрес получателя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат отправки сообщения. </dd></dl>
+
+</div>
+</div>
+<a id="acb3776a314cd5019d576acbc23c9326e" name="acb3776a314cd5019d576acbc23c9326e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3776a314cd5019d576acbc23c9326e">&#9670;&#160;</a></span>signalConnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMailSender::signalConnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал о подключении к серверу. </p>
+
+</div>
+</div>
+<a id="ab2f357a64ebdd63e352e39e968dc14fc" name="ab2f357a64ebdd63e352e39e968dc14fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f357a64ebdd63e352e39e968dc14fc">&#9670;&#160;</a></span>signalDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMailSender::signalDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал о отключении от сервера. </p>
+
+</div>
+</div>
+<a id="ae4c816de57cd6efae58f6286b9b482dc" name="ae4c816de57cd6efae58f6286b9b482dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c816de57cd6efae58f6286b9b482dc">&#9670;&#160;</a></span>signalLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMailSender::signalLog </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>log</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал о логе. </p>
+
+</div>
+</div>
+<a id="a65e9f5d501c54e7c98cdc05d9a6442e3" name="a65e9f5d501c54e7c98cdc05d9a6442e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e9f5d501c54e7c98cdc05d9a6442e3">&#9670;&#160;</a></span>signalSendResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMailSender::signalSendResult </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isOk</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал о результате отправки. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="aea9030a519a975e4fd7f6cbb25f86283" name="aea9030a519a975e4fd7f6cbb25f86283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9030a519a975e4fd7f6cbb25f86283">&#9670;&#160;</a></span>CONNECT_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EMailSender::CONNECT_PORT = 25</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Порт подключения к SMTP серверу. </p>
+
+</div>
+</div>
+<a id="acf72eb80c63bae4946d9061f9884a392" name="acf72eb80c63bae4946d9061f9884a392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf72eb80c63bae4946d9061f9884a392">&#9670;&#160;</a></span>mLogin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::mLogin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Логин для аутентификации. </p>
+
+</div>
+</div>
+<a id="ad618d71ccbe47eccf4688f01dddcf87b" name="ad618d71ccbe47eccf4688f01dddcf87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad618d71ccbe47eccf4688f01dddcf87b">&#9670;&#160;</a></span>mPassword</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::mPassword</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Пароль для аутентификации. </p>
+
+</div>
+</div>
+<a id="af8010a446060522e9b5c39e68fa40712" name="af8010a446060522e9b5c39e68fa40712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8010a446060522e9b5c39e68fa40712">&#9670;&#160;</a></span>mSmtpHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString EMailSender::mSmtpHost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SMTP-хост. </p>
+
+</div>
+</div>
+<a id="aaea2a2ad2fd4483cad080b7733fcb7fb" name="aaea2a2ad2fd4483cad080b7733fcb7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea2a2ad2fd4483cad080b7733fcb7fb">&#9670;&#160;</a></span>mTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EMailSender::mTimeout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймаут ожидания ответа от сервера. </p>
+
+</div>
+</div>
+<a id="ac0ffe047fa99c8bcc7e4b2fec82da45e" name="ac0ffe047fa99c8bcc7e4b2fec82da45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ffe047fa99c8bcc7e4b2fec82da45e">&#9670;&#160;</a></span>pSocket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* EMailSender::pSocket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сокет для соединения с SMTP-сервером. </p>
+
+</div>
+</div>
+<a id="a09b00bceee9a30c6c7761e606416fc38" name="a09b00bceee9a30c6c7761e606416fc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b00bceee9a30c6c7761e606416fc38">&#9670;&#160;</a></span>pSocketStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextStream* EMailSender::pSocketStream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поток для обмена данными по сокету. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="emailsender_8h_source.html">emailsender.h</a></li>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="emailsender_8cpp.html">emailsender.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

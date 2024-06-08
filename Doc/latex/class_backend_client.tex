@@ -1,0 +1,454 @@
+\doxysection{Класс Backend\+Client}
+\hypertarget{class_backend_client}{}\label{class_backend_client}\index{BackendClient@{BackendClient}}
+
+
+Класс \doxylink{class_backend_client}{Backend\+Client} представляет собой клиентскую часть приложения, которая устанавливает соединение с сервером и обрабатывает коммуникацию с ним.  
+
+
+
+
+{\ttfamily \#include $<$backendclient.\+h$>$}
+
+Граф наследования\+:Backend\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_backend_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_backend_client_a5cc3aa41e913f139a58a7498c883f410}{slot\+Server\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Слот для обработки данных, полученных от сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_backend_client_a207da85f24c9598a920ee2887758239f}{message\+\_\+from\+\_\+server}} (QString message)
+\begin{DoxyCompactList}\small\item\em Сигнал, отправляемый при получении сообщения от сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_backend_client_a9600850c1110740ba4d2367dd1a9a459}{send\+\_\+message\+\_\+to\+\_\+server}} (QString query)
+\begin{DoxyCompactList}\small\item\em Отправить сообщение на сервер. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_backend_client_a6f206e1686299f1e57a58fdba0b76e3e}{get\+\_\+auth\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Получить состояние авторизации. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_backend_client_a1ae24483668c24627f945804539e29fd}{authorization\+\_\+server\+\_\+responce}} (QString, QString)
+\begin{DoxyCompactList}\small\item\em Отправить запрос авторизации на сервер. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_backend_client_a9aa91fdbfba438d2007fcf99a1fbea57}{registration\+\_\+server\+\_\+responce}} (QString, QString, QString, QString)
+\begin{DoxyCompactList}\small\item\em Отправить запрос регистрации на сервер. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_backend_client}{Backend\+Client}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_backend_client_aa4dc6bd8aa7d9a7d5e16139039de22ab}{getclient}} ()
+\begin{DoxyCompactList}\small\item\em Получить экземпляр класса \doxylink{class_backend_client}{Backend\+Client}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_a280290abcc7242ffbc21b55b00a7f260}{authentificate}} (QString, QString)
+\begin{DoxyCompactList}\small\item\em Аутентификация пользователя. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_ac7c97fa3f8ed050b677a52a8d9316d4f}{registration}} (QString, QString, QString, QString, QString)
+\begin{DoxyCompactList}\small\item\em Регистрация нового пользователя. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_ad933f682911062bbc94b580bfe920a09}{start\+\_\+application}} ()
+\begin{DoxyCompactList}\small\item\em Запустить приложение. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_ad781e63400af6aae8c26699d32008811}{open\+\_\+entering\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно входа. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_a80ed16177f0624d2e542afcc68e0c271}{open\+\_\+register\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно регистрации. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_ad0c8729beed354ce13246f807b5f6b6c}{open\+\_\+main\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать главное окно. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_a773adeec89c03bc3ca4ff92f73541362}{open\+\_\+menu\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно меню. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_ae851ae4a4213c485c7f9071c7559fa1e}{open\+\_\+booking\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно брониров \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_aea2f26b8de3cb25a57dd3929d4074411}{open\+\_\+basket\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно корзины. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_backend_client_afd34523ecdcb88f823efdb48d3649c95}{open\+\_\+profile\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Показать окно профиля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_basket_window}{Basket\+Window}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_backend_client_a97421374c7695981fd027cdecef6dc38}{basket\+Window}}
+\begin{DoxyCompactList}\small\item\em Указатель на окно корзины. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_menu_window}{Menu\+Window}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_backend_client_a22359d744d8d87dfc4f9e3053934bb4d}{menu\+Window}}
+\begin{DoxyCompactList}\small\item\em Указатель на окно меню. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_backend_client_a337fded3229e19ba67f439353e3114a5}{Backend\+Client}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_backend_client}{Backend\+Client}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_backend_client_a7f5b13035f32dc8fba53c309c421cf13}{Backend\+Client}} (\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \&)=delete
+\item 
+\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \& \mbox{\hyperlink{class_backend_client_a160fb357ad7772db3b6b87404a67562f}{operator=}} (\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \&)=delete
+\item 
+\mbox{\hyperlink{class_backend_client_a335c4aab525dcad62780412eb6ed919f}{\texorpdfstring{$\sim$}{\string~}\+Backend\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_backend_client}{Backend\+Client}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_backend_client_a3e37e241fe98ca09a1c5079227fc5afe}{Backend\+Client\+Destroyer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \doxylink{class_backend_client}{Backend\+Client} представляет собой клиентскую часть приложения, которая устанавливает соединение с сервером и обрабатывает коммуникацию с ним. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_backend_client_a337fded3229e19ba67f439353e3114a5}\index{BackendClient@{BackendClient}!BackendClient@{BackendClient}}
+\index{BackendClient@{BackendClient}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{BackendClient()}{BackendClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_backend_client_a337fded3229e19ba67f439353e3114a5} 
+Backend\+Client\+::\+Backend\+Client (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+Конструктор класса \doxylink{class_backend_client}{Backend\+Client}. 
+
+Инициализация \doxylink{class_backend_client}{Backend\+Client}. Вызывается в @getclient().
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & Указатель на родительский QObject. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_backend_client_a7f5b13035f32dc8fba53c309c421cf13}\index{BackendClient@{BackendClient}!BackendClient@{BackendClient}}
+\index{BackendClient@{BackendClient}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{BackendClient()}{BackendClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_backend_client_a7f5b13035f32dc8fba53c309c421cf13} 
+Backend\+Client\+::\+Backend\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_backend_client_a335c4aab525dcad62780412eb6ed919f}\index{BackendClient@{BackendClient}!````~BackendClient@{\texorpdfstring{$\sim$}{\string~}BackendClient}}
+\index{````~BackendClient@{\texorpdfstring{$\sim$}{\string~}BackendClient}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BackendClient()}{\string~BackendClient()}}
+{\footnotesize\ttfamily \label{class_backend_client_a335c4aab525dcad62780412eb6ed919f} 
+Backend\+Client\+::\texorpdfstring{$\sim$}{\string~}\+Backend\+Client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Деструктор класса \doxylink{class_backend_client}{Backend\+Client}. 
+
+Деструктор для \doxylink{class_backend_client}{Backend\+Client}. 
+
+\doxysubsection{Методы}
+\Hypertarget{class_backend_client_a280290abcc7242ffbc21b55b00a7f260}\index{BackendClient@{BackendClient}!authentificate@{authentificate}}
+\index{authentificate@{authentificate}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{authentificate()}{authentificate()}}
+{\footnotesize\ttfamily \label{class_backend_client_a280290abcc7242ffbc21b55b00a7f260} 
+void Backend\+Client\+::authentificate (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Аутентификация пользователя. 
+
+Авторизация пользователя с использованием логина и пароля.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_backend_client_a1ae24483668c24627f945804539e29fd}\index{BackendClient@{BackendClient}!authorization\_server\_responce@{authorization\_server\_responce}}
+\index{authorization\_server\_responce@{authorization\_server\_responce}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{authorization\_server\_responce()}{authorization\_server\_responce()}}
+{\footnotesize\ttfamily \label{class_backend_client_a1ae24483668c24627f945804539e29fd} 
+bool Backend\+Client\+::authorization\+\_\+server\+\_\+responce (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Отправить запрос авторизации на сервер. 
+
+Сравнить хэш с сервера с локальным.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+True, если запрос выполнен успешно, иначе false.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+True, если авторизация успешна, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_backend_client_a6f206e1686299f1e57a58fdba0b76e3e}\index{BackendClient@{BackendClient}!get\_auth\_state@{get\_auth\_state}}
+\index{get\_auth\_state@{get\_auth\_state}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{get\_auth\_state()}{get\_auth\_state()}}
+{\footnotesize\ttfamily \label{class_backend_client_a6f206e1686299f1e57a58fdba0b76e3e} 
+bool Backend\+Client\+::get\+\_\+auth\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получить состояние авторизации. 
+
+\begin{DoxyReturn}{Возвращает}
+True, если авторизация выполнена, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_backend_client_aa4dc6bd8aa7d9a7d5e16139039de22ab}\index{BackendClient@{BackendClient}!getclient@{getclient}}
+\index{getclient@{getclient}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{getclient()}{getclient()}}
+{\footnotesize\ttfamily \label{class_backend_client_aa4dc6bd8aa7d9a7d5e16139039de22ab} 
+\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \texorpdfstring{$\ast$}{*} Backend\+Client\+::getclient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получить экземпляр класса \doxylink{class_backend_client}{Backend\+Client}. 
+
+Получить экземпляр бэкэнд процессора.
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на экземпляр \doxylink{class_backend_client}{Backend\+Client}. 
+\end{DoxyReturn}
+\Hypertarget{class_backend_client_a207da85f24c9598a920ee2887758239f}\index{BackendClient@{BackendClient}!message\_from\_server@{message\_from\_server}}
+\index{message\_from\_server@{message\_from\_server}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{message\_from\_server}{message\_from\_server}}
+{\footnotesize\ttfamily \label{class_backend_client_a207da85f24c9598a920ee2887758239f} 
+void Backend\+Client\+::message\+\_\+from\+\_\+server (\begin{DoxyParamCaption}\item[{QString}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, отправляемый при получении сообщения от сервера. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Полученное сообщение. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_backend_client_aea2f26b8de3cb25a57dd3929d4074411}\index{BackendClient@{BackendClient}!open\_basket\_window@{open\_basket\_window}}
+\index{open\_basket\_window@{open\_basket\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_basket\_window()}{open\_basket\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_aea2f26b8de3cb25a57dd3929d4074411} 
+void Backend\+Client\+::open\+\_\+basket\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно корзины. 
+
+\Hypertarget{class_backend_client_ae851ae4a4213c485c7f9071c7559fa1e}\index{BackendClient@{BackendClient}!open\_booking\_window@{open\_booking\_window}}
+\index{open\_booking\_window@{open\_booking\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_booking\_window()}{open\_booking\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_ae851ae4a4213c485c7f9071c7559fa1e} 
+void Backend\+Client\+::open\+\_\+booking\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно брониров 
+
+Показать окно бронирования.
+
+/\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
+
+Показать окно бронирования. \Hypertarget{class_backend_client_ad781e63400af6aae8c26699d32008811}\index{BackendClient@{BackendClient}!open\_entering\_window@{open\_entering\_window}}
+\index{open\_entering\_window@{open\_entering\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_entering\_window()}{open\_entering\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_ad781e63400af6aae8c26699d32008811} 
+void Backend\+Client\+::open\+\_\+entering\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно входа. 
+
+\Hypertarget{class_backend_client_ad0c8729beed354ce13246f807b5f6b6c}\index{BackendClient@{BackendClient}!open\_main\_window@{open\_main\_window}}
+\index{open\_main\_window@{open\_main\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_main\_window()}{open\_main\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_ad0c8729beed354ce13246f807b5f6b6c} 
+void Backend\+Client\+::open\+\_\+main\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать главное окно. 
+
+\Hypertarget{class_backend_client_a773adeec89c03bc3ca4ff92f73541362}\index{BackendClient@{BackendClient}!open\_menu\_window@{open\_menu\_window}}
+\index{open\_menu\_window@{open\_menu\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_menu\_window()}{open\_menu\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_a773adeec89c03bc3ca4ff92f73541362} 
+void Backend\+Client\+::open\+\_\+menu\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно меню. 
+
+\Hypertarget{class_backend_client_afd34523ecdcb88f823efdb48d3649c95}\index{BackendClient@{BackendClient}!open\_profile\_window@{open\_profile\_window}}
+\index{open\_profile\_window@{open\_profile\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_profile\_window()}{open\_profile\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_afd34523ecdcb88f823efdb48d3649c95} 
+void Backend\+Client\+::open\+\_\+profile\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно профиля. 
+
+\Hypertarget{class_backend_client_a80ed16177f0624d2e542afcc68e0c271}\index{BackendClient@{BackendClient}!open\_register\_window@{open\_register\_window}}
+\index{open\_register\_window@{open\_register\_window}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{open\_register\_window()}{open\_register\_window()}}
+{\footnotesize\ttfamily \label{class_backend_client_a80ed16177f0624d2e542afcc68e0c271} 
+void Backend\+Client\+::open\+\_\+register\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Показать окно регистрации. 
+
+\Hypertarget{class_backend_client_a160fb357ad7772db3b6b87404a67562f}\index{BackendClient@{BackendClient}!operator=@{operator=}}
+\index{operator=@{operator=}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_backend_client_a160fb357ad7772db3b6b87404a67562f} 
+\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \& Backend\+Client\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_backend_client}{Backend\+Client}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_backend_client_ac7c97fa3f8ed050b677a52a8d9316d4f}\index{BackendClient@{BackendClient}!registration@{registration}}
+\index{registration@{registration}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{registration()}{registration()}}
+{\footnotesize\ttfamily \label{class_backend_client_ac7c97fa3f8ed050b677a52a8d9316d4f} 
+void Backend\+Client\+::registration (\begin{DoxyParamCaption}\item[{QString}]{name}{, }\item[{QString}]{login}{, }\item[{QString}]{email}{, }\item[{QString}]{password}{, }\item[{QString}]{password\+\_\+repeat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Регистрация нового пользователя. 
+
+Зарегистрировать нового пользователя.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя пользователя. \\
+\hline
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Email пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+{\em password\+\_\+repeat} & Повторение пароля пользователя для подтверждения.\\
+\hline
+{\em name} & Имя пользователя. \\
+\hline
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Email пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+{\em password\+\_\+repeat} & Повторенный пароль пользователя для подтверждения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_backend_client_a9aa91fdbfba438d2007fcf99a1fbea57}\index{BackendClient@{BackendClient}!registration\_server\_responce@{registration\_server\_responce}}
+\index{registration\_server\_responce@{registration\_server\_responce}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{registration\_server\_responce()}{registration\_server\_responce()}}
+{\footnotesize\ttfamily \label{class_backend_client_a9aa91fdbfba438d2007fcf99a1fbea57} 
+bool Backend\+Client\+::registration\+\_\+server\+\_\+responce (\begin{DoxyParamCaption}\item[{QString}]{name}{, }\item[{QString}]{login}{, }\item[{QString}]{email}{, }\item[{QString}]{hashed\+\_\+pass}{}\end{DoxyParamCaption})}
+
+
+
+Отправить запрос регистрации на сервер. 
+
+Отправить данные регистрации на сервер.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя пользователя. \\
+\hline
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Email пользователя. \\
+\hline
+{\em hashed\+\_\+pass} & Хэшированный пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+True, если запрос выполнен успешно, иначе false.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя пользователя. \\
+\hline
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Email пользователя. \\
+\hline
+{\em hashed\+\_\+pass} & Хэшированный пароль. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+True, если данные регистрации успешно отправлены. 
+\end{DoxyReturn}
+\Hypertarget{class_backend_client_a9600850c1110740ba4d2367dd1a9a459}\index{BackendClient@{BackendClient}!send\_message\_to\_server@{send\_message\_to\_server}}
+\index{send\_message\_to\_server@{send\_message\_to\_server}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{send\_message\_to\_server()}{send\_message\_to\_server()}}
+{\footnotesize\ttfamily \label{class_backend_client_a9600850c1110740ba4d2367dd1a9a459} 
+void Backend\+Client\+::send\+\_\+message\+\_\+to\+\_\+server (\begin{DoxyParamCaption}\item[{QString}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Отправить сообщение на сервер. 
+
+Отправить базовое сообщение на сервер.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Сообщение для отправки.\\
+\hline
+{\em query} & Сообщение, которое нужно отправить на сервер. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_backend_client_a5cc3aa41e913f139a58a7498c883f410}\index{BackendClient@{BackendClient}!slotServerRead@{slotServerRead}}
+\index{slotServerRead@{slotServerRead}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{slotServerRead}{slotServerRead}}
+{\footnotesize\ttfamily \label{class_backend_client_a5cc3aa41e913f139a58a7498c883f410} 
+void Backend\+Client\+::slot\+Server\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для обработки данных, полученных от сервера. 
+
+Слот для обработки ответов от сервера. \Hypertarget{class_backend_client_ad933f682911062bbc94b580bfe920a09}\index{BackendClient@{BackendClient}!start\_application@{start\_application}}
+\index{start\_application@{start\_application}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{start\_application()}{start\_application()}}
+{\footnotesize\ttfamily \label{class_backend_client_ad933f682911062bbc94b580bfe920a09} 
+static void Backend\+Client\+::start\+\_\+application (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Запустить приложение. 
+
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\Hypertarget{class_backend_client_a3e37e241fe98ca09a1c5079227fc5afe}\index{BackendClient@{BackendClient}!BackendClientDestroyer@{BackendClientDestroyer}}
+\index{BackendClientDestroyer@{BackendClientDestroyer}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{BackendClientDestroyer}{BackendClientDestroyer}}
+{\footnotesize\ttfamily \label{class_backend_client_a3e37e241fe98ca09a1c5079227fc5afe} 
+friend class \mbox{\hyperlink{class_backend_client_destroyer}{Backend\+Client\+Destroyer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_backend_client_a97421374c7695981fd027cdecef6dc38}\index{BackendClient@{BackendClient}!basketWindow@{basketWindow}}
+\index{basketWindow@{basketWindow}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{basketWindow}{basketWindow}}
+{\footnotesize\ttfamily \label{class_backend_client_a97421374c7695981fd027cdecef6dc38} 
+\mbox{\hyperlink{class_basket_window}{Basket\+Window}} \texorpdfstring{$\ast$}{*} Backend\+Client\+::basket\+Window\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Указатель на окно корзины. 
+
+\Hypertarget{class_backend_client_a22359d744d8d87dfc4f9e3053934bb4d}\index{BackendClient@{BackendClient}!menuWindow@{menuWindow}}
+\index{menuWindow@{menuWindow}!BackendClient@{BackendClient}}
+\doxysubsubsection{\texorpdfstring{menuWindow}{menuWindow}}
+{\footnotesize\ttfamily \label{class_backend_client_a22359d744d8d87dfc4f9e3053934bb4d} 
+\mbox{\hyperlink{class_menu_window}{Menu\+Window}} \texorpdfstring{$\ast$}{*} Backend\+Client\+::menu\+Window\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Указатель на окно меню. 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{backendclient_8h}{backendclient.\+h}}\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{backendclient_8cpp}{backendclient.\+cpp}}\end{DoxyCompactItemize}

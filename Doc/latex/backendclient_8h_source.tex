@@ -1,0 +1,106 @@
+\doxysection{backendclient.\+h}
+\hypertarget{backendclient_8h_source}{}\label{backendclient_8h_source}\index{C:/Users/BARA/Documents/GitHub/OurCafe/application/backendclient.h@{C:/Users/BARA/Documents/GitHub/OurCafe/application/backendclient.h}}
+\mbox{\hyperlink{backendclient_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BACKENDCLIENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BACKENDCLIENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QRegularExpression>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{entering__window_8h}{entering\_window.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{register__window_8h}{register\_window.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mainwindow_8h}{mainwindow.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{menuwindow_8h}{menuwindow.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hash_8h}{hash.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bookingwindow_8h}{bookingwindow.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{basketwindow_8h}{basketwindow.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{profilewindow_8h}{profilewindow.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_backend_client}{BackendClient}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_backend_client_destroyer}{BackendClientDestroyer}}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_backend_client}{BackendClient}}\ *client;}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_backend_client_destroyer_a22b48df494ee8ee506517e9086c6c9f2}{\string~BackendClientDestroyer}}()\ \{\ \textcolor{keyword}{delete}\ client;\ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_destroyer_a2dfca07482fa8266c66e62e526e6c99a}{initialize}}(\mbox{\hyperlink{class_backend_client}{BackendClient}}\ *p)\ \{\ client\ =\ p;\ \}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_backend_client}{BackendClient}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_backend_client}{BackendClient}}\ *client;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_backend_client_destroyer}{BackendClientDestroyer}}\ destroyer;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ Сокет\ для\ связи\ с\ сервером}}
+\DoxyCodeLine{00051\ \ \ \ \ QTcpSocket*\ TcpSocket;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ authorization\_state;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ Окна\ приложения}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classentering__window}{entering\_window}}*\ enteringWindow;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classregister__window}{register\_window}}*\ registerWindow;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_main_window}{MainWindow}}*\ mainWindow;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_booking_window}{BookingWindow}}*\ bookingWindow;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_profile_window}{ProfileWindow}}*\ profileWindow;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_backend_client_a337fded3229e19ba67f439353e3114a5}{BackendClient}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_backend_client_a7f5b13035f32dc8fba53c309c421cf13}{BackendClient}}(\mbox{\hyperlink{class_backend_client}{BackendClient}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_backend_client}{BackendClient}}\&\ \mbox{\hyperlink{class_backend_client_a160fb357ad7772db3b6b87404a67562f}{operator=}}(\mbox{\hyperlink{class_backend_client}{BackendClient}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_backend_client_a335c4aab525dcad62780412eb6ed919f}{\string~BackendClient}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_backend_client_destroyer}{BackendClientDestroyer}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_backend_client}{BackendClient}}*\ \mbox{\hyperlink{class_backend_client_aa4dc6bd8aa7d9a7d5e16139039de22ab}{getclient}}();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_basket_window}{BasketWindow}}*\ \mbox{\hyperlink{class_backend_client_a97421374c7695981fd027cdecef6dc38}{basketWindow}};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_menu_window}{MenuWindow}}*\ \mbox{\hyperlink{class_backend_client_a22359d744d8d87dfc4f9e3053934bb4d}{menuWindow}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a9600850c1110740ba4d2367dd1a9a459}{send\_message\_to\_server}}(QString\ query);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_backend_client_a6f206e1686299f1e57a58fdba0b76e3e}{get\_auth\_state}}()\ \{\ \textcolor{keywordflow}{return}\ authorization\_state;\ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_backend_client_a1ae24483668c24627f945804539e29fd}{authorization\_server\_responce}}(QString,\ QString);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_backend_client_a9aa91fdbfba438d2007fcf99a1fbea57}{registration\_server\_responce}}(QString,\ QString,\ QString,\ QString);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a280290abcc7242ffbc21b55b00a7f260}{authentificate}}(QString,\ QString);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_ac7c97fa3f8ed050b677a52a8d9316d4f}{registration}}(QString,\ QString,\ QString,\ QString,\ QString);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_ad933f682911062bbc94b580bfe920a09}{start\_application}}();}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_ad781e63400af6aae8c26699d32008811}{open\_entering\_window}}();}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a80ed16177f0624d2e542afcc68e0c271}{open\_register\_window}}();}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_ad0c8729beed354ce13246f807b5f6b6c}{open\_main\_window}}();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a773adeec89c03bc3ca4ff92f73541362}{open\_menu\_window}}();}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_ae851ae4a4213c485c7f9071c7559fa1e}{open\_booking\_window}}();}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_aea2f26b8de3cb25a57dd3929d4074411}{open\_basket\_window}}();}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_afd34523ecdcb88f823efdb48d3649c95}{open\_profile\_window}}();}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ signals:}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a207da85f24c9598a920ee2887758239f}{message\_from\_server}}(QString\ message);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_backend_client_a5cc3aa41e913f139a58a7498c883f410}{slotServerRead}}();}
+\DoxyCodeLine{00189\ \};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BACKENDCLIENT\_H}}
+
+\end{DoxyCode}

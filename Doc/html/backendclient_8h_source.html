@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OurCafe: Исходный файл C:/Users/BARA/Documents/GitHub/OurCafe/application/backendclient.h</title>
+<link rel="icon" href="MainLogo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MainLogo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OurCafe<span id="projectnumber">&#160;1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b1722f785063e4c18eb38c82d57cfefb.html">OurCafe</a></li><li class="navelem"><a class="el" href="dir_3a80b52111d7abe6ad6d9f32a6eb5310.html">application</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">backendclient.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="backendclient_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BACKENDCLIENT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BACKENDCLIENT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtNetwork&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QRegularExpression&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="entering__window_8h.html">entering_window.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="register__window_8h.html">register_window.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="menuwindow_8h.html">menuwindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="hash_8h.html">hash.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="bookingwindow_8h.html">bookingwindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="basketwindow_8h.html">basketwindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="profilewindow_8h.html">profilewindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span><a class="code hl_class" href="class_backend_client.html">BackendClient</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_backend_client_destroyer.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_backend_client_destroyer.html">BackendClientDestroyer</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_backend_client.html">BackendClient</a> *client;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_backend_client_destroyer.html#a22b48df494ee8ee506517e9086c6c9f2">   35</a></span>    <a class="code hl_function" href="class_backend_client_destroyer.html#a22b48df494ee8ee506517e9086c6c9f2">~BackendClientDestroyer</a>() { <span class="keyword">delete</span> client; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_backend_client_destroyer.html#a2dfca07482fa8266c66e62e526e6c99a">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client_destroyer.html#a2dfca07482fa8266c66e62e526e6c99a">initialize</a>(<a class="code hl_class" href="class_backend_client.html">BackendClient</a> *p) { client = p; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_backend_client.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="class_backend_client.html">BackendClient</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Q_OBJECT</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_backend_client.html">BackendClient</a> *client;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_backend_client_destroyer.html">BackendClientDestroyer</a> destroyer;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// Сокет для связи с сервером</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    QTcpSocket* TcpSocket;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> authorization_state;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Окна приложения</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">static</span> <a class="code hl_class" href="classentering__window.html">entering_window</a>* enteringWindow;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">static</span> <a class="code hl_class" href="classregister__window.html">register_window</a>* registerWindow;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_main_window.html">MainWindow</a>* mainWindow;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_booking_window.html">BookingWindow</a>* bookingWindow;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_profile_window.html">ProfileWindow</a>* profileWindow;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_backend_client.html#a337fded3229e19ba67f439353e3114a5">BackendClient</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_backend_client.html#a7f5b13035f32dc8fba53c309c421cf13">   68</a></span>    <a class="code hl_function" href="class_backend_client.html#a7f5b13035f32dc8fba53c309c421cf13">BackendClient</a>(<a class="code hl_class" href="class_backend_client.html">BackendClient</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_backend_client.html#a160fb357ad7772db3b6b87404a67562f">   69</a></span>    <a class="code hl_class" href="class_backend_client.html">BackendClient</a>&amp; <a class="code hl_function" href="class_backend_client.html#a160fb357ad7772db3b6b87404a67562f">operator=</a>(<a class="code hl_class" href="class_backend_client.html">BackendClient</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="class_backend_client.html#a335c4aab525dcad62780412eb6ed919f">~BackendClient</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_backend_client.html#a3e37e241fe98ca09a1c5079227fc5afe">   75</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_backend_client_destroyer.html">BackendClientDestroyer</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_backend_client.html">BackendClient</a>* <a class="code hl_function" href="class_backend_client.html#aa4dc6bd8aa7d9a7d5e16139039de22ab">getclient</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_backend_client.html#a97421374c7695981fd027cdecef6dc38">   84</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="class_basket_window.html">BasketWindow</a>* <a class="code hl_variable" href="class_backend_client.html#a97421374c7695981fd027cdecef6dc38">basketWindow</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_backend_client.html#a22359d744d8d87dfc4f9e3053934bb4d">   85</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="class_menu_window.html">MenuWindow</a>* <a class="code hl_variable" href="class_backend_client.html#a22359d744d8d87dfc4f9e3053934bb4d">menuWindow</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#a9600850c1110740ba4d2367dd1a9a459">send_message_to_server</a>(QString query);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_backend_client.html#a6f206e1686299f1e57a58fdba0b76e3e">   97</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_backend_client.html#a6f206e1686299f1e57a58fdba0b76e3e">get_auth_state</a>() { <span class="keywordflow">return</span> authorization_state; }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_backend_client.html#a1ae24483668c24627f945804539e29fd">authorization_server_responce</a>(QString, QString);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_backend_client.html#a9aa91fdbfba438d2007fcf99a1fbea57">registration_server_responce</a>(QString, QString, QString, QString);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#a280290abcc7242ffbc21b55b00a7f260">authentificate</a>(QString, QString);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#ac7c97fa3f8ed050b677a52a8d9316d4f">registration</a>(QString, QString, QString, QString, QString);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="class_backend_client.html#ad933f682911062bbc94b580bfe920a09">  137</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#ad933f682911062bbc94b580bfe920a09">start_application</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#ad781e63400af6aae8c26699d32008811">open_entering_window</a>();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#a80ed16177f0624d2e542afcc68e0c271">open_register_window</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#ad0c8729beed354ce13246f807b5f6b6c">open_main_window</a>();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#a773adeec89c03bc3ca4ff92f73541362">open_menu_window</a>();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#ae851ae4a4213c485c7f9071c7559fa1e">open_booking_window</a>();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#aea2f26b8de3cb25a57dd3929d4074411">open_basket_window</a>();</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_backend_client.html#afd34523ecdcb88f823efdb48d3649c95">open_profile_window</a>();</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>signals:</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_backend_client.html#a207da85f24c9598a920ee2887758239f">  182</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_backend_client.html#a207da85f24c9598a920ee2887758239f">message_from_server</a>(QString message);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_backend_client.html#a5cc3aa41e913f139a58a7498c883f410">slotServerRead</a>();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>};</div>
+</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#endif </span><span class="comment">// BACKENDCLIENT_H</span></div>
+<div class="ttc" id="abasketwindow_8h_html"><div class="ttname"><a href="basketwindow_8h.html">basketwindow.h</a></div></div>
+<div class="ttc" id="abookingwindow_8h_html"><div class="ttname"><a href="bookingwindow_8h.html">bookingwindow.h</a></div></div>
+<div class="ttc" id="aclass_backend_client_destroyer_html"><div class="ttname"><a href="class_backend_client_destroyer.html">BackendClientDestroyer</a></div><div class="ttdoc">Класс BackendClientDestroyer используется для уничтожения экземпляра BackendClient.</div><div class="ttdef"><b>Definition</b> backendclient.h:31</div></div>
+<div class="ttc" id="aclass_backend_client_destroyer_html_a22b48df494ee8ee506517e9086c6c9f2"><div class="ttname"><a href="class_backend_client_destroyer.html#a22b48df494ee8ee506517e9086c6c9f2">BackendClientDestroyer::~BackendClientDestroyer</a></div><div class="ttdeci">~BackendClientDestroyer()</div><div class="ttdef"><b>Definition</b> backendclient.h:35</div></div>
+<div class="ttc" id="aclass_backend_client_destroyer_html_a2dfca07482fa8266c66e62e526e6c99a"><div class="ttname"><a href="class_backend_client_destroyer.html#a2dfca07482fa8266c66e62e526e6c99a">BackendClientDestroyer::initialize</a></div><div class="ttdeci">void initialize(BackendClient *p)</div><div class="ttdef"><b>Definition</b> backendclient.h:36</div></div>
+<div class="ttc" id="aclass_backend_client_html"><div class="ttname"><a href="class_backend_client.html">BackendClient</a></div><div class="ttdoc">Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...</div><div class="ttdef"><b>Definition</b> backendclient.h:44</div></div>
+<div class="ttc" id="aclass_backend_client_html_a160fb357ad7772db3b6b87404a67562f"><div class="ttname"><a href="class_backend_client.html#a160fb357ad7772db3b6b87404a67562f">BackendClient::operator=</a></div><div class="ttdeci">BackendClient &amp; operator=(BackendClient &amp;)=delete</div></div>
+<div class="ttc" id="aclass_backend_client_html_a1ae24483668c24627f945804539e29fd"><div class="ttname"><a href="class_backend_client.html#a1ae24483668c24627f945804539e29fd">BackendClient::authorization_server_responce</a></div><div class="ttdeci">bool authorization_server_responce(QString, QString)</div><div class="ttdoc">Отправить запрос авторизации на сервер.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:52</div></div>
+<div class="ttc" id="aclass_backend_client_html_a207da85f24c9598a920ee2887758239f"><div class="ttname"><a href="class_backend_client.html#a207da85f24c9598a920ee2887758239f">BackendClient::message_from_server</a></div><div class="ttdeci">void message_from_server(QString message)</div><div class="ttdoc">Сигнал, отправляемый при получении сообщения от сервера.</div></div>
+<div class="ttc" id="aclass_backend_client_html_a22359d744d8d87dfc4f9e3053934bb4d"><div class="ttname"><a href="class_backend_client.html#a22359d744d8d87dfc4f9e3053934bb4d">BackendClient::menuWindow</a></div><div class="ttdeci">static MenuWindow * menuWindow</div><div class="ttdoc">Указатель на окно меню.</div><div class="ttdef"><b>Definition</b> backendclient.h:85</div></div>
+<div class="ttc" id="aclass_backend_client_html_a280290abcc7242ffbc21b55b00a7f260"><div class="ttname"><a href="class_backend_client.html#a280290abcc7242ffbc21b55b00a7f260">BackendClient::authentificate</a></div><div class="ttdeci">static void authentificate(QString, QString)</div><div class="ttdoc">Аутентификация пользователя.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:90</div></div>
+<div class="ttc" id="aclass_backend_client_html_a335c4aab525dcad62780412eb6ed919f"><div class="ttname"><a href="class_backend_client.html#a335c4aab525dcad62780412eb6ed919f">BackendClient::~BackendClient</a></div><div class="ttdeci">~BackendClient()</div><div class="ttdoc">Деструктор класса BackendClient.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:33</div></div>
+<div class="ttc" id="aclass_backend_client_html_a337fded3229e19ba67f439353e3114a5"><div class="ttname"><a href="class_backend_client.html#a337fded3229e19ba67f439353e3114a5">BackendClient::BackendClient</a></div><div class="ttdeci">BackendClient(QObject *parent=nullptr)</div><div class="ttdoc">Конструктор класса BackendClient.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:21</div></div>
+<div class="ttc" id="aclass_backend_client_html_a5cc3aa41e913f139a58a7498c883f410"><div class="ttname"><a href="class_backend_client.html#a5cc3aa41e913f139a58a7498c883f410">BackendClient::slotServerRead</a></div><div class="ttdeci">void slotServerRead()</div><div class="ttdoc">Слот для обработки данных, полученных от сервера.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:196</div></div>
+<div class="ttc" id="aclass_backend_client_html_a6f206e1686299f1e57a58fdba0b76e3e"><div class="ttname"><a href="class_backend_client.html#a6f206e1686299f1e57a58fdba0b76e3e">BackendClient::get_auth_state</a></div><div class="ttdeci">bool get_auth_state()</div><div class="ttdoc">Получить состояние авторизации.</div><div class="ttdef"><b>Definition</b> backendclient.h:97</div></div>
+<div class="ttc" id="aclass_backend_client_html_a773adeec89c03bc3ca4ff92f73541362"><div class="ttname"><a href="class_backend_client.html#a773adeec89c03bc3ca4ff92f73541362">BackendClient::open_menu_window</a></div><div class="ttdeci">static void open_menu_window()</div><div class="ttdoc">Показать окно меню.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:247</div></div>
+<div class="ttc" id="aclass_backend_client_html_a7f5b13035f32dc8fba53c309c421cf13"><div class="ttname"><a href="class_backend_client.html#a7f5b13035f32dc8fba53c309c421cf13">BackendClient::BackendClient</a></div><div class="ttdeci">BackendClient(BackendClient &amp;)=delete</div></div>
+<div class="ttc" id="aclass_backend_client_html_a80ed16177f0624d2e542afcc68e0c271"><div class="ttname"><a href="class_backend_client.html#a80ed16177f0624d2e542afcc68e0c271">BackendClient::open_register_window</a></div><div class="ttdeci">static void open_register_window()</div><div class="ttdoc">Показать окно регистрации.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:224</div></div>
+<div class="ttc" id="aclass_backend_client_html_a9600850c1110740ba4d2367dd1a9a459"><div class="ttname"><a href="class_backend_client.html#a9600850c1110740ba4d2367dd1a9a459">BackendClient::send_message_to_server</a></div><div class="ttdeci">void send_message_to_server(QString query)</div><div class="ttdoc">Отправить сообщение на сервер.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:188</div></div>
+<div class="ttc" id="aclass_backend_client_html_a97421374c7695981fd027cdecef6dc38"><div class="ttname"><a href="class_backend_client.html#a97421374c7695981fd027cdecef6dc38">BackendClient::basketWindow</a></div><div class="ttdeci">static BasketWindow * basketWindow</div><div class="ttdoc">Указатель на окно корзины.</div><div class="ttdef"><b>Definition</b> backendclient.h:84</div></div>
+<div class="ttc" id="aclass_backend_client_html_a9aa91fdbfba438d2007fcf99a1fbea57"><div class="ttname"><a href="class_backend_client.html#a9aa91fdbfba438d2007fcf99a1fbea57">BackendClient::registration_server_responce</a></div><div class="ttdeci">bool registration_server_responce(QString, QString, QString, QString)</div><div class="ttdoc">Отправить запрос регистрации на сервер.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:123</div></div>
+<div class="ttc" id="aclass_backend_client_html_aa4dc6bd8aa7d9a7d5e16139039de22ab"><div class="ttname"><a href="class_backend_client.html#aa4dc6bd8aa7d9a7d5e16139039de22ab">BackendClient::getclient</a></div><div class="ttdeci">static BackendClient * getclient()</div><div class="ttdoc">Получить экземпляр класса BackendClient.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:7</div></div>
+<div class="ttc" id="aclass_backend_client_html_ac7c97fa3f8ed050b677a52a8d9316d4f"><div class="ttname"><a href="class_backend_client.html#ac7c97fa3f8ed050b677a52a8d9316d4f">BackendClient::registration</a></div><div class="ttdeci">static void registration(QString, QString, QString, QString, QString)</div><div class="ttdoc">Регистрация нового пользователя.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:146</div></div>
+<div class="ttc" id="aclass_backend_client_html_ad0c8729beed354ce13246f807b5f6b6c"><div class="ttname"><a href="class_backend_client.html#ad0c8729beed354ce13246f807b5f6b6c">BackendClient::open_main_window</a></div><div class="ttdeci">static void open_main_window()</div><div class="ttdoc">Показать главное окно.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:235</div></div>
+<div class="ttc" id="aclass_backend_client_html_ad781e63400af6aae8c26699d32008811"><div class="ttname"><a href="class_backend_client.html#ad781e63400af6aae8c26699d32008811">BackendClient::open_entering_window</a></div><div class="ttdeci">static void open_entering_window()</div><div class="ttdoc">Показать окно входа.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:213</div></div>
+<div class="ttc" id="aclass_backend_client_html_ad933f682911062bbc94b580bfe920a09"><div class="ttname"><a href="class_backend_client.html#ad933f682911062bbc94b580bfe920a09">BackendClient::start_application</a></div><div class="ttdeci">static void start_application()</div><div class="ttdoc">Запустить приложение.</div></div>
+<div class="ttc" id="aclass_backend_client_html_ae851ae4a4213c485c7f9071c7559fa1e"><div class="ttname"><a href="class_backend_client.html#ae851ae4a4213c485c7f9071c7559fa1e">BackendClient::open_booking_window</a></div><div class="ttdeci">static void open_booking_window()</div><div class="ttdoc">Показать окно брониров</div><div class="ttdef"><b>Definition</b> backendclient.cpp:258</div></div>
+<div class="ttc" id="aclass_backend_client_html_aea2f26b8de3cb25a57dd3929d4074411"><div class="ttname"><a href="class_backend_client.html#aea2f26b8de3cb25a57dd3929d4074411">BackendClient::open_basket_window</a></div><div class="ttdeci">static void open_basket_window()</div><div class="ttdoc">Показать окно корзины.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:269</div></div>
+<div class="ttc" id="aclass_backend_client_html_afd34523ecdcb88f823efdb48d3649c95"><div class="ttname"><a href="class_backend_client.html#afd34523ecdcb88f823efdb48d3649c95">BackendClient::open_profile_window</a></div><div class="ttdeci">static void open_profile_window()</div><div class="ttdoc">Показать окно профиля.</div><div class="ttdef"><b>Definition</b> backendclient.cpp:280</div></div>
+<div class="ttc" id="aclass_basket_window_html"><div class="ttname"><a href="class_basket_window.html">BasketWindow</a></div><div class="ttdoc">Класс для окна корзины.</div><div class="ttdef"><b>Definition</b> basketwindow.h:14</div></div>
+<div class="ttc" id="aclass_booking_window_html"><div class="ttname"><a href="class_booking_window.html">BookingWindow</a></div><div class="ttdoc">Класс окна бронирования.</div><div class="ttdef"><b>Definition</b> bookingwindow.h:14</div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Класс главного окна приложения.</div><div class="ttdef"><b>Definition</b> mainwindow.h:20</div></div>
+<div class="ttc" id="aclass_menu_window_html"><div class="ttname"><a href="class_menu_window.html">MenuWindow</a></div><div class="ttdoc">Класс окна меню.</div><div class="ttdef"><b>Definition</b> menuwindow.h:20</div></div>
+<div class="ttc" id="aclass_profile_window_html"><div class="ttname"><a href="class_profile_window.html">ProfileWindow</a></div><div class="ttdoc">Класс окна профиля пользователя.</div><div class="ttdef"><b>Definition</b> profilewindow.h:20</div></div>
+<div class="ttc" id="aclassentering__window_html"><div class="ttname"><a href="classentering__window.html">entering_window</a></div><div class="ttdoc">Класс entering_window представляет собой окно входа в систему.</div><div class="ttdef"><b>Definition</b> entering_window.h:17</div></div>
+<div class="ttc" id="aclassregister__window_html"><div class="ttname"><a href="classregister__window.html">register_window</a></div><div class="ttdoc">Класс окна регистрации пользователей.</div><div class="ttdef"><b>Definition</b> register_window.h:19</div></div>
+<div class="ttc" id="aentering__window_8h_html"><div class="ttname"><a href="entering__window_8h.html">entering_window.h</a></div></div>
+<div class="ttc" id="ahash_8h_html"><div class="ttname"><a href="hash_8h.html">hash.h</a></div><div class="ttdoc">Заголовочный файл с описанием класса Hash для вычисления хэш-значения пароля.</div></div>
+<div class="ttc" id="amainwindow_8h_html"><div class="ttname"><a href="mainwindow_8h.html">mainwindow.h</a></div><div class="ttdoc">Заголовочный файл с объявлением класса MainWindow для главного окна приложения.</div></div>
+<div class="ttc" id="amenuwindow_8h_html"><div class="ttname"><a href="menuwindow_8h.html">menuwindow.h</a></div><div class="ttdoc">Заголовочный файл с объявлением класса MenuWindow для окна меню.</div></div>
+<div class="ttc" id="aprofilewindow_8h_html"><div class="ttname"><a href="profilewindow_8h.html">profilewindow.h</a></div><div class="ttdoc">Заголовочный файл с объявлением класса ProfileWindow для окна профиля пользователя.</div></div>
+<div class="ttc" id="aregister__window_8h_html"><div class="ttname"><a href="register__window_8h.html">register_window.h</a></div><div class="ttdoc">Заголовочный файл с объявлением класса register_window для окна регистрации пользователей.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

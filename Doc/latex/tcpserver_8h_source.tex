@@ -1,0 +1,57 @@
+\doxysection{tcpserver.\+h}
+\hypertarget{tcpserver_8h_source}{}\label{tcpserver_8h_source}\index{C:/Users/BARA/Documents/GitHub/OurCafe/Server/tcpserver.h@{C:/Users/BARA/Documents/GitHub/OurCafe/Server/tcpserver.h}}
+\mbox{\hyperlink{tcpserver_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TCPSERVER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TCPSERVER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTcpServer>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QSqlError>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_c_p_server}{TCPServer}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_server_destroyer}{ServerDestroyer}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\ *server;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_server_destroyer_a3b8cc3c82f9eb976a301c181e7d3c8b6}{\string~ServerDestroyer}}()\ \{\ \textcolor{keyword}{delete}\ server;\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_server_destroyer_a0dc780d2853b3ec9d284844a12840ee7}{initialize}}(\mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\ *Server)\ \{\ server\ =\ Server;\ \}}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ Q\_OBJECT}
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\ *server;\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_server_destroyer}{ServerDestroyer}}\ destroyer;\ }
+\DoxyCodeLine{00041\ \ \ \ \ QTcpServer\ *TcpServer;\ }
+\DoxyCodeLine{00042\ \ \ \ \ QSqlDatabase\ Database;\ }
+\DoxyCodeLine{00043\ \ \ \ \ QList<QTcpSocket\ *>\ clients;\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ server\_status;\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ database\_status;\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_t_c_p_server_af9980f4c39e88fb8d8ff473764d3723d}{TCPServer}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_t_c_p_server_abc497ac52355e53986a6a1bd1acb9581}{\string~TCPServer}}();\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_t_c_p_server_aeee1b53bad3d31c26abf5ea28c26a364}{TCPServer}}(\ \mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\&\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\&\ \mbox{\hyperlink{class_t_c_p_server_aaa0dc0c186ab86430847955efa7cea2c}{operator\ =\ }}(\mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_server_destroyer}{ServerDestroyer}};}
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_t_c_p_server}{TCPServer}}\ *\mbox{\hyperlink{class_t_c_p_server_a348c6ae0c5fce4eefab76647e1078f18}{getserver}}();}
+\DoxyCodeLine{00062\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_c_p_server_ac5ea426b821d6956fa1cf474ae851a65}{slotNewConnection}}();\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_c_p_server_ac9934e4f21cc98d750053b3eb2c527e5}{slotClientDisconnected}}();\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_c_p_server_af9633dc7ec431650a998d9c0f0313ad3}{slotServerRead}}();\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_c_p_server_ade0635052b5b82999afb1af93efaf037}{stopServer}}();\ }
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TCPSERVER\_H}}
+
+\end{DoxyCode}

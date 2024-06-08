@@ -1,0 +1,171 @@
+\doxysection{Класс TCPServer}
+\hypertarget{class_t_c_p_server}{}\label{class_t_c_p_server}\index{TCPServer@{TCPServer}}
+
+
+The \doxylink{class_t_c_p_server}{TCPServer} class.  
+
+
+
+
+{\ttfamily \#include $<$tcpserver.\+h$>$}
+
+Граф наследования\+:TCPServer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_c_p_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_c_p_server_ac5ea426b821d6956fa1cf474ae851a65}{slot\+New\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Слот для обработки новых подключений клиентов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_server_ac9934e4f21cc98d750053b3eb2c527e5}{slot\+Client\+Disconnected}} ()
+\begin{DoxyCompactList}\small\item\em Слот для обработки отключения клиента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_server_af9633dc7ec431650a998d9c0f0313ad3}{slot\+Server\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Слот для чтения данных от подключенных клиентов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_server_ade0635052b5b82999afb1af93efaf037}{stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Останавливает TCP-\/сервер и закрывает соединение с базой данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_c_p_server_a348c6ae0c5fce4eefab76647e1078f18}{getserver}} ()
+\begin{DoxyCompactList}\small\item\em Получить экземпляр сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_c_p_server_af9980f4c39e88fb8d8ff473764d3723d}{TCPServer}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_c_p_server_abc497ac52355e53986a6a1bd1acb9581}{\texorpdfstring{$\sim$}{\string~}\+TCPServer}} ()
+\begin{DoxyCompactList}\small\item\em Уничтожает объект \doxylink{class_t_c_p_server}{TCPServer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_c_p_server_aeee1b53bad3d31c26abf5ea28c26a364}{TCPServer}} (\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \&)=delete
+\item 
+\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \& \mbox{\hyperlink{class_t_c_p_server_aaa0dc0c186ab86430847955efa7cea2c}{operator=}} (\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_t_c_p_server_abc16aa51e64ce612d7321decc134667b}{Server\+Destroyer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The \doxylink{class_t_c_p_server}{TCPServer} class. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_t_c_p_server_af9980f4c39e88fb8d8ff473764d3723d}\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_af9980f4c39e88fb8d8ff473764d3723d} 
+TCPServer\+::\+TCPServer (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+Конструктор класса. 
+
+Конструирует объект \doxylink{class_t_c_p_server}{TCPServer}.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & Родительский объект.\\
+\hline
+{\em parent} & Указатель на родительский объект QObject. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_t_c_p_server_abc497ac52355e53986a6a1bd1acb9581}\index{TCPServer@{TCPServer}!````~TCPServer@{\texorpdfstring{$\sim$}{\string~}TCPServer}}
+\index{````~TCPServer@{\texorpdfstring{$\sim$}{\string~}TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TCPServer()}{\string~TCPServer()}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_abc497ac52355e53986a6a1bd1acb9581} 
+TCPServer\+::\texorpdfstring{$\sim$}{\string~}\+TCPServer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Уничтожает объект \doxylink{class_t_c_p_server}{TCPServer}. 
+
+Деструктор класса. \Hypertarget{class_t_c_p_server_aeee1b53bad3d31c26abf5ea28c26a364}\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_aeee1b53bad3d31c26abf5ea28c26a364} 
+TCPServer\+::\+TCPServer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_t_c_p_server_a348c6ae0c5fce4eefab76647e1078f18}\index{TCPServer@{TCPServer}!getserver@{getserver}}
+\index{getserver@{getserver}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{getserver()}{getserver()}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_a348c6ae0c5fce4eefab76647e1078f18} 
+\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \texorpdfstring{$\ast$}{*} TCPServer\+::getserver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получить экземпляр сервера. 
+
+Возвращает единственный экземпляр \doxylink{class_t_c_p_server}{TCPServer}.
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на экземпляр сервера.
+
+Указатель на экземпляр \doxylink{class_t_c_p_server}{TCPServer}. 
+\end{DoxyReturn}
+\Hypertarget{class_t_c_p_server_aaa0dc0c186ab86430847955efa7cea2c}\index{TCPServer@{TCPServer}!operator=@{operator=}}
+\index{operator=@{operator=}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_aaa0dc0c186ab86430847955efa7cea2c} 
+\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \& TCPServer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_c_p_server}{TCPServer}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_t_c_p_server_ac9934e4f21cc98d750053b3eb2c527e5}\index{TCPServer@{TCPServer}!slotClientDisconnected@{slotClientDisconnected}}
+\index{slotClientDisconnected@{slotClientDisconnected}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{slotClientDisconnected}{slotClientDisconnected}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_ac9934e4f21cc98d750053b3eb2c527e5} 
+void TCPServer\+::slot\+Client\+Disconnected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для обработки отключения клиента. 
+
+Слот для обработки отключения клиента. \Hypertarget{class_t_c_p_server_ac5ea426b821d6956fa1cf474ae851a65}\index{TCPServer@{TCPServer}!slotNewConnection@{slotNewConnection}}
+\index{slotNewConnection@{slotNewConnection}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{slotNewConnection}{slotNewConnection}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_ac5ea426b821d6956fa1cf474ae851a65} 
+void TCPServer\+::slot\+New\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для обработки новых подключений клиентов. 
+
+Слот для обработки нового клиентского соединения. \Hypertarget{class_t_c_p_server_af9633dc7ec431650a998d9c0f0313ad3}\index{TCPServer@{TCPServer}!slotServerRead@{slotServerRead}}
+\index{slotServerRead@{slotServerRead}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{slotServerRead}{slotServerRead}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_af9633dc7ec431650a998d9c0f0313ad3} 
+void TCPServer\+::slot\+Server\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для чтения данных от подключенных клиентов. 
+
+Слот для чтения данных от клиента. \Hypertarget{class_t_c_p_server_ade0635052b5b82999afb1af93efaf037}\index{TCPServer@{TCPServer}!stopServer@{stopServer}}
+\index{stopServer@{stopServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{stopServer}{stopServer}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_ade0635052b5b82999afb1af93efaf037} 
+void TCPServer\+::stop\+Server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Останавливает TCP-\/сервер и закрывает соединение с базой данных. 
+
+Остановить сервер. 
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\Hypertarget{class_t_c_p_server_abc16aa51e64ce612d7321decc134667b}\index{TCPServer@{TCPServer}!ServerDestroyer@{ServerDestroyer}}
+\index{ServerDestroyer@{ServerDestroyer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{ServerDestroyer}{ServerDestroyer}}
+{\footnotesize\ttfamily \label{class_t_c_p_server_abc16aa51e64ce612d7321decc134667b} 
+friend class \mbox{\hyperlink{class_server_destroyer}{Server\+Destroyer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/\+Server/\mbox{\hyperlink{tcpserver_8h}{tcpserver.\+h}}\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/\+Server/\mbox{\hyperlink{tcpserver_8cpp}{tcpserver.\+cpp}}\end{DoxyCompactItemize}

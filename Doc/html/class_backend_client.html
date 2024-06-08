@@ -1,0 +1,961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OurCafe: Класс BackendClient</title>
+<link rel="icon" href="MainLogo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MainLogo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OurCafe<span id="projectnumber">&#160;1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_backend_client-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BackendClient</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a> представляет собой клиентскую часть приложения, которая устанавливает соединение с сервером и обрабатывает коммуникацию с ним.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="backendclient_8h_source.html">backendclient.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:BackendClient:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_backend_client.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:a5cc3aa41e913f139a58a7498c883f410" id="r_a5cc3aa41e913f139a58a7498c883f410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cc3aa41e913f139a58a7498c883f410">slotServerRead</a> ()</td></tr>
+<tr class="memdesc:a5cc3aa41e913f139a58a7498c883f410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки данных, полученных от сервера.  <br /></td></tr>
+<tr class="separator:a5cc3aa41e913f139a58a7498c883f410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:a207da85f24c9598a920ee2887758239f" id="r_a207da85f24c9598a920ee2887758239f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a207da85f24c9598a920ee2887758239f">message_from_server</a> (QString message)</td></tr>
+<tr class="memdesc:a207da85f24c9598a920ee2887758239f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, отправляемый при получении сообщения от сервера.  <br /></td></tr>
+<tr class="separator:a207da85f24c9598a920ee2887758239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9600850c1110740ba4d2367dd1a9a459" id="r_a9600850c1110740ba4d2367dd1a9a459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9600850c1110740ba4d2367dd1a9a459">send_message_to_server</a> (QString query)</td></tr>
+<tr class="memdesc:a9600850c1110740ba4d2367dd1a9a459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправить сообщение на сервер.  <br /></td></tr>
+<tr class="separator:a9600850c1110740ba4d2367dd1a9a459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f206e1686299f1e57a58fdba0b76e3e" id="r_a6f206e1686299f1e57a58fdba0b76e3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f206e1686299f1e57a58fdba0b76e3e">get_auth_state</a> ()</td></tr>
+<tr class="memdesc:a6f206e1686299f1e57a58fdba0b76e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить состояние авторизации.  <br /></td></tr>
+<tr class="separator:a6f206e1686299f1e57a58fdba0b76e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae24483668c24627f945804539e29fd" id="r_a1ae24483668c24627f945804539e29fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ae24483668c24627f945804539e29fd">authorization_server_responce</a> (QString, QString)</td></tr>
+<tr class="memdesc:a1ae24483668c24627f945804539e29fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправить запрос авторизации на сервер.  <br /></td></tr>
+<tr class="separator:a1ae24483668c24627f945804539e29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa91fdbfba438d2007fcf99a1fbea57" id="r_a9aa91fdbfba438d2007fcf99a1fbea57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa91fdbfba438d2007fcf99a1fbea57">registration_server_responce</a> (QString, QString, QString, QString)</td></tr>
+<tr class="memdesc:a9aa91fdbfba438d2007fcf99a1fbea57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправить запрос регистрации на сервер.  <br /></td></tr>
+<tr class="separator:a9aa91fdbfba438d2007fcf99a1fbea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aa4dc6bd8aa7d9a7d5e16139039de22ab" id="r_aa4dc6bd8aa7d9a7d5e16139039de22ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_backend_client.html">BackendClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4dc6bd8aa7d9a7d5e16139039de22ab">getclient</a> ()</td></tr>
+<tr class="memdesc:aa4dc6bd8aa7d9a7d5e16139039de22ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить экземпляр класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>.  <br /></td></tr>
+<tr class="separator:aa4dc6bd8aa7d9a7d5e16139039de22ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280290abcc7242ffbc21b55b00a7f260" id="r_a280290abcc7242ffbc21b55b00a7f260"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a280290abcc7242ffbc21b55b00a7f260">authentificate</a> (QString, QString)</td></tr>
+<tr class="memdesc:a280290abcc7242ffbc21b55b00a7f260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аутентификация пользователя.  <br /></td></tr>
+<tr class="separator:a280290abcc7242ffbc21b55b00a7f260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c97fa3f8ed050b677a52a8d9316d4f" id="r_ac7c97fa3f8ed050b677a52a8d9316d4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c97fa3f8ed050b677a52a8d9316d4f">registration</a> (QString, QString, QString, QString, QString)</td></tr>
+<tr class="memdesc:ac7c97fa3f8ed050b677a52a8d9316d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация нового пользователя.  <br /></td></tr>
+<tr class="separator:ac7c97fa3f8ed050b677a52a8d9316d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad933f682911062bbc94b580bfe920a09" id="r_ad933f682911062bbc94b580bfe920a09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad933f682911062bbc94b580bfe920a09">start_application</a> ()</td></tr>
+<tr class="memdesc:ad933f682911062bbc94b580bfe920a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запустить приложение.  <br /></td></tr>
+<tr class="separator:ad933f682911062bbc94b580bfe920a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad781e63400af6aae8c26699d32008811" id="r_ad781e63400af6aae8c26699d32008811"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad781e63400af6aae8c26699d32008811">open_entering_window</a> ()</td></tr>
+<tr class="memdesc:ad781e63400af6aae8c26699d32008811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно входа.  <br /></td></tr>
+<tr class="separator:ad781e63400af6aae8c26699d32008811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ed16177f0624d2e542afcc68e0c271" id="r_a80ed16177f0624d2e542afcc68e0c271"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80ed16177f0624d2e542afcc68e0c271">open_register_window</a> ()</td></tr>
+<tr class="memdesc:a80ed16177f0624d2e542afcc68e0c271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно регистрации.  <br /></td></tr>
+<tr class="separator:a80ed16177f0624d2e542afcc68e0c271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c8729beed354ce13246f807b5f6b6c" id="r_ad0c8729beed354ce13246f807b5f6b6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c8729beed354ce13246f807b5f6b6c">open_main_window</a> ()</td></tr>
+<tr class="memdesc:ad0c8729beed354ce13246f807b5f6b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать главное окно.  <br /></td></tr>
+<tr class="separator:ad0c8729beed354ce13246f807b5f6b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773adeec89c03bc3ca4ff92f73541362" id="r_a773adeec89c03bc3ca4ff92f73541362"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a773adeec89c03bc3ca4ff92f73541362">open_menu_window</a> ()</td></tr>
+<tr class="memdesc:a773adeec89c03bc3ca4ff92f73541362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно меню.  <br /></td></tr>
+<tr class="separator:a773adeec89c03bc3ca4ff92f73541362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae851ae4a4213c485c7f9071c7559fa1e" id="r_ae851ae4a4213c485c7f9071c7559fa1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae851ae4a4213c485c7f9071c7559fa1e">open_booking_window</a> ()</td></tr>
+<tr class="memdesc:ae851ae4a4213c485c7f9071c7559fa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно брониров  <br /></td></tr>
+<tr class="separator:ae851ae4a4213c485c7f9071c7559fa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2f26b8de3cb25a57dd3929d4074411" id="r_aea2f26b8de3cb25a57dd3929d4074411"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea2f26b8de3cb25a57dd3929d4074411">open_basket_window</a> ()</td></tr>
+<tr class="memdesc:aea2f26b8de3cb25a57dd3929d4074411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно корзины.  <br /></td></tr>
+<tr class="separator:aea2f26b8de3cb25a57dd3929d4074411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd34523ecdcb88f823efdb48d3649c95" id="r_afd34523ecdcb88f823efdb48d3649c95"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd34523ecdcb88f823efdb48d3649c95">open_profile_window</a> ()</td></tr>
+<tr class="memdesc:afd34523ecdcb88f823efdb48d3649c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно профиля.  <br /></td></tr>
+<tr class="separator:afd34523ecdcb88f823efdb48d3649c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a97421374c7695981fd027cdecef6dc38" id="r_a97421374c7695981fd027cdecef6dc38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_basket_window.html">BasketWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97421374c7695981fd027cdecef6dc38">basketWindow</a></td></tr>
+<tr class="memdesc:a97421374c7695981fd027cdecef6dc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на окно корзины.  <br /></td></tr>
+<tr class="separator:a97421374c7695981fd027cdecef6dc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22359d744d8d87dfc4f9e3053934bb4d" id="r_a22359d744d8d87dfc4f9e3053934bb4d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_menu_window.html">MenuWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22359d744d8d87dfc4f9e3053934bb4d">menuWindow</a></td></tr>
+<tr class="memdesc:a22359d744d8d87dfc4f9e3053934bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на окно меню.  <br /></td></tr>
+<tr class="separator:a22359d744d8d87dfc4f9e3053934bb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a337fded3229e19ba67f439353e3114a5" id="r_a337fded3229e19ba67f439353e3114a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a337fded3229e19ba67f439353e3114a5">BackendClient</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a337fded3229e19ba67f439353e3114a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>.  <br /></td></tr>
+<tr class="separator:a337fded3229e19ba67f439353e3114a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5b13035f32dc8fba53c309c421cf13" id="r_a7f5b13035f32dc8fba53c309c421cf13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f5b13035f32dc8fba53c309c421cf13">BackendClient</a> (<a class="el" href="class_backend_client.html">BackendClient</a> &amp;)=delete</td></tr>
+<tr class="separator:a7f5b13035f32dc8fba53c309c421cf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160fb357ad7772db3b6b87404a67562f" id="r_a160fb357ad7772db3b6b87404a67562f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_backend_client.html">BackendClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a160fb357ad7772db3b6b87404a67562f">operator=</a> (<a class="el" href="class_backend_client.html">BackendClient</a> &amp;)=delete</td></tr>
+<tr class="separator:a160fb357ad7772db3b6b87404a67562f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335c4aab525dcad62780412eb6ed919f" id="r_a335c4aab525dcad62780412eb6ed919f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a335c4aab525dcad62780412eb6ed919f">~BackendClient</a> ()</td></tr>
+<tr class="memdesc:a335c4aab525dcad62780412eb6ed919f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>.  <br /></td></tr>
+<tr class="separator:a335c4aab525dcad62780412eb6ed919f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a3e37e241fe98ca09a1c5079227fc5afe" id="r_a3e37e241fe98ca09a1c5079227fc5afe"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e37e241fe98ca09a1c5079227fc5afe">BackendClientDestroyer</a></td></tr>
+<tr class="separator:a3e37e241fe98ca09a1c5079227fc5afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a> представляет собой клиентскую часть приложения, которая устанавливает соединение с сервером и обрабатывает коммуникацию с ним. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a337fded3229e19ba67f439353e3114a5" name="a337fded3229e19ba67f439353e3114a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337fded3229e19ba67f439353e3114a5">&#9670;&#160;</a></span>BackendClient() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BackendClient::BackendClient </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. </p>
+<p>Инициализация <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. Вызывается в @getclient().</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Указатель на родительский QObject. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f5b13035f32dc8fba53c309c421cf13" name="a7f5b13035f32dc8fba53c309c421cf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5b13035f32dc8fba53c309c421cf13">&#9670;&#160;</a></span>BackendClient() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BackendClient::BackendClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_backend_client.html">BackendClient</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a335c4aab525dcad62780412eb6ed919f" name="a335c4aab525dcad62780412eb6ed919f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335c4aab525dcad62780412eb6ed919f">&#9670;&#160;</a></span>~BackendClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BackendClient::~BackendClient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. </p>
+<p>Деструктор для <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a280290abcc7242ffbc21b55b00a7f260" name="a280290abcc7242ffbc21b55b00a7f260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280290abcc7242ffbc21b55b00a7f260">&#9670;&#160;</a></span>authentificate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::authentificate </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Аутентификация пользователя. </p>
+<p>Авторизация пользователя с использованием логина и пароля.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ae24483668c24627f945804539e29fd" name="a1ae24483668c24627f945804539e29fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae24483668c24627f945804539e29fd">&#9670;&#160;</a></span>authorization_server_responce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BackendClient::authorization_server_responce </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправить запрос авторизации на сервер. </p>
+<p>Сравнить хэш с сервера с локальным.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если запрос выполнен успешно, иначе false.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если авторизация успешна, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="a6f206e1686299f1e57a58fdba0b76e3e" name="a6f206e1686299f1e57a58fdba0b76e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f206e1686299f1e57a58fdba0b76e3e">&#9670;&#160;</a></span>get_auth_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BackendClient::get_auth_state </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить состояние авторизации. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если авторизация выполнена, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="aa4dc6bd8aa7d9a7d5e16139039de22ab" name="aa4dc6bd8aa7d9a7d5e16139039de22ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4dc6bd8aa7d9a7d5e16139039de22ab">&#9670;&#160;</a></span>getclient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_backend_client.html">BackendClient</a> * BackendClient::getclient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить экземпляр класса <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. </p>
+<p>Получить экземпляр бэкэнд процессора.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на экземпляр <a class="el" href="class_backend_client.html" title="Класс BackendClient представляет собой клиентскую часть приложения, которая устанавливает соединение ...">BackendClient</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a207da85f24c9598a920ee2887758239f" name="a207da85f24c9598a920ee2887758239f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207da85f24c9598a920ee2887758239f">&#9670;&#160;</a></span>message_from_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::message_from_server </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал, отправляемый при получении сообщения от сервера. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Полученное сообщение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea2f26b8de3cb25a57dd3929d4074411" name="aea2f26b8de3cb25a57dd3929d4074411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2f26b8de3cb25a57dd3929d4074411">&#9670;&#160;</a></span>open_basket_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_basket_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно корзины. </p>
+
+</div>
+</div>
+<a id="ae851ae4a4213c485c7f9071c7559fa1e" name="ae851ae4a4213c485c7f9071c7559fa1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae851ae4a4213c485c7f9071c7559fa1e">&#9670;&#160;</a></span>open_booking_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_booking_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно брониров </p>
+<p>Показать окно бронирования.</p>
+<p>/**</p>
+<p>Показать окно бронирования. </p>
+
+</div>
+</div>
+<a id="ad781e63400af6aae8c26699d32008811" name="ad781e63400af6aae8c26699d32008811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad781e63400af6aae8c26699d32008811">&#9670;&#160;</a></span>open_entering_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_entering_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно входа. </p>
+
+</div>
+</div>
+<a id="ad0c8729beed354ce13246f807b5f6b6c" name="ad0c8729beed354ce13246f807b5f6b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c8729beed354ce13246f807b5f6b6c">&#9670;&#160;</a></span>open_main_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_main_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать главное окно. </p>
+
+</div>
+</div>
+<a id="a773adeec89c03bc3ca4ff92f73541362" name="a773adeec89c03bc3ca4ff92f73541362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773adeec89c03bc3ca4ff92f73541362">&#9670;&#160;</a></span>open_menu_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_menu_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно меню. </p>
+
+</div>
+</div>
+<a id="afd34523ecdcb88f823efdb48d3649c95" name="afd34523ecdcb88f823efdb48d3649c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd34523ecdcb88f823efdb48d3649c95">&#9670;&#160;</a></span>open_profile_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_profile_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно профиля. </p>
+
+</div>
+</div>
+<a id="a80ed16177f0624d2e542afcc68e0c271" name="a80ed16177f0624d2e542afcc68e0c271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ed16177f0624d2e542afcc68e0c271">&#9670;&#160;</a></span>open_register_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::open_register_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показать окно регистрации. </p>
+
+</div>
+</div>
+<a id="a160fb357ad7772db3b6b87404a67562f" name="a160fb357ad7772db3b6b87404a67562f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160fb357ad7772db3b6b87404a67562f">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_backend_client.html">BackendClient</a> &amp; BackendClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_backend_client.html">BackendClient</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c97fa3f8ed050b677a52a8d9316d4f" name="ac7c97fa3f8ed050b677a52a8d9316d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c97fa3f8ed050b677a52a8d9316d4f">&#9670;&#160;</a></span>registration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::registration </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>password_repeat</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Регистрация нового пользователя. </p>
+<p>Зарегистрировать нового пользователя.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя пользователя. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">email</td><td>Email пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+    <tr><td class="paramname">password_repeat</td><td>Повторение пароля пользователя для подтверждения.</td></tr>
+    <tr><td class="paramname">name</td><td>Имя пользователя. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">email</td><td>Email пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+    <tr><td class="paramname">password_repeat</td><td>Повторенный пароль пользователя для подтверждения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9aa91fdbfba438d2007fcf99a1fbea57" name="a9aa91fdbfba438d2007fcf99a1fbea57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa91fdbfba438d2007fcf99a1fbea57">&#9670;&#160;</a></span>registration_server_responce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BackendClient::registration_server_responce </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>hashed_pass</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправить запрос регистрации на сервер. </p>
+<p>Отправить данные регистрации на сервер.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя пользователя. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">email</td><td>Email пользователя. </td></tr>
+    <tr><td class="paramname">hashed_pass</td><td>Хэшированный пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если запрос выполнен успешно, иначе false.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя пользователя. </td></tr>
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">email</td><td>Email пользователя. </td></tr>
+    <tr><td class="paramname">hashed_pass</td><td>Хэшированный пароль. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если данные регистрации успешно отправлены. </dd></dl>
+
+</div>
+</div>
+<a id="a9600850c1110740ba4d2367dd1a9a459" name="a9600850c1110740ba4d2367dd1a9a459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9600850c1110740ba4d2367dd1a9a459">&#9670;&#160;</a></span>send_message_to_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::send_message_to_server </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправить сообщение на сервер. </p>
+<p>Отправить базовое сообщение на сервер.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Сообщение для отправки.</td></tr>
+    <tr><td class="paramname">query</td><td>Сообщение, которое нужно отправить на сервер. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cc3aa41e913f139a58a7498c883f410" name="a5cc3aa41e913f139a58a7498c883f410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc3aa41e913f139a58a7498c883f410">&#9670;&#160;</a></span>slotServerRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackendClient::slotServerRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки данных, полученных от сервера. </p>
+<p>Слот для обработки ответов от сервера. </p>
+
+</div>
+</div>
+<a id="ad933f682911062bbc94b580bfe920a09" name="ad933f682911062bbc94b580bfe920a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad933f682911062bbc94b580bfe920a09">&#9670;&#160;</a></span>start_application()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BackendClient::start_application </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запустить приложение. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a3e37e241fe98ca09a1c5079227fc5afe" name="a3e37e241fe98ca09a1c5079227fc5afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e37e241fe98ca09a1c5079227fc5afe">&#9670;&#160;</a></span>BackendClientDestroyer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_backend_client_destroyer.html">BackendClientDestroyer</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a97421374c7695981fd027cdecef6dc38" name="a97421374c7695981fd027cdecef6dc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97421374c7695981fd027cdecef6dc38">&#9670;&#160;</a></span>basketWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_basket_window.html">BasketWindow</a> * BackendClient::basketWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на окно корзины. </p>
+
+</div>
+</div>
+<a id="a22359d744d8d87dfc4f9e3053934bb4d" name="a22359d744d8d87dfc4f9e3053934bb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22359d744d8d87dfc4f9e3053934bb4d">&#9670;&#160;</a></span>menuWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_menu_window.html">MenuWindow</a> * BackendClient::menuWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на окно меню. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="backendclient_8h_source.html">backendclient.h</a></li>
+<li>C:/Users/BARA/Documents/GitHub/OurCafe/application/<a class="el" href="backendclient_8cpp.html">backendclient.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,116 @@
+\doxysection{Класс Basket\+Window}
+\hypertarget{class_basket_window}{}\label{class_basket_window}\index{BasketWindow@{BasketWindow}}
+
+
+Класс для окна корзины.  
+
+
+
+
+{\ttfamily \#include $<$basketwindow.\+h$>$}
+
+Граф наследования\+:Basket\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_basket_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_basket_window_a0dde266d337b46e2ddc8f75bcbaefbfa}{slot\+\_\+cappuccino}} (QString url, QString name, qint64 price)
+\begin{DoxyCompactList}\small\item\em Обработчик сигнала о получении информации о продукте "{}капучино"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basket_window_a7a68bb68be5600cfde720defae7739f9}{Basket\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса окна корзины. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_basket_window_adaeb4142f97a001945b1197345e0a2ab}{\texorpdfstring{$\sim$}{\string~}\+Basket\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса окна корзины. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Basket\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_basket_window_a41e4d077f85527abc0df813fb3e72785}{ui}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для окна корзины. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_basket_window_a7a68bb68be5600cfde720defae7739f9}\index{BasketWindow@{BasketWindow}!BasketWindow@{BasketWindow}}
+\index{BasketWindow@{BasketWindow}!BasketWindow@{BasketWindow}}
+\doxysubsubsection{\texorpdfstring{BasketWindow()}{BasketWindow()}}
+{\footnotesize\ttfamily \label{class_basket_window_a7a68bb68be5600cfde720defae7739f9} 
+Basket\+Window\+::\+Basket\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор класса окна корзины. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & Родительский виджет. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Скрытие элемента card\+\_\+1 по умолчанию.\Hypertarget{class_basket_window_adaeb4142f97a001945b1197345e0a2ab}\index{BasketWindow@{BasketWindow}!````~BasketWindow@{\texorpdfstring{$\sim$}{\string~}BasketWindow}}
+\index{````~BasketWindow@{\texorpdfstring{$\sim$}{\string~}BasketWindow}!BasketWindow@{BasketWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BasketWindow()}{\string~BasketWindow()}}
+{\footnotesize\ttfamily \label{class_basket_window_adaeb4142f97a001945b1197345e0a2ab} 
+Basket\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Basket\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор класса окна корзины. 
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_basket_window_a0dde266d337b46e2ddc8f75bcbaefbfa}\index{BasketWindow@{BasketWindow}!slot\_cappuccino@{slot\_cappuccino}}
+\index{slot\_cappuccino@{slot\_cappuccino}!BasketWindow@{BasketWindow}}
+\doxysubsubsection{\texorpdfstring{slot\_cappuccino}{slot\_cappuccino}}
+{\footnotesize\ttfamily \label{class_basket_window_a0dde266d337b46e2ddc8f75bcbaefbfa} 
+void Basket\+Window\+::slot\+\_\+cappuccino (\begin{DoxyParamCaption}\item[{QString}]{url}{, }\item[{QString}]{name}{, }\item[{qint64}]{price}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Обработчик сигнала о получении информации о продукте "{}капучино"{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em url} & URL изображения. \\
+\hline
+{\em name} & Название продукта. \\
+\hline
+{\em price} & Цена продукта. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Отображение элемента card\+\_\+1.
+
+\texorpdfstring{$<$}{<} Установка стиля для изображения.
+
+\texorpdfstring{$<$}{<} Установка названия продукта.
+
+\texorpdfstring{$<$}{<} Получение текущего количества продукта.
+
+\texorpdfstring{$<$}{<} Преобразование цены в строку.
+
+\texorpdfstring{$<$}{<} Установка цены продукта.
+
+\texorpdfstring{$<$}{<} Вычисление полной стоимости.
+
+\texorpdfstring{$<$}{<} Установка полной стоимости.
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_basket_window_a41e4d077f85527abc0df813fb3e72785}\index{BasketWindow@{BasketWindow}!ui@{ui}}
+\index{ui@{ui}!BasketWindow@{BasketWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_basket_window_a41e4d077f85527abc0df813fb3e72785} 
+Ui\+::\+Basket\+Window\texorpdfstring{$\ast$}{*} Basket\+Window\+::ui}
+
+Указатель на интерфейс окна. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{basketwindow_8h}{basketwindow.\+h}}\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{basketwindow_8cpp}{basketwindow.\+cpp}}\end{DoxyCompactItemize}

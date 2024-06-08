@@ -1,0 +1,363 @@
+\doxysection{Класс Hash}
+\hypertarget{class_hash}{}\label{class_hash}\index{Hash@{Hash}}
+
+
+{\ttfamily \#include $<$hash.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hash_a47e26eb6cc018dbe756dab7e4d7d08e8}{Hash}} (std\+::string pass)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_hash}{Hash}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_adfcce1f821c92704376d32a504e8870a}{bin}} (char \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}})
+\begin{DoxyCompactList}\small\item\em Функция преобразования символа в бинарное представление. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_a8cd910e7c5cf253d254f52b883174113}{prime\+\_\+hash}} (std\+::string pass)
+\begin{DoxyCompactList}\small\item\em Функция вычисления первичного хэша. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_a3a9beedcc372ccbbce0dd3d8b347d1c2}{pad}} (std\+::string line)
+\begin{DoxyCompactList}\small\item\em Функция добавления нулей в конец строки. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_a46ee6da1496bf3c5acb7399b213d3b86}{complete\+\_\+zero}} (std\+::string line)
+\begin{DoxyCompactList}\small\item\em Функция дополнения строки нулями. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_a04cf17041e54ff89a9115a872b7d301c}{xor\+\_\+bit}} (std\+::string a, std\+::string \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}})
+\begin{DoxyCompactList}\small\item\em Функция применения операции XOR к последовательностям битов. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_hash_a7406da3eaca1f78f0110b72485388b33}{xor\+\_\+bit}} (char a, char \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}})
+\begin{DoxyCompactList}\small\item\em Функция применения операции XOR к отдельным битам. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_hash_a55cadaded99f683e6fca33908e6cc092}{rot}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}s, int x, int y, int z, int d)
+\begin{DoxyCompactList}\small\item\em Функция вращения элемента. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_hash_a72d47ce8b155186a53ba9ae20332cb1e}{opposite}} (char \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}})
+\begin{DoxyCompactList}\small\item\em Функция инверсии бита. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_hash_ae9a9147e625be316c7421c1a55e5c747}{char\+\_\+and}} (char a, char \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}})
+\begin{DoxyCompactList}\small\item\em Функция выполнения операции AND над битами. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_af7becb1d92fdbe0d3e7e57a0e9e5143c}{permutation}} (std\+::string S)
+\begin{DoxyCompactList}\small\item\em Функция перестановки. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_hash_a7be1813233ee58af5e07b8475149554f}{get\+\_\+hash}} ()
+\begin{DoxyCompactList}\small\item\em Получение хэш-\/значения в виде QString. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_hash_a834fb923e50632c5f9451aba35a66b71}{get\+Std\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em Получение хэш-\/значения в виде стандартной строки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_hash_a63691f5c5d3b4b4ca3121565abe8553b}{value}}
+\begin{DoxyCompactList}\small\item\em Хэш-\/значение. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}{b}} = 1600
+\begin{DoxyCompactList}\small\item\em Длина статус-\/бара. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_hash_a858258db83a083a44785a65da957d0c0}{r}} = 1088
+\begin{DoxyCompactList}\small\item\em Длина блока. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_hash_a8b4420c49ba4b491de545e1520dfc637}{c}} = 512
+\begin{DoxyCompactList}\small\item\em Длина добавочной части. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_hash_ad08479d61a09ac4e93a496d1c0e89193}{w}} = 64
+\begin{DoxyCompactList}\small\item\em Длина "{}слова"{}. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_hash_aaa8dc77d08637b17125d153af0923743}{nr}} = 24
+\begin{DoxyCompactList}\small\item\em Количество итераций. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_hash_a47e26eb6cc018dbe756dab7e4d7d08e8}\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{Hash()}{Hash()}}
+{\footnotesize\ttfamily \label{class_hash_a47e26eb6cc018dbe756dab7e4d7d08e8} 
+Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{std\+::string}]{pass}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_hash}{Hash}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em pass} & Пароль, для которого вычисляется хэш-\/значение. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_hash_adfcce1f821c92704376d32a504e8870a}\index{Hash@{Hash}!bin@{bin}}
+\index{bin@{bin}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{bin()}{bin()}}
+{\footnotesize\ttfamily \label{class_hash_adfcce1f821c92704376d32a504e8870a} 
+string Hash\+::bin (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Функция преобразования символа в бинарное представление. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Символ для преобразования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Бинарное представление символа. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_ae9a9147e625be316c7421c1a55e5c747}\index{Hash@{Hash}!char\_and@{char\_and}}
+\index{char\_and@{char\_and}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{char\_and()}{char\_and()}}
+{\footnotesize\ttfamily \label{class_hash_ae9a9147e625be316c7421c1a55e5c747} 
+char Hash\+::char\+\_\+and (\begin{DoxyParamCaption}\item[{char}]{a}{, }\item[{char}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Функция выполнения операции AND над битами. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & Первый бит. \\
+\hline
+{\em b} & Второй бит. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат операции AND. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a46ee6da1496bf3c5acb7399b213d3b86}\index{Hash@{Hash}!complete\_zero@{complete\_zero}}
+\index{complete\_zero@{complete\_zero}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{complete\_zero()}{complete\_zero()}}
+{\footnotesize\ttfamily \label{class_hash_a46ee6da1496bf3c5acb7399b213d3b86} 
+string Hash\+::complete\+\_\+zero (\begin{DoxyParamCaption}\item[{std\+::string}]{line}{}\end{DoxyParamCaption})}
+
+
+
+Функция дополнения строки нулями. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em line} & Строка, которую нужно дополнить нулями. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Дополненная строка. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a7be1813233ee58af5e07b8475149554f}\index{Hash@{Hash}!get\_hash@{get\_hash}}
+\index{get\_hash@{get\_hash}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{get\_hash()}{get\_hash()}}
+{\footnotesize\ttfamily \label{class_hash_a7be1813233ee58af5e07b8475149554f} 
+QString Hash\+::get\+\_\+hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Получение хэш-\/значения в виде QString. 
+
+\begin{DoxyReturn}{Возвращает}
+Хэш-\/значение в виде QString. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a834fb923e50632c5f9451aba35a66b71}\index{Hash@{Hash}!getStdHash@{getStdHash}}
+\index{getStdHash@{getStdHash}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{getStdHash()}{getStdHash()}}
+{\footnotesize\ttfamily \label{class_hash_a834fb923e50632c5f9451aba35a66b71} 
+string Hash\+::get\+Std\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Получение хэш-\/значения в виде стандартной строки. 
+
+\begin{DoxyReturn}{Возвращает}
+Хэш-\/значение в виде стандартной строки. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a72d47ce8b155186a53ba9ae20332cb1e}\index{Hash@{Hash}!opposite@{opposite}}
+\index{opposite@{opposite}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{opposite()}{opposite()}}
+{\footnotesize\ttfamily \label{class_hash_a72d47ce8b155186a53ba9ae20332cb1e} 
+char Hash\+::opposite (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Функция инверсии бита. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em c} & Бит для инверсии. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Инвертированный бит. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a3a9beedcc372ccbbce0dd3d8b347d1c2}\index{Hash@{Hash}!pad@{pad}}
+\index{pad@{pad}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{pad()}{pad()}}
+{\footnotesize\ttfamily \label{class_hash_a3a9beedcc372ccbbce0dd3d8b347d1c2} 
+string Hash\+::pad (\begin{DoxyParamCaption}\item[{std\+::string}]{line}{}\end{DoxyParamCaption})}
+
+
+
+Функция добавления нулей в конец строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em line} & Строка, к которой добавляются нули. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка с добавленными нулями. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_af7becb1d92fdbe0d3e7e57a0e9e5143c}\index{Hash@{Hash}!permutation@{permutation}}
+\index{permutation@{permutation}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{permutation()}{permutation()}}
+{\footnotesize\ttfamily \label{class_hash_af7becb1d92fdbe0d3e7e57a0e9e5143c} 
+string Hash\+::permutation (\begin{DoxyParamCaption}\item[{std\+::string}]{S}{}\end{DoxyParamCaption})}
+
+
+
+Функция перестановки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em S} & Строка для перестановки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат перестановки. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a8cd910e7c5cf253d254f52b883174113}\index{Hash@{Hash}!prime\_hash@{prime\_hash}}
+\index{prime\_hash@{prime\_hash}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{prime\_hash()}{prime\_hash()}}
+{\footnotesize\ttfamily \label{class_hash_a8cd910e7c5cf253d254f52b883174113} 
+string Hash\+::prime\+\_\+hash (\begin{DoxyParamCaption}\item[{std\+::string}]{pass}{}\end{DoxyParamCaption})}
+
+
+
+Функция вычисления первичного хэша. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em pass} & Пароль для вычисления хэша. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Первичное хэш-\/значение пароля. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a55cadaded99f683e6fca33908e6cc092}\index{Hash@{Hash}!rot@{rot}}
+\index{rot@{rot}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{rot()}{rot()}}
+{\footnotesize\ttfamily \label{class_hash_a55cadaded99f683e6fca33908e6cc092} 
+char Hash\+::rot (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{s}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{z}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Функция вращения элемента. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & 3D массив символов. \\
+\hline
+{\em x} & Координата x. \\
+\hline
+{\em y} & Координата y. \\
+\hline
+{\em z} & Координата z. \\
+\hline
+{\em d} & Расстояние вращения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вращенный элемент. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a7406da3eaca1f78f0110b72485388b33}\index{Hash@{Hash}!xor\_bit@{xor\_bit}}
+\index{xor\_bit@{xor\_bit}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{xor\_bit()}{xor\_bit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_hash_a7406da3eaca1f78f0110b72485388b33} 
+char Hash\+::xor\+\_\+bit (\begin{DoxyParamCaption}\item[{char}]{a}{, }\item[{char}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Функция применения операции XOR к отдельным битам. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & Первый бит. \\
+\hline
+{\em b} & Второй бит. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат применения операции XOR к отдельным битам. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_a04cf17041e54ff89a9115a872b7d301c}\index{Hash@{Hash}!xor\_bit@{xor\_bit}}
+\index{xor\_bit@{xor\_bit}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{xor\_bit()}{xor\_bit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_hash_a04cf17041e54ff89a9115a872b7d301c} 
+std\+::string Hash\+::xor\+\_\+bit (\begin{DoxyParamCaption}\item[{std\+::string}]{a}{, }\item[{std\+::string}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Функция применения операции XOR к последовательностям битов. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & Первая последовательность битов. \\
+\hline
+{\em b} & Вторая последовательность битов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат применения операции XOR. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_hash_a608fb5735a6959eabd79c5a1bb9378ce}\index{Hash@{Hash}!b@{b}}
+\index{b@{b}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \label{class_hash_a608fb5735a6959eabd79c5a1bb9378ce} 
+const int Hash\+::b = 1600\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Длина статус-\/бара. 
+
+\Hypertarget{class_hash_a8b4420c49ba4b491de545e1520dfc637}\index{Hash@{Hash}!c@{c}}
+\index{c@{c}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \label{class_hash_a8b4420c49ba4b491de545e1520dfc637} 
+const int Hash\+::c = 512\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Длина добавочной части. 
+
+\Hypertarget{class_hash_aaa8dc77d08637b17125d153af0923743}\index{Hash@{Hash}!nr@{nr}}
+\index{nr@{nr}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{nr}{nr}}
+{\footnotesize\ttfamily \label{class_hash_aaa8dc77d08637b17125d153af0923743} 
+const int Hash\+::nr = 24\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Количество итераций. 
+
+\Hypertarget{class_hash_a858258db83a083a44785a65da957d0c0}\index{Hash@{Hash}!r@{r}}
+\index{r@{r}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \label{class_hash_a858258db83a083a44785a65da957d0c0} 
+const int Hash\+::r = 1088\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Длина блока. 
+
+\Hypertarget{class_hash_a63691f5c5d3b4b4ca3121565abe8553b}\index{Hash@{Hash}!value@{value}}
+\index{value@{value}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{class_hash_a63691f5c5d3b4b4ca3121565abe8553b} 
+QString Hash\+::value}
+
+
+
+Хэш-\/значение. 
+
+\Hypertarget{class_hash_ad08479d61a09ac4e93a496d1c0e89193}\index{Hash@{Hash}!w@{w}}
+\index{w@{w}!Hash@{Hash}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \label{class_hash_ad08479d61a09ac4e93a496d1c0e89193} 
+const int Hash\+::w = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Длина "{}слова"{}. 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{hash_8h}{hash.\+h}}\item 
+C\+:/\+Users/\+BARA/\+Documents/\+Git\+Hub/\+Our\+Cafe/application/\mbox{\hyperlink{hash_8cpp}{hash.\+cpp}}\end{DoxyCompactItemize}
