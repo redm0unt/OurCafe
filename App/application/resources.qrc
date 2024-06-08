@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/Cart.png</file>
+        <file>resources/Account.png</file>
+        <file>resources/Instagram.png</file>
+        <file>resources/Telegram.png</file>
+        <file>resources/Whatsapp.png</file>
+        <file>resources/VK.png</file>
+        <file>resources/AppIcon.png</file>
+        <file>resources/MainLogo.png</file>
+        <file>resources/plus_menu.png</file>
+        <file>resources/Welcome_photo.png</file>
+        <file>resources/About_text.png</file>
+        <file>resources/CafeBackground.png</file>
+        <file>resources/cocoa.png</file>
+        <file>resources/dessert.png</file>
+        <file>resources/coffee.png</file>
+        <file>resources/minus.png</file>
+        <file>resources/americano.png</file>
+        <file>resources/birds_milk.png</file>
+        <file>resources/cappuccino.png</file>
+        <file>resources/cocoa_menu.png</file>
+        <file>resources/espresso.png</file>
+        <file>resources/hot_chocolate.png</file>
+        <file>resources/latte.png</file>
+        <file>resources/matcha-tonic.png</file>
+        <file>resources/medovik.png</file>
+        <file>resources/milkshake.png</file>
+        <file>resources/raf.png</file>
+        <file>resources/shu_cake.png</file>
+        <file>resources/tea.png</file>
+        <file>resources/three_chocolates.png</file>
+        <file>resources/napoleon.png</file>
+        <file>resources/Account_profile.png</file>
+    </qresource>
+</RCC>
