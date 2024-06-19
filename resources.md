@@ -17,5 +17,5 @@ Docker ⬇️
 https://online.mospolytech.ru/pluginfile.php/967019/mod_label/intro/Docker.mp4
 
 
-Диаграмма классов ⬇️
+Диаграмма классов (страница) ⬇️
 https://online.mospolytech.ru/mod/page/view.php?id=127030
